@@ -1,0 +1,25 @@
+{
+  "name": "vsportfest",
+  "version": "1.0.0",
+  "description": "The main Repository for vsportfest-mun 2021",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "tailwindcss": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferdydh/vsportfest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferdydh/vsportfest/issues"
+  },
+  "homepage": "https://github.com/Ferdydh/vsportfest#readme"
+}
