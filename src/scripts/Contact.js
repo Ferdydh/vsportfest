@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Content extends React.Component {
+class Contact extends React.Component {
     render() {
       const bgcolor = this.props.bgcolor;
       const id = this.props.id;
@@ -23,4 +23,4 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
     }
 }
   
-export default Content;
+export default Contact;
