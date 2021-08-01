@@ -2,6 +2,7 @@ import './App.css';
 import "tailwindcss/tailwind.css"
 import Content from './scripts/Content';
 import Sidebar from './scripts/Sidebar';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function App() {
   return (
