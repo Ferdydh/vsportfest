@@ -9,7 +9,7 @@ import ScrollToTopBtn from './scripts/ScrollToTopBtn';
 function App() {
   return (
     <section className="App">
-      <ScrollToTopBtn className="fixed"/>
+      <ScrollToTopBtn/>
       <Topbar />
 
       <Sidebar />

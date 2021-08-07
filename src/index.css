@@ -57,4 +57,13 @@ code {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+}
  
