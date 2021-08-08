@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
-export default class ScrollToTopBtn extends Component {
+class ScrollToTopBtn extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -26,6 +27,7 @@ export default class ScrollToTopBtn extends Component {
             });
         }
     }
+    
     scrollToTop() {
         window.scrollTo({
             top: 0,
@@ -46,3 +48,5 @@ export default class ScrollToTopBtn extends Component {
         );
     }
 }
+
+export default ScrollToTopBtn;

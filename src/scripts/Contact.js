@@ -6,19 +6,57 @@ class Contact extends React.Component {
       const id = this.props.id;
 
       return (
-        <div class={bgcolor} id={id} >
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+        <div class="bg-grey-lighter min-h-screen flex flex-col">
+            <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+                <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+                    <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+                    <input 
+                        type="text"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="fullname"
+                        placeholder="Full Name" />
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+                    <input 
+                        type="text"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="email"
+                        placeholder="Email" />
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+                    <input 
+                        type="password"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="password"
+                        placeholder="Password" />
+                    <input 
+                        type="password"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="confirm_password"
+                        placeholder="Confirm Password" />
 
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                    <button
+                        type="submit"
+                        class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
+                    >Create Account</button>
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                    <div class="text-center text-sm text-grey-dark mt-4">
+                        By signing up, you agree to the 
+                        <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                            Terms of Service
+                        </a> and 
+                        <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur        
-      </div>
+                <div class="text-grey-dark mt-6">
+                    Already have an account? 
+                    <a class="no-underline border-b border-blue text-blue" href="../login/">
+                        Log in
+                    </a>.
+                </div>
+            </div>
+        </div>
       );
     }
 }
