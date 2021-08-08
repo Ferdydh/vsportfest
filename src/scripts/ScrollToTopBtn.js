@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import img from "../images/scrollup.svg"
 
-export default class ScrollToTopBtn extends Component {
+class ScrollToTopBtn extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -27,6 +28,7 @@ export default class ScrollToTopBtn extends Component {
             });
         }
     }
+    
     scrollToTop() {
         window.scrollTo({
             top: 0,
@@ -61,3 +63,4 @@ cp: ig, email, cp?
 opt: merch, faq, money collection
 
 */
+export default ScrollToTopBtn;
