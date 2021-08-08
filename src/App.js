@@ -9,7 +9,6 @@ import ScrollToTopBtn from './scripts/ScrollToTopBtn';
 function App() {
   return (
     <section className="App">
-      <ScrollToTopBtn className="fixed"/>
       <Topbar />
 
       <Sidebar />
@@ -21,6 +20,8 @@ function App() {
         <Contact />
         
       </section>
+
+      <ScrollToTopBtn />
     </section>
   );
 } 

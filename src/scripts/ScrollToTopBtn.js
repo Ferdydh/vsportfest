@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import img from "../images/scrollup.svg"
 
 export default class ScrollToTopBtn extends Component {
     constructor(props) {
@@ -36,13 +37,27 @@ export default class ScrollToTopBtn extends Component {
     render() {
         const { is_visible } = this.state;
         return (
-            <div className="scroll-to-top">
+            <div className="scroll-to-top h-16 fixed border-2">
                 {is_visible && (
                     <div onClick={() => this.scrollToTop()}>
-                        <img src='https://i.postimg.cc/44Ytsk8Z/top-arrow-emoj.png' alt='Go to top' />
+                        <img src={img} alt='Go to top' />
                     </div>
                 )}
             </div>
         );
     }
 }
+
+/*
+link to drive: https://drive.google.com/drive/folders/11c60SqhlJDhZy62KPdyUVtO3P-f1qjBs
+
+Sections: rules, Contact person, hadiah, signup, 
+
+lomba -> catur, moleg, pubg, virtual run, dota, dance
+
+link to google form
+
+cp: ig, email, cp?
+opt: merch, faq, money collection
+
+*/
