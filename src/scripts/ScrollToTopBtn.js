@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import img from "../images/scrollup.svg"
+import img2 from "../images/pikachu.png"
 
 class ScrollToTopBtn extends Component {
 
@@ -42,7 +43,7 @@ class ScrollToTopBtn extends Component {
             <div className="scroll-to-top h-16 fixed border-2">
                 {is_visible && (
                     <div onClick={() => this.scrollToTop()}>
-                        <img src={img} alt='Go to top' />
+                        <img src={img2} alt='Go to top' />
                     </div>
                 )}
             </div>
