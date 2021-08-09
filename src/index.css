@@ -72,7 +72,7 @@ code {
 
 /* +++++++++++++++++++MODAL STYLING++++++++++++++++ */
 /* The Close Button */
-.modal {
+.dylan-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -87,27 +87,61 @@ code {
 }
 
 /* Modal Content */
-.modal-content {
+ .dylan-modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
-
+ 
 /* The Close Button */
-.close {
+ .dylan-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.dylan-close:hover,
+.dylan-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
+} 
 /* +++++++++++++++++++MODAL STYLING++++++++++++++++ */
  
+
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}

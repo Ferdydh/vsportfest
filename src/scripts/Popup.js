@@ -35,9 +35,9 @@ export default class Sidebar extends React.Component {
                 <button id="myBtn" className="bg-blue-300 float-right p-10 font-mono" onClick={() => this.btnOnClick()}>
                     RULES
                 </button>
-                <div id="myModal" className="modal">
-                    <div className="modal-content">
-                        <span className="close" onClick={() => this.spanOnClick()}>&times;</span>
+                <div id="myModal" className="dylan-modal">
+                    <div className="dylan-modal-content">
+                        <span className="dylan-close" onClick={() => this.spanOnClick()}>&times;</span>
                         <p>Some text in the Modal..</p>
                     </div>
                 </div>
