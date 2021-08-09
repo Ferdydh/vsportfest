@@ -13,11 +13,11 @@ function App() {
       <Topbar />
       {/* The topmost slide gets extra padding due to the first slide*/}
 
-      <Popup />
+      <Content className="bg-red-300 p-10" id="pembukaan" />
 
-      <Content className="bg-red-300 pt-16" id="pembukaan" />
-      <Content className="bg-yellow-300" id="isi" />
-      <Content className="bg-green-300" id="penutup" />
+      <Content className="bg-yellow-300 p-10" id="isi" />
+
+      <Content className="bg-green-300 p-10" id="penutup" />
 
       <Contact />
       <Sidebar />
