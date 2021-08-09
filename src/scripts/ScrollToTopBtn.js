@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import img from "../images/scrollup.svg"
-import img2 from "../images/pikachu.png"
+import img2 from "../images/pikachu.jpg"
 
 class ScrollToTopBtn extends Component {
 
