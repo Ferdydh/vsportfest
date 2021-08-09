@@ -9,12 +9,10 @@ export default class Sidebar extends React.Component {
                 <button id="myBtn" onClick="btnOnClick()">Open Modal</button>
 
                 <div id="myModal" className="modal">
-
                     <div className="modal-content">
                         <span className="close" onClick="spanOnClick()">&times;</span>
                         <p>Some text in the Modal..</p>
                     </div>
-
                 </div>
 
             </div>
