@@ -11,7 +11,9 @@ export default class MainWindow extends React.Component {
             <div className="mainwindow h-screen w-full">
                 <div className="w-full inline-block">
                     <img src={logo} alt="logo" className="float-left ml-8 mt-2 w-16 h-16" />
-                    <InstagramIcon fontSize="large" className="float-right mr-8 mt-2"/>
+                    <a href="https://www.w3schools.com/" target="_blank">
+                        <InstagramIcon fontSize="large" className="float-right mr-8 mt-2"/>
+                    </a>
                 </div>
 
                 <div className="-mt-5 flex-1 flex justify-center mr-auto">
@@ -75,7 +77,7 @@ export default class MainWindow extends React.Component {
                 </div>
 
                 <div className="text-4xl p-3 flex w-auto m-5 bg-yellow-300 rounded-lg justify-center items-center">
-                    <a href="google.com">Register now!</a>
+                    <a href="https://www.w3schools.com/" target="_blank">Register now!</a>
                 </div>
             </div>
         );
