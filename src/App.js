@@ -6,6 +6,7 @@ import Contact from './scripts/Contact';
 import MainWindow from './scripts/MainWindow';
 import Popup from './scripts/Popup';
 import ScrollToTopBtn from './scripts/ScrollToTopBtn';
+import MoLeg from './scripts/MoLeg';
 
 function App() {
   return (
