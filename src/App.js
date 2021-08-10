@@ -4,7 +4,6 @@ import Content from './scripts/Content';
 import Sidebar from './scripts/Sidebar';
 import MainWindow from './scripts/MainWindow';
 import Register from './scripts/Register'
-import Popup from './scripts/Popup';
 import ScrollToTopBtn from './scripts/ScrollToTopBtn';
 import MoLeg from './scripts/MoLeg';
 
