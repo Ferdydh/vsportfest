@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import img from "../images/scrollup.svg"
 import img2 from "../images/pikachu.jpg"
+import icon from "../images/icon.svg"
 
 class ScrollToTopBtn extends Component {
 
@@ -40,10 +41,10 @@ class ScrollToTopBtn extends Component {
     render() {
         const { is_visible } = this.state;
         return (
-            <div className="scroll-to-top h-16 fixed border-2">
+            <div className="scroll-to-top w-1/12 h-1/12 fixed">
                 {is_visible && (
                     <div onClick={() => this.scrollToTop()}>
-                        <img src={img2} alt='Go to top' />
+                        <img src={icon} alt='Go to top' />
                     </div>
                 )}
             </div>
