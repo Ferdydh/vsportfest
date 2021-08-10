@@ -74,6 +74,19 @@ class Sidebar extends React.Component {
                 3
               </button>
             </Link>
+            
+            <Link
+              activeClass="active"
+              to="register"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                3
+              </button>
+            </Link>
           </div>
         )}
       </div>
