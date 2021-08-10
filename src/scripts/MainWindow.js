@@ -16,11 +16,11 @@ export default class MainWindow extends React.Component {
                     <InstagramIcon fontSize="large" className="float-right mr-8 mt-2"/>
                 </div>
 
-                <div className="mt-8 flex-1 flex justify-center mr-auto">
+                <div className="-mt-5 flex-1 flex justify-center mr-auto">
                     <img src={Kacamata} alt="Kacamata" className="w-1/3 h-1/3" />
                 </div>
 
-                <div className="bg-red-100 mt-8 p-5">
+                <div className="bg-red-100 mt-8 p-5 flex-1 flex justify-center mr-auto">
                     <div className="w-48 bg-yellow-100" >
                         AUG - SEPT
                     </div>
