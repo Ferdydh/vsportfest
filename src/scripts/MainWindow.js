@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import LogoLarge from '../images/vr.png';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
+
 export default class MainWindow extends React.Component {
     render() {
         return (
@@ -17,7 +18,7 @@ export default class MainWindow extends React.Component {
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-1/3 h-1/3" />
                 </div>
 
-                <div className="bg-red-100 mt-8 p-5 flex-1 flex justify-center mr-auto">
+                <div className="mt-8 flex-1 flex justify-center mr-auto">
                     <div className="w-48 bg-yellow-100" >
                         AUG - SEPT
                     </div>
@@ -71,6 +72,10 @@ export default class MainWindow extends React.Component {
                             4
                         </button>
                     </Link>
+                </div>
+
+                <div className="text-4xl p-3 flex w-auto m-5 bg-yellow-300 rounded-lg justify-center items-center">
+                    <a href="google.com">Register now!</a>
                 </div>
             </div>
         );
