@@ -41,7 +41,7 @@ class ScrollToTopBtn extends Component {
     render() {
         const { is_visible } = this.state;
         return (
-            <div className="scroll-to-top w-1/12 h-1/12 fixed">
+            <div className="scroll-to-top w-14 h-14 fixed">
                 {is_visible && (
                     <div onClick={() => this.scrollToTop()}>
                         <img src={icon} alt='Go to top' />
