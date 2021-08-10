@@ -13,7 +13,7 @@ export default class MainWindow extends React.Component {
                 <div>
                     <img src={logo} alt="logo" className="logo float-left ml-8 mt-2 w-16 h-16" />
                     <img src={ig} alt="ig" className="ig float-right mr-8 mt-2 w-10 h-10" />
-                    <InstagramIcon />
+                    <InstagramIcon fontSize='   ' />
                 </div>
 
                 <div className="mt-12 flex-1 flex justify-center mr-auto">
