@@ -10,13 +10,13 @@ export default class MainWindow extends React.Component {
     render() {
         return (
             <div className="mainwindow h-screen w-full">
-                <div className="w-full">
-                    <img src={logo} alt="logo" className="logo float-left ml-8 mt-2 w-16 h-16" />
+                <div className="w-full fixed">
+                    <img src={logo} alt="logo" className="float-left ml-8 mt-2 w-16 h-16" />
                     {/* <img src={ig} alt="ig" className="ig float-right mr-8 mt-2 w-10 h-10" /> */}
                     <InstagramIcon fontSize="large" className="float-right mr-8 mt-2"/>
                 </div>
 
-                <div className="mt-12 flex-1 flex justify-center mr-auto">
+                <div className="mt-12 flex-1 flex justify-center">
                     <img src={Kacamata} alt="Kacamata" className="w-1/3 h-1/3" />
                 </div>
 
