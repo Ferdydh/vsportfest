@@ -11,7 +11,7 @@ class Register extends React.Component {
 
                 <div className="flex w-auto m-5 bg-yellow-300 rounded-lg justify-center items-center">
                     <div className="text-4xl p-5">
-                        <a href="https://www.w3schools.com/">Register now!</a>
+                        <a href="#">Register now!</a>
                     </div>
                     
                 </div>
