@@ -1,6 +1,8 @@
 import React,{useEffect} from 'react';
 import Popup from './Popup'
 import Pikachu from '../images/pikachu.jpg'
+import VR from '../images/vr.png'
+import { Parallax } from 'react-parallax';
 
 class Content extends React.Component {
 
@@ -8,10 +10,22 @@ class Content extends React.Component {
     console.log("Hello");
   }
 
+  MouseOver(event) {
+    event.target.style.height = '120%';
+    event.target.style.transform = 'rotate(20deg)'
+    event.target.style.transition = 'height 0.4s, transform 0.3s';
+  }
+
+  MouseOut(event){
+    event.target.style.height = '100%';
+    event.target.style.transform = 'rotate(0deg)'
+  }
+
   render() {
 
     return (
-      <div className={"h-screen py-20 flex flex-row " + (this.props.className)} id={this.props.id}>
+      <Parallax bgImage={VR} className="bg-gray-500" strength={300}>
+      <div className={"h-screen py-20 flex flex-row "} id={this.props.id}>
         {/* LEFT SIDE OF THE DIV */}
         <div className="h-full w-1/2 flex flex-col" id="leftside">
           <div className="m-auto font-bold text-5xl">
@@ -36,11 +50,15 @@ class Content extends React.Component {
         
         {/* RIGHT SIDE OF THE DIV */}
         <div className="h-full w-1/2 flex-col flex" id="rightside">
+        
           <div className="m-auto">
-            <img src={Pikachu} />
-          </div>
+
+              <img src={Pikachu} onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+
+            </div>
         </div>
       </div>
+      </Parallax>
     );
   }
 }
