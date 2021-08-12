@@ -13,7 +13,7 @@ class Content extends React.Component {
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
-    event.target.style.transition = 'height 0.4s, transform 0.3s';
+    event.target.style.transition = 'height 0.5s, transform 1s';
   }
 
   MouseOut(event){
@@ -25,14 +25,15 @@ class Content extends React.Component {
 
     return (
       <Parallax bgImage={VR} className="bg-gray-500" strength={300}>
-      <div className={"h-screen py-20 flex flex-row "} id={this.props.id}>
+      <div className="h-screen py-20 flex flex-row " id={this.props.id}>
         {/* LEFT SIDE OF THE DIV */}
         <div className="h-full w-1/2 flex flex-col" id="leftside">
           <div className="m-auto font-bold text-5xl">
-            <div className="transform -skew-y-6">
+            <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
                 MOBILE LEGENDS
             </div>
-            <button className="transform skew-y-6 my-10 float-left bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
+            <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
+             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
                 RULES
             </button>
           </div>

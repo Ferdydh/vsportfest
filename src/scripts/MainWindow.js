@@ -8,7 +8,7 @@ import Countdown from './Countdown'
 export default class MainWindow extends React.Component {
     render() {
         return (
-            <div className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-700 to-pink-400">
+            <div className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-900 to-pink-500">
                 <div className="w-full inline-block">
                     <img src={logo} alt="logo" className="float-left ml-8 mt-2 w-16 h-16" />
                     <a href="https://www.w3schools.com/" target="_blank">
@@ -17,7 +17,7 @@ export default class MainWindow extends React.Component {
                 </div>
 
                 <div className="mt-5 flex-1 flex justify-center mr-auto">
-                    <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 h-1/3" />
+                    <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3" />
                 </div>
 
                 <div className="mt-8 flex-1 flex justify-center mr-auto">
