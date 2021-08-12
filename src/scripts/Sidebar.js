@@ -34,8 +34,7 @@ class Sidebar extends React.Component {
     return (
       <div class="sidebar">
         {is_visible && (
-          <div>
-
+          <div className="flex space-y-10">
             <Link
               activeClass="active"
               to="pembukaan"
