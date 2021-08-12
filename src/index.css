@@ -26,9 +26,6 @@ code {
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-
-
-
   display: table;
 
 }
@@ -36,6 +33,16 @@ code {
 .sidebar div {
   display: table-cell;
   vertical-align: middle;
+}
+
+.sidebar div div.active > a {
+  color: red;
+  font-weight: 500;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 .sidebar a {

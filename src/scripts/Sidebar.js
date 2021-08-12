@@ -19,14 +19,17 @@ class Sidebar extends React.Component {
 
     window.addEventListener('DOMContentLoaded', () => {
       const observer = new IntersectionObserver(entries => {
-        alert("es");
-
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
+          // alert(id);
+          // if (id !== "pembukaan" || id !== "isi" || id !== "penutup" || id !== "register") {
+          //   return;
+          // }
+          
           if (entry.intersectionRatio > 0) {
             document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
           } else {
-            document.querySelector(`nav div a[href="#${id}"]`).parentElement.classList.remove('active');
+            document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.remove('active');
           }
         });
       });
@@ -58,60 +61,12 @@ class Sidebar extends React.Component {
       <nav class="sidebar">
         {is_visible && (
           <div className="flex space-y-10">
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active:bg-green-700"><a href="#pembukaan">Introduction</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#mainwindow">1</a></div>
+            <div class=" active focus:bg-green-700"><a href="#pembukaan">0</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#isi">1</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#penutup">2</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#register">3</a></div>
 
-
-            <Link
-              activeClass="bg-black-100"
-              to="pembukaan"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                1
-              </button>
-            </Link>
-
-            <Link
-              activeClass="active"
-              to="isi"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                2
-              </button>
-            </Link>
-
-            <Link
-              activeClass="active"
-              to="penutup"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                3
-              </button>
-            </Link>
-            
-            <Link
-              activeClass="active"
-              to="register"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                4
-              </button>
-            </Link>
           </div>
         )}
       </nav>
