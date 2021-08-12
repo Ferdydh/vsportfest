@@ -40,7 +40,7 @@ class Sidebar extends React.Component {
               to="pembukaan"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -53,7 +53,7 @@ class Sidebar extends React.Component {
               to="isi"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -66,7 +66,7 @@ class Sidebar extends React.Component {
               to="penutup"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -79,7 +79,7 @@ class Sidebar extends React.Component {
               to="register"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
