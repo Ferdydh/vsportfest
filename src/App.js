@@ -13,7 +13,7 @@ function App() {
       <MainWindow />
       {/* The topmost slide gets extra padding due to the first slide*/}
 
-      <MoLeg className="bg-red-300 p-10" id="pembukaan" />
+      <Content section="pubg" id="pembukaan" />
 
       <Content className="bg-yellow-300 p-10" id="isi" />
 

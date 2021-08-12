@@ -17,7 +17,7 @@ export default class MainWindow extends React.Component {
                 </div>
 
                 <div className="mt-5 flex-1 flex justify-center mr-auto">
-                    <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 h-1/3" />
+                    <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3" />
                 </div>
 
                 <div className="mt-8 flex-1 flex justify-center mr-auto">
