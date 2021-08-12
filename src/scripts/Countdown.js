@@ -36,14 +36,14 @@ function Countdown() {
       }
   
       timerComponents.push(
-        <div className="font-extrabold text-3xl font-sans transform skew-x-6 text-white inline-block">
+        <div className="font-extrabold text-3xl font-sans transform skew-x-6 text-white inline-block select-none">
           {timeLeft[interval]} {interval}{" "}
         </div>
       );
     });
     return (
       <div>
-        <h1 className="font-semibold text-xl font-sans transform -skew-x-6 text-white"> Get Ready for the Website Deadline!! </h1>
+        <h1 className="font-semibold text-xl font-sans transform -skew-x-6 text-white select-none"> Get Ready for the Website Deadline!! </h1>
         {timerComponents.length ? timerComponents : <span>LMAOOOOO</span>}
       </div>
     );
