@@ -3,7 +3,7 @@ import logo from '../images/pikachu.jpg';
 import { Link } from "react-scroll";
 import LogoLarge from '../images/vr.png';
 import InstagramIcon from '@material-ui/icons/Instagram';
-
+import Countdown from './Countdown'
 
 export default class MainWindow extends React.Component {
     render() {
@@ -75,6 +75,8 @@ export default class MainWindow extends React.Component {
                         </button>
                     </Link>
                 </div>
+
+                <Countdown />
 
                 <div className="text-4xl p-3 flex w-auto m-5 bg-yellow-300 rounded-lg justify-center items-center">
                     <a href="https://www.w3schools.com/" target="_blank">Register now!</a>
