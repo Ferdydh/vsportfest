@@ -20,7 +20,7 @@ class Register extends React.Component {
                 </div>
               </div>
             
-            <img src={VRMascot} className="object-contain md:w-3/8 h-3/4" alt="Vr mascot"></img>
+            <img src={VRMascot} className="object-contain md:w-3/8 h-3/4 animate-wiggle" alt="Vr mascot"></img>
             </div>
           </div>
       ); 
