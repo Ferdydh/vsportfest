@@ -94,8 +94,8 @@ export default class MainWindow extends React.Component {
                     <Countdown />
                 </div>
 
-                <div className=" flex-1 flex justify-center mr-auto">
-                    <a href="https://www.w3schools.com/" target="_blank" className="text-4xl p-1 mx-5 w-screen mb-5 bg-yellow-300 rounded-lg md:w-1/3">Register now!</a>
+                <div className="flex-1 mr-auto text-5xl font-extrabold font-mono p-3 m-3 content-center justify-center rounded-lg items-center animate-pulse">
+                    <a href="https://www.w3schools.com/" target="_blank" className="p-3 rounded-xl"  style={{backgroundColor: "#EEC184"}}>Register now!</a>
                 </div>
             </section>
         );
