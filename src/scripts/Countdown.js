@@ -31,6 +31,7 @@ function Countdown() {
     const timerComponents = [];
   
     Object.keys(timeLeft).forEach((interval) => {
+<<<<<<< HEAD
       if (!timeLeft[interval]) {
         return;
       }
@@ -40,6 +41,17 @@ function Countdown() {
           {timeLeft[interval]} {interval}{" "}
         </div>
       );
+=======
+    // if (!timeLeft[interval]) {
+    //     return;
+    // }
+    
+    timerComponents.push(
+        <span>
+        {timeLeft[interval]} {interval}{" "}
+        </span>
+    );
+>>>>>>> 6648cd897c84e81ac5749d82d06d23356b5038fe
     });
     return (
       <div>
