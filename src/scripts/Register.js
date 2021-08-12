@@ -15,7 +15,7 @@ class Register extends React.Component {
                 <div className="text-5xl font-extrabold font-mono p-3 m-3 rounded-lg justify-center items-center animate-bounce" style={{backgroundColor: "#EEC184"}}>
                   <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">Register now!</a>
                 </div>
-                <div className="animate-pulse text-2xl text-red-600 font-bold font-mono border-2 border-double p-3">
+                <div className="animate-pulse text-2xl text-red-600 font-bold font-mono border-2 border-double p-3 md:w-96">
                   <Countdown />
                 </div>
 
