@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import LogoLarge from '../images/vr.png';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Countdown from './Countdown'
+import EmailIcon from '@material-ui/icons/Email';
+import WhatsApp from '@material-ui/icons/WhatsApp';
 
 export default class MainWindow extends React.Component {
     render() {
@@ -12,19 +14,25 @@ export default class MainWindow extends React.Component {
                 <div className="w-full inline-block">
                     <img src={logo} alt="logo" className="float-left ml-8 mt-2 w-16 h-16" />
                     <a href="https://www.w3schools.com/" target="_blank">
-                        <InstagramIcon fontSize="large" className="float-right mr-8 mt-2 text-white"/>
+                        <InstagramIcon fontSize="large" className="float-right mr-6 mt-2 text-white hover:text-black hover:bg-gray-50"/>
+                    </a>
+                    <a href="https://www.w3schools.com/" target="_blank">
+                        <EmailIcon fontSize="large" className="float-right mr-2 mt-2 text-white hover:text-black hover:bg-gray-50"/>
+                    </a>
+                    <a href="https://www.w3schools.com/" target="_blank">
+                        <WhatsApp fontSize="large" className="float-right mr-2 mt-2 text-white hover:text-black hover:bg-gray-50"/>
                     </a>
                 </div>
 
-                <div className="-mt-2 flex-1 flex justify-center mr-auto">
-                    <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3" />
+                <div className="-mt-4 flex-1 flex justify-center mr-auto">
+                    <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
-                <div className="mt-8 flex-1 flex justify-center mr-auto">
+                {/* <div className="mt-8 flex-1 flex justify-center mr-auto">
                     <div className="w-48 bg-yellow-100" >
                         AUG - SEPT
                     </div>
-                </div>
+                </div> */}
 
                 <div> 
                     <Link
@@ -78,8 +86,8 @@ export default class MainWindow extends React.Component {
 
                 <Countdown />
 
-                <div className="text-4xl p-3 flex w-auto m-5 bg-yellow-300 rounded-lg justify-center items-center">
-                    <a href="https://www.w3schools.com/" target="_blank">Register now!</a>
+                <div className=" flex-1 flex justify-center mr-auto">
+                    <a href="https://www.w3schools.com/" target="_blank" className="text-4xl p-1 w-1/3 mb-5 bg-yellow-300 rounded-lg">Register now!</a>
                 </div>
             </section>
         );
