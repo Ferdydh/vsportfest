@@ -152,3 +152,20 @@ html {
   border-radius: 18px;
   border: 1px solid #cfcece;
 }
+
+.logo {
+  position: relative;
+  display: inline-block;
+}
+
+.logo:hover .logoblack {
+  display: inline;
+}
+
+.logo .logoblack {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
