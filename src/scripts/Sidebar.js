@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-scroll";
 
 class Sidebar extends React.Component {
 
@@ -61,12 +60,11 @@ class Sidebar extends React.Component {
       <nav class="sidebar">
         {is_visible && (
           <div className="flex space-y-10">
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#mainwindow">1</a></div>
-            <div class=" active focus:bg-green-700"><a href="#pembukaan">0</a></div>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#isi">1</a></div>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#penutup">2</a></div>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active"><a href="#register">3</a></div>
-
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#mainwindow">1</a></div>
+            <div class="focus:bg-green-700"><a href="#pembukaan">0</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#isi">1</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#penutup">2</a></div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#register">3</a></div>
           </div>
         )}
       </nav>
