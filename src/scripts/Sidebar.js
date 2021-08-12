@@ -27,7 +27,6 @@ class Sidebar extends React.Component {
           
           if (entry.intersectionRatio > 0) {
             document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
-            // alert(document.querySelector(`nav div div a[href="#${id}"]`));
           } else {
             document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.remove('active');
           }
