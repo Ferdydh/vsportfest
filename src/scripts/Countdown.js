@@ -4,7 +4,7 @@ import '../index.css';
 const Countdown = () => {
     const calculateTimeLeft = () => {
         let year = new Date().getFullYear();
-        let difference = +new Date(`10/07/${year}`) - +new Date();
+        let difference = +new Date(`08/15/${year}`) - +new Date();
         let timeLeft = {};
     
         if (difference > 0) {
@@ -30,21 +30,20 @@ const Countdown = () => {
     const timerComponents = [];
 
     Object.keys(timeLeft).forEach((interval) => {
-      if (!timeLeft[interval]) {
-        return;
-      }
+    //   if (!timeLeft[interval]) {
+    //     return;
+    //   }
   
       timerComponents.push(
-        <div className="font-extrabold text-3xl font-sans transform skew-x-6 text-white inline-block select-none">
+        <div className="pr-2">
           {timeLeft[interval]} {interval}{" "}
         </div>
       );
     });
 
     return (
-      <div>
-        <h1 className="font-semibold text-xl font-sans transform -skew-x-6 text-white select-none"> Get Ready for the Website Deadline!! </h1>
-        {timerComponents.length ? timerComponents : <span>LMAOOOOO</span>}
+      <div className="flex flex-wrap content-center justify-center">
+        {timerComponents.length ? timerComponents : <div>Vsportfest is now LIVE!</div>}
       </div>
     );
   }
