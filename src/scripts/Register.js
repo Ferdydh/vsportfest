@@ -10,10 +10,10 @@ class Register extends React.Component {
     render() {
       return (
           <section className={"h-auto md:h-screen flex flex-auto relative justify-center content-center bg-gradient-to-br from-pink-400 via-blue-700 to-purple-500 p-10"} id={this.props.id}>
-            <div className="flex flex-wrap container justify-center content-center mt-40 md:mt-10">
-              <div className="transform -skew-y-6 mr-4">
+            <div className="flex flex-wrap container justify-center mt-10 content-center md:mt-30">
+              <div className="transform -skew-y-6 mr-4 max-w-screen-sm">
                 <div className="text-5xl font-extrabold font-mono p-3 m-3 rounded-lg justify-center items-center animate-bounce" style={{backgroundColor: "#EEC184"}}>
-                  <a href="https://www.w3schools.com/" target="_blank">Register now!</a>
+                  <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">Register now!</a>
                 </div>
                 <div className="animate-pulse text-2xl text-red-600 font-bold font-mono border-2 border-double p-3">
                   <Countdown />
@@ -28,7 +28,7 @@ class Register extends React.Component {
                     <EmailIcon className="pr-2" />
                     vsportfest@ppi-munich.org
                   </a>
-                  <a href="https://www.instagram.com/vsportfest.ppim/" target="_blank">
+                  <a href="https://www.instagram.com/vsportfest.ppim/" rel="noreferrer" target="_blank">
                     <InstagramIcon className="pr-2" />
                     vsportfest.ppim
                   </a>
