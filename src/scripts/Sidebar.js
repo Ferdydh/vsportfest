@@ -65,9 +65,8 @@ class Sidebar extends React.Component {
     return (
       <nav class="sidebar">
         {is_visible && (
-          <div className="flex space-y-10">
+          <div>
             <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#mainwindow">1</a></div>
-            <div class="focus:bg-green-700"><a href="#pembukaan">0</a></div>
             <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#isi">1</a></div>
             <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#penutup">2</a></div>
             <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#register">3</a></div>
