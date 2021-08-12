@@ -9,7 +9,7 @@ import MoLeg from './scripts/MoLeg';
 
 function App() {
   return (
-    <section className="App">
+    <main className="App">
       <MainWindow />
       {/* The topmost slide gets extra padding due to the first slide*/}
 
@@ -23,7 +23,7 @@ function App() {
       <Sidebar />
       <ScrollToTopBtn />
 
-    </section>
+    </main>
   );
 } 
 

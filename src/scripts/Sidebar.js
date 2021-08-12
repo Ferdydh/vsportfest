@@ -15,6 +15,29 @@ class Sidebar extends React.Component {
     document.addEventListener("scroll", function (e) {
       scrollComponent.toggleVisibility();
     })
+
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        alert("es");
+
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          if (entry.intersectionRatio > 0) {
+            document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
+          } else {
+            document.querySelector(`nav div a[href="#${id}"]`).parentElement.classList.remove('active');
+          }
+        });
+      });
+    
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+      });
+      
+    });  
+
   }
 
   toggleVisibility() {
@@ -32,11 +55,14 @@ class Sidebar extends React.Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <div class="sidebar">
+      <nav class="sidebar">
         {is_visible && (
           <div className="flex space-y-10">
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded active:bg-green-700"><a href="#pembukaan">Introduction</a></div>
+
+
             <Link
-              activeClass="active"
+              activeClass="bg-black-100"
               to="pembukaan"
               spy={true}
               smooth={true}
@@ -88,7 +114,7 @@ class Sidebar extends React.Component {
             </Link>
           </div>
         )}
-      </div>
+      </nav>
 
     );
   }

@@ -25,7 +25,7 @@ class Content extends React.Component {
 
     return (
       <Parallax bgImage={VR} className="bg-gray-500" strength={300}>
-      <div className="h-screen px-20 md:py-20 flex flex-row " id={this.props.id}>
+      <section className="h-screen px-20 md:py-20 flex flex-row " id={this.props.id}>
         {/* LEFT SIDE OF THE DIV */}
         <div className="h-full w-1/2 flex flex-col" id="leftside">
           <div className="m-auto font-bold text-5xl">
@@ -58,7 +58,7 @@ class Content extends React.Component {
 
             </div>
         </div>
-      </div>
+      </section>
       </Parallax>
     );
   }

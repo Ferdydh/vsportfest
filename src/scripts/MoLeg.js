@@ -7,7 +7,7 @@ import 'reactjs-popup/dist/index.css';
 export default class MoLeg extends React.Component {
   render() {
     return (
-      <div className={this.props.className} id={this.props.id}>
+      <section className={this.props.className} id={this.props.id}>
         <div className={"h-screen flex flex-row " + (this.props.className)} id={this.props.id}>
           <div id="right" className="w-1/2 h-full text-center bg-purple-600 flex flex-col">
             <div className="flex flex-col m-auto">
@@ -51,7 +51,7 @@ export default class MoLeg extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
