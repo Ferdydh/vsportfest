@@ -30,22 +30,23 @@ const Countdown = () => {
     const timerComponents = [];
 
     Object.keys(timeLeft).forEach((interval) => {
-    // if (!timeLeft[interval]) {
-    //     return;
-    // }
-    
-    timerComponents.push(
-        <span>
-        {timeLeft[interval]} {interval}{" "}
-        </span>
-    );
+      if (!timeLeft[interval]) {
+        return;
+      }
+  
+      timerComponents.push(
+        <div className="font-extrabold text-3xl font-sans transform skew-x-6 text-white inline-block select-none">
+          {timeLeft[interval]} {interval}{" "}
+        </div>
+      );
     });
 
     return (
-        <div>
-            {timerComponents.length ? timerComponents : <span>Vsportfest is now LIVE!</span>}
-        </div>
-    )
-}
-
-export default Countdown
+      <div>
+        <h1 className="font-semibold text-xl font-sans transform -skew-x-6 text-white select-none"> Get Ready for the Website Deadline!! </h1>
+        {timerComponents.length ? timerComponents : <span>LMAOOOOO</span>}
+      </div>
+    );
+  }
+  
+  export default Countdown;
