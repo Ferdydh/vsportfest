@@ -1,53 +1,43 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Popup from './Popup'
 import Pikachu from '../images/pikachu.jpg'
 
 class Content extends React.Component {
+
+  componentDidMount(){
+    console.log("Hello");
+  }
+
   render() {
+
     return (
-      <div className={"h-screen py-60 flex flex-row " + (this.props.className)} id={this.props.id}>
-        <div id="right" className="w-1/2 h-full text-center flex flex-col">
-          <div className="m-auto font-light text-5xl">
-            SPORTFESTTEMPLATE
+      <div className={"h-screen py-20 flex flex-row " + (this.props.className)} id={this.props.id}>
+        {/* LEFT SIDE OF THE DIV */}
+        <div className="h-full w-1/2 flex flex-col" id="leftside">
+          <div className="m-auto font-bold text-5xl">
+            <div className="transform -skew-y-6">
+                MOBILE LEGENDS
+            </div>
+            <button className="transform skew-y-6 my-10 float-left bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
+                RULES
+            </button>
           </div>
-
-          <div className="flex flex-wrap bg-pink-500 justify-center content-center w-1/3">
-          <Popup
-                    trigger={<button className="font-mono"> Rules </button>}
-                    modal
-                    nested
-                    >
-                    {close => (
-                      <div className="modal">
-                        <button className="close" onClick={close}>
-                          &times;
-                        </button>
-                        <div className="header"> Modal Title </div>
-                        <div className="content">
-                          {' '}
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-                          Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-                          delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-                          <br />
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-                          commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-                          explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
-                        </div>
-                      </div>
-                    )}
-           </Popup>
-        </div>
         </div>
 
-        <div className="bg-gray-800 w-1">
-
+        {/* LINE THROUGH MIDDLE OF COMPONENT */}
+        <div className="flex flex-col" id="columnspace">
+        <div className="w-1 h-full">
+          </div>
+          <div className="bg-gray-800 w-1 h-full">
+          </div>
+          <div className=" w-1 h-full">
+          </div>
         </div>
-
-        <div className="rounded-md text-white text-2xl font-extrabold h-full w-1/2 text-center flex-col flex" id="left">
+        
+        {/* RIGHT SIDE OF THE DIV */}
+        <div className="h-full w-1/2 flex-col flex" id="rightside">
           <div className="m-auto">
-            <img src={Pikachu}>
-
-            </img>
+            <img src={Pikachu} />
           </div>
         </div>
       </div>
