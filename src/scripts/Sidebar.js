@@ -21,9 +21,9 @@ class Sidebar extends React.Component {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
           // alert(id);
-          // if (id !== "pembukaan" || id !== "isi" || id !== "penutup" || id !== "register") {
-          //   return;
-          // }
+          if (id !== "pembukaan" || id !== "isi" || id !== "penutup" || id !== "register") {
+            return;
+          }
           
           if (entry.intersectionRatio > 0) {
             document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
