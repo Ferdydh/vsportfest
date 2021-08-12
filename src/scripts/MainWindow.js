@@ -8,7 +8,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 export default class MainWindow extends React.Component {
     render() {
         return (
-            <div className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-700 to-pink-400">
+            <div className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-900 to-pink-500">
                 <div className="w-full inline-block">
                     <img src={logo} alt="logo" className="float-left ml-8 mt-2 w-16 h-16" />
                     <a href="https://www.w3schools.com/" target="_blank">
