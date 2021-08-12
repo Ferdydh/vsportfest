@@ -21,7 +21,7 @@ class Sidebar extends React.Component {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
           // alert(id);
-          if (id !== "pembukaan" || id !== "isi" || id !== "penutup" || id !== "register") {
+          if (!(id === "pembukaan" || id === "isi" || id === "penutup" || id === "register")) {
             return;
           }
           
