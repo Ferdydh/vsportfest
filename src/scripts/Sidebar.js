@@ -25,6 +25,17 @@ class Sidebar extends React.Component {
 
 
     window.addEventListener('DOMContentLoaded', () => {
+      const sidebarButtons = {
+        mainwindow: document.querySelector(`nav div div a[href="#mainwindow"]`),
+        dota: document.querySelector(`nav div div a[href="#dota"]`),
+        moleg: document.querySelector(`nav div div a[href="#moleg"]`),
+        pubg: document.querySelector(`nav div div a[href="#pubg"]`),
+        catur: document.querySelector(`nav div div a[href="#catur"]`),
+        dance: document.querySelector(`nav div div a[href="#dance"]`),
+        virtualrun: document.querySelector(`nav div div a[href="#virtualrun"]`),
+        register: document.querySelector(`nav div div a[href="#register"]`)
+      };
+
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
@@ -33,7 +44,7 @@ class Sidebar extends React.Component {
             return;
           }
           
-          if (entry.intersectionRatio > 0) {
+          if (entry.intersectionRatio > 0.2) {
             try {
               document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
             } catch (error) {
