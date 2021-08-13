@@ -11,25 +11,25 @@ import WhatsApp from '@material-ui/icons/WhatsApp';
 export default class MainWindow extends React.Component {
     render() {
         return (
-            <section id="mainwindow" className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-900 to-pink-500">
+            <section id="mainwindow" className="pt-6 pb-20 min-h-screen w-full bg-gradient-to-b from-purple-800 via-blue-900 to-pink-500">
                 <div className="w-full inline-block">
-                    <a href="https://ppi-munich.org/" target="_blank" className="logo float-left ml-8 mt-2 w-20 h-12 hover:bg-gray-50 rounded-md">
+                    <a href="https://ppi-munich.org/" target="_blank" rel="noreferrer" className="logo float-left ml-8 mt-2 w-20 h-12 hover:bg-gray-50 rounded-md">
                         <img src={logoWhite} alt="logo" className="logowhite w-20 h-12" />
                         <img src={logoBlack} alt="logo" className="logoblack w-20 h-12" />
                     </a>
 
-                    <a href="https://www.instagram.com/vsportfest.ppim/" target="_blank">
+                    <a href="https://www.instagram.com/vsportfest.ppim/" target="_blank" rel="noreferrer">
                         <InstagramIcon fontSize="large" className="float-right mr-6 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
-                    <a href="mailto:vsportfest@ppi-munich.org" target="_blank">
+                    <a href="mailto:vsportfest@ppi-munich.org" target="_blank" rel="noreferrer">
                         <EmailIcon fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
-                    <a href="https://www.w3schools.com/" target="_blank">
+                    <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">
                         <WhatsApp fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
                 </div>
 
-                <div className="mt-4 md:-mt-4 flex-1 flex justify-center mr-auto">
+                <div className="mt-4 md:-mt-4 flex-1 flex justify-center mr-auto pt-8">
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
@@ -94,8 +94,8 @@ export default class MainWindow extends React.Component {
                     <Countdown />
                 </div>
 
-                <div className="flex-1 mr-auto text-5xl font-extrabold font-mono p-3 m-3 content-center justify-center rounded-lg items-center animate-pulse">
-                    <a href="https://www.w3schools.com/" target="_blank" className="p-3 rounded-xl"  style={{backgroundColor: "#EEC184"}}>Register now!</a>
+                <div className="flex-1 mr-auto text-3xl  md:text-5xl font-extrabold font-mono p-3 m-3 content-center justify-center rounded-lg items-center animate-pulse">
+                    <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer" className="p-3 rounded-xl"  style={{backgroundColor: "#EEC184"}}>Register now!</a>
                 </div>
             </section>
         );

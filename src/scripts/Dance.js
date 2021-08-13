@@ -1,5 +1,4 @@
-import React,{useEffect} from 'react';
-import Popup from 'reactjs-popup';
+import React from 'react';
 import Pikachu from '../images/pikachu.jpg'
 import VR from '../images/vr.png'
 import { Parallax } from 'react-parallax';

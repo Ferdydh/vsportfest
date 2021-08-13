@@ -1,5 +1,4 @@
-import React,{useEffect} from 'react';
-import Popup from 'reactjs-popup';
+import React from 'react';
 import Pikachu from '../images/pikachu.jpg'
 import VR from '../images/vr.png'
 import { Parallax } from 'react-parallax';
@@ -30,11 +29,19 @@ class Dota extends React.Component {
         {/* LEFT SIDE OF THE DIV */}
         <div className="h-full w-1/2 flex flex-col" id="leftside">
           <div className="m-auto font-bold text-5xl">
-            <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
+            <div className="test transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
                 DOTA
             </div>
 
-            <Modal title="DOTA" text="Dota is for noobs" />
+            <Modal 
+              title="DOTA" 
+              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+              Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+              delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
+              commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
+              explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?"
+            />
 
             {/* <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
              bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
