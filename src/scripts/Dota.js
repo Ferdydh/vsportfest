@@ -7,8 +7,12 @@ import Modal from './Modal';
 
 class Dota extends React.Component {
 
+  constructor(props){
+    super(props);
+  }
+
   componentDidMount(){
-    console.log("Hello");
+    console.log("Content Loaded");
   }
 
   MouseOver(event) {
@@ -27,14 +31,15 @@ class Dota extends React.Component {
     return (
       <Parallax bgImage={VR} className="bg-gray-500" strength={300}>
       <section className="h-screen px-20 md:py-20 flex flex-row " id={this.props.id}>
+
         {/* LEFT SIDE OF THE DIV */}
         <div className="h-full w-1/2 flex flex-col" id="leftside">
           <div className="m-auto font-bold text-5xl">
             <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
-                DOTA
+                {this.props.sectionName}
             </div>
 
-            <Modal title="DOTA" text="Dota is for noobs" />
+            <Modal title={this.props.sectionName} text={this.props.sectionText} />
 
             {/* <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
              bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
