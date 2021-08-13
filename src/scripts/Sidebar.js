@@ -6,6 +6,7 @@ import Chess from '../images/chess.png'
 import Dance from '../images/dance.png'
 import Run from '@material-ui/icons/DirectionsRun';
 import Home from '@material-ui/icons/Home';
+import Register from '../images/register.png'
 
 class Sidebar extends React.Component {
 
@@ -106,6 +107,11 @@ class Sidebar extends React.Component {
             <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
               <a href="#virtualrun">
                 <Run color="black" />
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#register">
+                <img src={Register} alt="Register" className="object-contain w-24 h-16"></img>
               </a>
             </div>
           </div>

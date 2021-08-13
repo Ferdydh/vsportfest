@@ -3,6 +3,7 @@ import Popup from 'reactjs-popup';
 import Pikachu from '../images/pikachu.jpg'
 import VR from '../images/vr.png'
 import { Parallax } from 'react-parallax';
+import Modal from './Modal';
 
 class VirtualRun extends React.Component {
 
@@ -33,34 +34,7 @@ class VirtualRun extends React.Component {
                 Virtual Run
             </div>
 
-            <div className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
-             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
-                <Popup
-                  trigger={<button className="font-mono"> Rules </button>}
-                  modal
-                  nested
-                >
-                  {close => (
-                    <div className="modal">
-                      <button className="close" onClick={close}>
-                        &times;
-                      </button>
-                      <div className="header"> Modal Title </div>
-                      <div className="content">
-                        {' '}
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-                        Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-                        delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-                        commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-                        explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
-                      </div>
-                    </div>
-                  )}
-                </Popup>
-                <span class="material-icons">chevron_right</span>
-            </div>
+            <Modal title="Virtual run" text="Virtual running is for noobs" />
 
             {/* <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
              bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">

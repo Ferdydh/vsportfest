@@ -33,8 +33,8 @@ class Chess extends React.Component {
                 Chess
             </div>
 
-            <div className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
-             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
+            <div className="flex flex-wrap align-middle content-center transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
+             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-black-700 hover:border-black rounded text-sm">
                 <Popup
                   trigger={<button className="font-mono"> Rules </button>}
                   modal
