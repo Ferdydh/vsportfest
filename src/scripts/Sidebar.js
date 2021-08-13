@@ -28,7 +28,7 @@ class Sidebar extends React.Component {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
           // alert(id);
-          if (!(id === "mainwindow" ||id === "pembukaan" || id === "isi" || id === "penutup" || id === "register")) {
+          if (!(id === "mainwindow" ||id === "virtualrun" || id === "dota" || id === "pubg" || id === "chess" || id === "dance" || id === "moleg" || id === "register")) {
             return;
           }
           
@@ -79,32 +79,32 @@ class Sidebar extends React.Component {
               </a>
             </div>
             <div class=" bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
-              <a href="#isi">
+              <a href="#dota">
                 <img src={Dota} alt="dota"></img>
               </a>
             </div>
             <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
-              <a href="#penutup">
+              <a href="#moleg">
                 <img src={MoLeg} alt="Mobile Legends" className="object-contain w-24 h-16"></img>
               </a>
             </div>
             <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
-              <a href="#register">
+              <a href="#pubg">
                 <img src={Pubg} alt="PUBG" className="object-contain w-24 h-16"></img>
               </a>
             </div>
             <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
-              <a href="#register">
+              <a href="#chess">
                 <img src={Chess} alt="Chess" className="object-contain w-24 h-16"></img>
               </a>
             </div>
             <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
-              <a href="#register">
+              <a href="#dance">
                 <img src={Dance} alt="Dance" className="object-contain w-24 h-16"></img>
               </a>
             </div>
             <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
-              <a href="#register">
+              <a href="#virtualrun">
                 <Run color="black" />
               </a>
             </div>

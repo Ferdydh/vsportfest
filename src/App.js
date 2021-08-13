@@ -8,6 +8,9 @@ import ScrollToTopBtn from './scripts/ScrollToTopBtn';
 import MoLeg from './scripts/MoLeg';
 import Dota from './scripts/Dota'
 import Pubg from './scripts/Pubg'
+import Dance from './scripts/Dance'
+import VirtualRun from './scripts/VirtualRun';
+import Chess from './scripts/Chess';
 
 function App() {
   return (
@@ -15,19 +18,19 @@ function App() {
       <MainWindow />
       {/* The topmost slide gets extra padding due to the first slide*/}
 
-      <MoLeg></MoLeg>
+      <MoLeg id="moleg"></MoLeg>
 
-      <Dota></Dota>
+      <Dota id="dota"></Dota>
 
-      <Pubg></Pubg>
+      <Pubg id="pubg"></Pubg>
 
-      {/* Dance, virtual run, and chess */}
+      <Dance id="dance"></Dance>
 
-      <Content section="pubg" id="pembukaan" />
+      <VirtualRun id="virtualrun"></VirtualRun>
 
-      <Content className="bg-yellow-300 p-10" id="isi" />
+      <Chess id="chess"></Chess>
 
-      <Content className="bg-green-300 p-10" id="penutup" />
+      {/* */}
 
       <Register id="register" />
       <Sidebar />
