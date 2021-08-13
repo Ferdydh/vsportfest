@@ -17,6 +17,13 @@ class Content extends React.Component {
 
   constructor(props){
     super(props);
+    var backgroundLink = "";
+
+    if(this.props.background == "on") {
+      backgroundLink = "BG";
+    } else {
+      backgroundLink = "../images/DOTAWALLPAPER.jpg";
+    }
   }
 
   MouseOver(event) {
@@ -31,9 +38,8 @@ class Content extends React.Component {
   }
 
   render() {
-
     return (
-      <Parallax bgImage={BG} className=" bg-purple-900 blur" strength={-500} bgClassName="opacity-30 blur" blur={{ min: 2, max: 4 }}>
+      <Parallax bgImage={this.backgroundLink} className=" bg-purple-900 blur" strength={-500} bgClassName="opacity-30 blur" blur={{ min: 2, max: 4 }}>
       <Parallax bgImage={FG} strength={300} bgClassName="ml-80 p-60 opacity-80 " blur={{ min: 0, max: 1 }}>
       <div className="float-right h-20 w-20 p-2">
         <img src={ICON} />
