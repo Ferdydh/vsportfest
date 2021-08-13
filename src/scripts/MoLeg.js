@@ -28,9 +28,7 @@ export default class MoLeg extends React.Component {
                       <div className="header"> Modal Title </div>
                       <div className="content">
                         {' '}
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-                        Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-                        delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+                        nasi goreng?
                         <br />
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
                         commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
