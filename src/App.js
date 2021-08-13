@@ -10,6 +10,7 @@ import Pubg from './scripts/Pubg'
 import Dance from './scripts/Dance'
 import VirtualRun from './scripts/VirtualRun';
 import Chess from './scripts/Chess';
+import Content from './scripts/Content'
 
 function App() {
   return (
