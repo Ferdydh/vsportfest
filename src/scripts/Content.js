@@ -1,5 +1,4 @@
-import React,{useEffect} from 'react';
-import Popup from './Popup'
+import React from 'react';
 import Pikachu from '../images/pikachu.jpg'
 import VR from '../images/vr.png'
 import { Parallax } from 'react-parallax';
@@ -35,7 +34,6 @@ class Content extends React.Component {
             <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
              bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm shadow-lg">
                 RULES
-
             </button>
           </div>
         </div>
@@ -55,7 +53,7 @@ class Content extends React.Component {
         
           <div className="p-10 m-auto">
 
-              <img src={Pikachu} onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+              <img src={Pikachu} onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} alt="" />
 
             </div>
         </div>

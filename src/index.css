@@ -38,6 +38,8 @@ code {
 .sidebar div div.active {
   background-color: rgb(226, 71, 152);
   font-weight: 500;
+  backdrop-filter: blur(30px);
+  opacity: 65%;
 }
 
 .sidebar img {
@@ -174,4 +176,8 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+}
+
+.test {
+  transition: 'max-width 0.5s';
 }
