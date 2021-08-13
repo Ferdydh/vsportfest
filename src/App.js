@@ -18,17 +18,17 @@ function App() {
       <MainWindow />
       {/* The topmost slide gets extra padding due to the first slide*/}
 
-      <MoLeg id="moleg"></MoLeg>
-
       <Dota id="dota"></Dota>
 
+      <MoLeg id="moleg"></MoLeg>
+
       <Pubg id="pubg"></Pubg>
+
+      <Chess id="chess"></Chess>
 
       <Dance id="dance"></Dance>
 
       <VirtualRun id="virtualrun"></VirtualRun>
-
-      <Chess id="chess"></Chess>
 
       {/* */}
 
