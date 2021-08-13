@@ -14,8 +14,8 @@ export default class MainWindow extends React.Component {
             <section id="mainwindow" className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-900 to-pink-500">
                 <div className="w-full inline-block">
                     <a href="https://ppi-munich.org/" target="_blank" className="logo float-left ml-8 mt-2 w-auto h-12 flex hover:bg-gray-50">
-                        <img src={logoWhite} alt="logo" className="logowhite" />
-                        <img src={logoBlack} alt="logo" className="logoblack" />
+                        <img src={logoWhite} alt="logo" className="logowhite object-contain" />
+                        <img src={logoBlack} alt="logo" className="logoblack object-contain" />
                     </a>
 
                     <a href="https://www.instagram.com/vsportfest.ppim/" target="_blank">
@@ -89,11 +89,13 @@ export default class MainWindow extends React.Component {
                         </button>
                     </Link>
                 </div>
+                
+                <div className="font-bold text-white text-3xl p-10 font-mono">
+                    <Countdown />
+                </div>
 
-                <Countdown />
-
-                <div className=" flex-1 flex justify-center mr-auto">
-                    <a href="https://www.w3schools.com/" target="_blank" className="text-4xl p-1 mx-5 w-screen mb-5 bg-yellow-300 rounded-lg md:w-1/3">Register now!</a>
+                <div className="flex-1 mr-auto text-5xl font-extrabold font-mono p-3 m-3 content-center justify-center rounded-lg items-center animate-pulse">
+                    <a href="https://www.w3schools.com/" target="_blank" className="p-3 rounded-xl"  style={{backgroundColor: "#EEC184"}}>Register now!</a>
                 </div>
             </section>
         );

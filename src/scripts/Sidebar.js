@@ -1,4 +1,12 @@
 import React from 'react';
+import Dota from '../images/dota.png'
+import MoLeg from '../images/ml.png'
+import Pubg from '../images/pubg.png'
+import Chess from '../images/chess.png'
+import Dance from '../images/dance.png'
+import Run from '@material-ui/icons/DirectionsRun';
+import Home from '@material-ui/icons/Home';
+import Register from '../images/register.png'
 
 class Sidebar extends React.Component {
 
@@ -21,7 +29,7 @@ class Sidebar extends React.Component {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
           // alert(id);
-          if (!(id === "mainwindow" ||id === "pembukaan" || id === "isi" || id === "penutup" || id === "register")) {
+          if (!(id === "mainwindow" ||id === "virtualrun" || id === "dota" || id === "pubg" || id === "chess" || id === "dance" || id === "moleg" || id === "register")) {
             return;
           }
           
@@ -63,14 +71,49 @@ class Sidebar extends React.Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <nav class="sidebar">
+      <nav class="sidebar p-2">
         {is_visible && (
-          <div className="flex space-y-10">
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#mainwindow">1</a></div>
-            <div class="focus:bg-green-700"><a href="#pembukaan">0</a></div>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#isi">1</a></div>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#penutup">2</a></div>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="#register">3</a></div>
+          <div>
+            <div class="bg-gray-400 hover:bg-purple-700 font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#mainwindow">
+                <Home color="black" />
+              </a>
+            </div>
+            <div class=" bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#dota">
+                <img src={Dota} alt="dota"></img>
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#moleg">
+                <img src={MoLeg} alt="Mobile Legends" className="object-contain w-24 h-16"></img>
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#pubg">
+                <img src={Pubg} alt="PUBG" className="object-contain w-24 h-16"></img>
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#chess">
+                <img src={Chess} alt="Chess" className="object-contain w-24 h-16"></img>
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#dance">
+                <img src={Dance} alt="Dance" className="object-contain w-24 h-16"></img>
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#virtualrun">
+                <Run color="black" />
+              </a>
+            </div>
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
+              <a href="#register">
+                <img src={Register} alt="Register" className="object-contain w-24 h-16"></img>
+              </a>
+            </div>
           </div>
         )}
       </nav>

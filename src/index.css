@@ -20,26 +20,30 @@ code {
 /* for sidebar */
 .sidebar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 5%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top*/
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  display: table;
-
-}
-
-.sidebar div {
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   vertical-align: middle;
 }
 
-.sidebar div div.active > a {
-  color: red;
+.sidebar div {
+  vertical-align: middle;
+}
+
+.sidebar div div.active {
+  background-color: rgb(226, 71, 152);
   font-weight: 500;
 }
 
+.sidebar img {
+  width: 24px;
+  height: 24px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -122,6 +126,7 @@ html {
 
 .modal {
   font-size: 12px;
+  transition: opacity 1s ease;
 }
 .modal > .header {
   width: 100%;

@@ -1,10 +1,11 @@
 import React,{useEffect} from 'react';
-import Popup from './Popup'
+import Popup from 'reactjs-popup';
 import Pikachu from '../images/pikachu.jpg'
 import VR from '../images/vr.png'
 import { Parallax } from 'react-parallax';
+import Modal from './Modal';
 
-class Content extends React.Component {
+class Dance extends React.Component {
 
   componentDidMount(){
     console.log("Hello");
@@ -30,13 +31,15 @@ class Content extends React.Component {
         <div className="h-full w-1/2 flex flex-col" id="leftside">
           <div className="m-auto font-bold text-5xl">
             <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
-                MOBILE LEGENDS
+                Dance
             </div>
-            <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
-             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm shadow-lg">
-                RULES
 
-            </button>
+            <Modal title="Dance" text="Dancing is for noobs" />
+
+            {/* <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
+             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
+                RULES
+            </button> */}
           </div>
         </div>
 
@@ -65,4 +68,4 @@ class Content extends React.Component {
   }
 }
   
-export default Content;
+export default Dance;
