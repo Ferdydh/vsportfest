@@ -126,6 +126,7 @@ html {
 
 .modal {
   font-size: 12px;
+  transition: opacity 1s ease;
 }
 .modal > .header {
   width: 100%;
