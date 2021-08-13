@@ -31,16 +31,19 @@ code {
   vertical-align: middle;
 }
 
-
 .sidebar div {
   vertical-align: middle;
 }
 
-.sidebar div div.active > a {
-  color: red;
+.sidebar div div.active {
+  background-color: rgb(226, 71, 152);
   font-weight: 500;
 }
 
+.sidebar img {
+  width: 24px;
+  height: 24px;
+}
 
 html {
   scroll-behavior: smooth;
