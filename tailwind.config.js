@@ -5,6 +5,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
         extend: {
+            backdropFilter: {
+                'none': 'none',
+                'blur': 'blur(20px)',
+              },
+              
             keyframes: {
                 wiggle: {
                     '0%, 100%': {
