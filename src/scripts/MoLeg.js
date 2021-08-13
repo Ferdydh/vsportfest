@@ -38,7 +38,6 @@ export default class MoLeg extends React.Component {
                   )}
                 </Popup>
                 <span class="material-icons">chevron_right</span>
-
               </div>
             </div>
 
