@@ -1,6 +1,5 @@
 import './App.css';
 import "tailwindcss/tailwind.css"
-import Content from './scripts/Content';
 import Sidebar from './scripts/Sidebar';
 import MainWindow from './scripts/MainWindow';
 import Register from './scripts/Register'

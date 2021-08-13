@@ -25,6 +25,17 @@ class Sidebar extends React.Component {
 
 
     window.addEventListener('DOMContentLoaded', () => {
+      const sidebarButtons = {
+        mainwindow: document.querySelector(`nav div div a[href="#mainwindow"]`),
+        dota: document.querySelector(`nav div div a[href="#dota"]`),
+        moleg: document.querySelector(`nav div div a[href="#moleg"]`),
+        pubg: document.querySelector(`nav div div a[href="#pubg"]`),
+        catur: document.querySelector(`nav div div a[href="#catur"]`),
+        dance: document.querySelector(`nav div div a[href="#dance"]`),
+        virtualrun: document.querySelector(`nav div div a[href="#virtualrun"]`),
+        register: document.querySelector(`nav div div a[href="#register"]`)
+      };
+
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
@@ -33,7 +44,7 @@ class Sidebar extends React.Component {
             return;
           }
           
-          if (entry.intersectionRatio > 0) {
+          if (entry.intersectionRatio > 0.2) {
             try {
               document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
             } catch (error) {
@@ -74,42 +85,42 @@ class Sidebar extends React.Component {
       <nav class="sidebar p-2">
         {is_visible && (
           <div>
-            <div class="bg-gray-400 hover:bg-purple-700 font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
               <a href="#mainwindow">
                 <Home color="black" />
               </a>
             </div>
-            <div class=" bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+            <div class=" bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
               <a href="#dota">
                 <img src={Dota} alt="dota"></img>
               </a>
             </div>
-            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
               <a href="#moleg">
                 <img src={MoLeg} alt="Mobile Legends" className="object-contain w-24 h-16"></img>
               </a>
             </div>
-            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
               <a href="#pubg">
                 <img src={Pubg} alt="PUBG" className="object-contain w-24 h-16"></img>
               </a>
             </div>
-            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
               <a href="#chess">
                 <img src={Chess} alt="Chess" className="object-contain w-24 h-16"></img>
               </a>
             </div>
-            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
               <a href="#dance">
                 <img src={Dance} alt="Dance" className="object-contain w-24 h-16"></img>
               </a>
             </div>
-            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200  font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
               <a href="#virtualrun">
                 <Run color="black" />
               </a>
             </div>
-            <div class="bg-gray-400 bg-opacity-40 hover:bg-purple-700  font-bold py-2 px-4 mb-2 rounded-full">
+            <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200  font-bold py-2 px-4 mb-2 rounded-full backdrop-filter-blur mb-4">
               <a href="#register">
                 <img src={Register} alt="Register" className="object-contain w-24 h-16"></img>
               </a>
