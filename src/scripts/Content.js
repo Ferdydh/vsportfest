@@ -16,12 +16,7 @@ import ICON from '../images/pubg.png';
 class Content extends React.Component {
 
   constructor(props){
-    var visibleBG = "";
-    if(this.props.background == "on") {
-      visibleBG = "BG"
-    } else {
-      visibleBG = ""
-    }
+    super(props);
   }
 
   MouseOver(event) {
