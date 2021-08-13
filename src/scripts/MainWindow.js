@@ -13,19 +13,19 @@ export default class MainWindow extends React.Component {
         return (
             <section id="mainwindow" className="h-screen w-full bg-gradient-to-b from-purple-800 via-blue-900 to-pink-500">
                 <div className="w-full inline-block">
-                    <a href="https://ppi-munich.org/" target="_blank" className="logo float-left ml-8 mt-2 w-auto h-12 flex hover:bg-gray-50">
+                    <a href="https://ppi-munich.org/" target="_blank" className="logo float-left ml-8 mt-2 w-auto h-12 flex hover:bg-gray-50 rounded-md">
                         <img src={logoWhite} alt="logo" className="logowhite object-contain" />
                         <img src={logoBlack} alt="logo" className="logoblack object-contain" />
                     </a>
 
                     <a href="https://www.instagram.com/vsportfest.ppim/" target="_blank">
-                        <InstagramIcon fontSize="large" className="float-right mr-6 mt-2 rounded-sm text-white hover:text-black hover:bg-gray-50"/>
+                        <InstagramIcon fontSize="large" className="float-right mr-6 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
                     <a href="mailto:vsportfest@ppi-munich.org" target="_blank">
-                        <EmailIcon fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50"/>
+                        <EmailIcon fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
                     <a href="https://www.w3schools.com/" target="_blank">
-                        <WhatsApp fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50"/>
+                        <WhatsApp fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
                 </div>
 
