@@ -38,8 +38,8 @@ code {
 .sidebar div div.active {
   background-color: rgb(226, 71, 152);
   font-weight: 500;
-  backdrop-filter: blur(30px);
-  opacity: 65%;
+  backdrop-filter: blur(20px);
+  opacity: 75%;
 }
 
 .sidebar img {

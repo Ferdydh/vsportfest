@@ -1,17 +1,40 @@
-import React from "react";
+import React,{ useRef, useEffect } from "react";
 
 export default function Modal(props) {
   const [showModal, setShowModal] = React.useState(false);
   const text = props.text;
   const title = props.title;
+  const ref = useRef();
+  useOnClickOutside(ref, () => setShowModal(false));
 
-  React.useEffect(() => {
-    window.addEventListener('mousedown', (event) => {
-      if (!event.target.matches(".modal")) {
-        setShowModal(false);
-      }
-    });
-  });
+
+  // Hook
+function useOnClickOutside(ref, handler) {
+  useEffect(
+    () => {
+      const listener = (event) => {
+        // Do nothing if clicking ref's element or descendent elements
+        if (!ref.current || ref.current.contains(event.target)) {
+          return;
+        }
+        handler(event);
+      };
+      document.addEventListener("mousedown", listener);
+      document.addEventListener("touchstart", listener);
+      return () => {
+        document.removeEventListener("mousedown", listener);
+        document.removeEventListener("touchstart", listener);
+      };
+    },
+    // Add ref and handler to effect dependencies
+    // It's worth noting that because passed in handler is a new ...
+    // ... function on every render that will cause this effect ...
+    // ... callback/cleanup to run every render. It's not a big deal ...
+    // ... but to optimize you can wrap handler in useCallback before ...
+    // ... passing it into this hook.
+    [ref, handler]
+  );
+}
 
 
   return (
@@ -27,15 +50,16 @@ export default function Modal(props) {
       {showModal ? (
         <>
           <div
+            id="modal"
             className="transition justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none p-10"
           >
-            <div className="modal">
+            <div ref={ref}>
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gray-100 bg-opacity-70 outline-none focus:outline-none backdrop-filter-blur">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-none border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-3xl font-semibold text-gray-700">
+                <div className="flex items-start justify-between p-5 border-solid border-blueGray-200 rounded-t">
+                  <h3 className="text-3xl font-semibold  text-gray-700">
                     {title}
                   </h3>
                   <button

@@ -82,7 +82,7 @@ class Sidebar extends React.Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <nav class="sidebar p-2">
+      <nav class="invisible md:visible sidebar p-2">
         {is_visible && (
           <div>
             <div class="bg-gray-400 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
