@@ -7,6 +7,19 @@ import Dance from '../images/dance.png'
 import Run from '@material-ui/icons/DirectionsRun';
 import Home from '@material-ui/icons/Home';
 import Register from '../images/register.png'
+import MenuIcon from '@material-ui/icons/Menu';
+import { Fragment } from 'react'
+import { Menu, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/solid'
+import {isMobile} from 'react-device-detect';
+
+
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+const heightOfMainWindow = document.getElementById('mainwindow').clientHeight;
 
 class Sidebar extends React.Component {
 
@@ -68,7 +81,7 @@ class Sidebar extends React.Component {
   }
 
   toggleVisibility() {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > heightOfMainWindow) {
       this.setState({
         is_visible: true
       });
@@ -82,8 +95,67 @@ class Sidebar extends React.Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <nav class="invisible md:visible sidebar p-2">
-        {is_visible && (
+      <nav class="sidebar p-2">
+
+{/* ///////////////////// */}
+
+        {/* <div className="visible md:invisible bg-gray-400 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4 fixed">
+          <MenuIcon/>
+        </div> */}
+
+
+      {isMobile && is_visible && (<Menu as="div" className="inline-block text-left fixed mobilemenu">
+        <div>
+          <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+            <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+          </Menu.Button>
+        </div>
+
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
+          <Menu.Items className="origin-top-left absolute left-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div className="py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="#moleg"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    MoLeg
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="#pubg"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Pubg
+                  </a>
+                )}
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </Transition>
+      </Menu>)}
+
+
+{/* ////////////////////////////// */}
+        {!isMobile && is_visible && (
           <div>
             <div class="bg-gray-400 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
               <a href="#mainwindow">

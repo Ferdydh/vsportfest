@@ -3,6 +3,8 @@ import img from "../images/scrollup.svg"
 import img2 from "../images/pikachu.jpg"
 import icon from "../images/icon.svg"
 
+const heightOfMainWindow = document.getElementById('mainwindow').clientHeight;
+
 class ScrollToTopBtn extends Component {
 
     constructor(props) {
@@ -20,7 +22,7 @@ class ScrollToTopBtn extends Component {
     }
     
     toggleVisibility() {
-        if(window.pageYOffset > 300) {
+        if(window.pageYOffset > heightOfMainWindow) {
             this.setState({
                 is_visible : true
             });
