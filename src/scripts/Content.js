@@ -1,13 +1,13 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 
-import Popup from './Popup';
 import Prizes from './Prizes';
 
-import Pikachu from '../images/pikachu.jpg';
-import VR from '../images/vr.png';
 import { Parallax } from 'react-parallax';
 import Modal from './Modal';
-import MascotDota from '../images/pikachu.jpg';
+
+// media imports for section
+import Pikachu from '../images/pikachu.jpg';
+import VR from '../images/vr.png';
 import FG from '../images/MOLEG.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/pubg.png';
