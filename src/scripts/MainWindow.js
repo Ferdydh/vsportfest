@@ -7,6 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import Countdown from './Countdown'
 import EmailIcon from '@material-ui/icons/Email';
 import WhatsApp from '@material-ui/icons/WhatsApp';
+import PIC from '../images/Cover/CHESS.jpg'
 
 export default class MainWindow extends React.Component {
     render() {
@@ -49,6 +50,7 @@ export default class MainWindow extends React.Component {
                     >
                         <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
                         hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
+
                             1
                         </button>
                     </Link>
@@ -60,7 +62,9 @@ export default class MainWindow extends React.Component {
                         smooth={true}
                         duration={500}
                     >
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
+                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
+                            
                             2
                         </button>
                     </Link>
@@ -72,7 +76,8 @@ export default class MainWindow extends React.Component {
                         smooth={true}
                         duration={500}
                     >
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
+                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
                             3
                         </button>
                     </Link>
@@ -84,8 +89,11 @@ export default class MainWindow extends React.Component {
                         smooth={true}
                         duration={500}
                     >
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            4
+                        <img src={PIC} className = "h-2/4 rounded-md"></img>
+                        
+                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
+                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
+                            
                         </button>
                     </Link>
                 </div>
