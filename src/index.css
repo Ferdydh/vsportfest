@@ -31,6 +31,10 @@ code {
   vertical-align: middle;
 }
 
+.sidebar .mobilemenu {
+  margin-top: -36rem;
+}
+
 .sidebar div {
   vertical-align: middle;
 }
