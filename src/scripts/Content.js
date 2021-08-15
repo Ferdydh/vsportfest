@@ -11,6 +11,9 @@ import VR from '../images/vr.png';
 import FG from '../images/MOLEG.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/pubg.png';
+import MEDAL1 from "../images/Medals/medal1.png"
+import MEDAL2 from "../images/Medals/medal2.png"
+import MEDAL3 from "../images/Medals/medal3.png"
 
 
 class Content extends React.Component {
