@@ -5,6 +5,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
         extend: {
+            skew: {
+                '25': '25deg',
+                '45': '45deg',
+                '60': '60deg',
+            },
             backdropFilter: {
                 'none': 'none',
                 'blur': 'blur(20px)',
