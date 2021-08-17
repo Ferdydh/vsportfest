@@ -39,7 +39,7 @@ class VirtualRun extends React.Component {
     }
 
     return (
-      <section id="dance">
+      <section id="virtualrun">
         <Parallax 
         bgImage={backgroundLink}
         className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec" 
