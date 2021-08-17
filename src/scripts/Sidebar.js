@@ -75,7 +75,7 @@ class Sidebar extends React.Component {
 
       // Track all sections that have an `id` applied
       sections.forEach((section) => {
-        alert(section);
+        // alert(section);
         observer.observe(section);
       });
       
@@ -102,7 +102,7 @@ class Sidebar extends React.Component {
 
       {isMobile && is_visible && (
       <nav class="mobilesidebar">
-        <Menu as="div" className="inline-block text-left fixed">
+        <Menu as="div" className="inline-block text-center flex-auto relative justify-center content-center">
           <div className="p-4">
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
               <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
@@ -118,18 +118,44 @@ class Sidebar extends React.Component {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="origin-top-left absolute left-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="absolute mt-2 w-216 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="py-1">
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="#mainwindow"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )}
+                    >
+                      <Home color="black" fontSize="large" />
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="#dota"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm w-16'
+                      )}
+                    >
+                      <img src={Dota} alt="dota"></img>
+                    </a>
+                  )}
+                </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
                     <a
                       href="#moleg"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
+                        'block px-4 py-2 text-sm w-16'
                       )}
                     >
-                      MoLeg
+                  <img src={MoLeg} alt="Mobile Legends" className="object-contain w-24 h-16"></img>
                     </a>
                   )}
                 </Menu.Item>
@@ -139,10 +165,62 @@ class Sidebar extends React.Component {
                       href="#pubg"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
+                        'block px-4 py-2 text-sm w-16'
                       )}
                     >
-                      Pubg
+                  <img src={Pubg} alt="PUBG" className="object-contain w-24 h-16"></img>
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="#chess"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm w-16'
+                      )}
+                    >
+                  <img src={Chess} alt="Chess" className="object-contain w-24 h-16"></img>
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="#dance"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm w-16'
+                      )}
+                    >
+                  <img src={Dance} alt="Dance" className="object-contain w-24 h-16"></img>
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="#virtualrun"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm w-16'
+                      )}
+                    >
+                  <Run color="black" />
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="#register"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm w-16'
+                      )}
+                    >
+                  <img src={Register} alt="Register" className="object-contain w-24 h-16"></img>
                     </a>
                   )}
                 </Menu.Item>
