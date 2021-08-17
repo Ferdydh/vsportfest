@@ -22,13 +22,13 @@ function App() {
 
       <MoLeg id="moleg" sectionName="Mobile Legends" parallaxStrength="-500" background="off" />
 
-      <Pubg id="pubg"></Pubg>
+      <Pubg id="pubg" sectionName="Pubg" parallaxStrength="300" background="on"></Pubg>
 
-      <Chess id="chess"></Chess>
+      <Chess id="chess" sectionName="Chess" parallaxStrength="-500" background="off"></Chess>
 
-      <Dance id="dance"></Dance>
+      <Dance id="dance" sectionName="Dance" parallaxStrength="300" background="on"></Dance>
 
-      <VirtualRun id="virtualrun"></VirtualRun>
+      <VirtualRun id="virtualrun" sectionName="Virtual Run" parallaxStrength="-500" background="off"></VirtualRun>
 
       {/* */}
 

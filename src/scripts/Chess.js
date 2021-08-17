@@ -84,8 +84,6 @@ class Chess extends React.Component {
       </Parallax>
       </Parallax>
       </div>
-      
-      
     );
   }
 }

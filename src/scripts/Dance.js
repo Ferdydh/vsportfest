@@ -84,8 +84,6 @@ class Dance extends React.Component {
       </Parallax>
       </Parallax>
       </div>
-      
-      
     );
   }
 }

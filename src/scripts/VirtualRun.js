@@ -84,8 +84,6 @@ class VirtualRun extends React.Component {
       </Parallax>
       </Parallax>
       </div>
-      
-      
     );
   }
 }
