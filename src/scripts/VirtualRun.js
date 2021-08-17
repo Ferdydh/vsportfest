@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/mascot-dance.png';
+import FG from '../images/mascot.marathon.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import {isMobile} from 'react-device-detect';
 import Rules from '../registration/run'
