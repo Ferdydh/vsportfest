@@ -71,14 +71,11 @@ class Sidebar extends React.Component {
             }
           }
         });
-      }, {
-        // root: parent,
-        threshold: [0,1]
-      } );
+      });
 
       // Track all sections that have an `id` applied
       sections.forEach((section) => {
-        // alert(section);
+        alert(section);
         observer.observe(section);
       });
       
