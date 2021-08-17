@@ -49,7 +49,7 @@ class Content extends React.Component {
         blur={{ min: 2, max: 4 }}
         contentClassName="w-full"
         >
-        <Parallax bgImage={FG} bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} : {}} strength={300} bgClassName="opacity-80" blur={{ min: 0, max: 0.3 }}>
+        <Parallax bgImage={FG} bgImageStyle={isMobile ? {position: "absolute", marginTop: "15em"} : {}} strength={300} bgClassName="opacity-80" blur={{ min: 0, max: 0.3 }}>
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
             <img src={ICON} className="object-contain p-1" />
