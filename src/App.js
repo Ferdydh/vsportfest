@@ -18,9 +18,9 @@ function App() {
       <MainWindow />
       {/* The topmost slide gets extra padding due to the first slide*/}
 
-      <Content id="dota" sectionName="Dota" parallaxStrength="300" background="on"></Content>
+      <Dota id="dota" sectionName="Dota" parallaxStrength="300" background="on" />
 
-      <Content id="moleg" sectionName="Mobile Legends" parallaxStrength="-500" background="off"></Content>
+      <MoLeg id="moleg" sectionName="Mobile Legends" parallaxStrength="-500" background="off" />
 
       <Pubg id="pubg"></Pubg>
 
