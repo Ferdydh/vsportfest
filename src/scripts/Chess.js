@@ -8,7 +8,7 @@ import FG from '../images/mascot-moleg.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/chess.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../rules/chess'
+import Rules from '../registration/chess'
 
 
 class Chess extends React.Component {

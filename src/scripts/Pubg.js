@@ -8,7 +8,7 @@ import {isMobile} from 'react-device-detect';
 import FG from '../images/mascot-pubg.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/pubg.png';
-import Rules from '../rules/pubg'
+import Rules from '../registration/pubg'
 
 
 class Pubg extends React.Component {

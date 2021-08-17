@@ -7,7 +7,7 @@ import Modal from './Modal';
 import FG from '../images/mascot-dance.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import {isMobile} from 'react-device-detect';
-import Rules from '../rules/run'
+import Rules from '../registration/run'
 import Run from '@material-ui/icons/DirectionsRun';
 
 

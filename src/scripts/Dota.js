@@ -8,7 +8,7 @@ import FG from '../images/mascot-dota.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/dota.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../rules/dota';
+import Rules from '../registration/dota';
 
 
 

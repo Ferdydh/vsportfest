@@ -8,7 +8,7 @@ import FG from '../images/mascot-moleg.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/ml.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../rules/moleg'
+import Rules from '../registration/moleg'
 
 
 class MoLeg extends React.Component {

@@ -8,7 +8,7 @@ import FG from '../images/mascot-dance.png';
 import BG from '../images/DOTAWALLPAPER.jpg';
 import ICON from '../images/dance.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../rules/dance'
+import Rules from '../registration/dance'
 
 
 class Dance extends React.Component {
