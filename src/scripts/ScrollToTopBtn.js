@@ -3,26 +3,27 @@ import img from "../images/scrollup.svg"
 import img2 from "../images/pikachu.jpg"
 import icon from "../images/icon.svg"
 
-//const heightOfMainWindow = document.getElementById('mainwindow').clientHeight;
-
 class ScrollToTopBtn extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            is_visible: false
+            is_visible: false,
+            windowHeight:0
         };
     }
 
     componentDidMount() {
         var scrollComponent = this;
+        const height = document.getElementById('mainwindow').clientHeight -50;
+        this.setState({ windowHeight:height });    
         document.addEventListener("scroll", function(e) {
             scrollComponent.toggleVisibility();
         })
     }
     
     toggleVisibility() {
-        if(window.pageYOffset > 300) {
+        if(window.pageYOffset > this.state.windowHeight) {
             this.setState({
                 is_visible : true
             });
