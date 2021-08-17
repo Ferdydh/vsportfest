@@ -1,15 +1,21 @@
-import React,{useEffect} from 'react';
-import Popup from 'reactjs-popup';
-import Pikachu from '../images/pikachu.jpg'
-import VR from '../images/vr.png'
+import React from 'react';
+import Prizes from './Prizes';
 import { Parallax } from 'react-parallax';
 import Modal from './Modal';
+import {isMobile} from 'react-device-detect';
+
+// media imports for section
+import FG from '../images/mascot-pubg.png';
+import BG from '../images/DOTAWALLPAPER.jpg';
+import ICON from '../images/pubg.png';
+import Rules from '../rules/pubg'
 
 
 class Pubg extends React.Component {
 
-  componentDidMount(){
-    console.log("Hello");
+  constructor(props){
+    super(props);
+    console.log(BG);
   }
 
   MouseOver(event) {
@@ -24,47 +30,62 @@ class Pubg extends React.Component {
   }
 
   render() {
+    var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
+
+    if(this.props.background == "on"){
+      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
+    } else {
+      backgroundLink = "";
+    }
 
     return (
-      <Parallax bgImage={VR} className="bg-gray-500" strength={300}>
-      <section className="h-screen px-20 md:py-20 flex flex-row " id={this.props.id}>
-        {/* LEFT SIDE OF THE DIV */}
-        <div className="h-full w-1/2 flex flex-col" id="leftside">
-          <div className="m-auto font-bold text-5xl">
-            <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">
+      <div id="pubg">
+        <Parallax 
+        bgImage={backgroundLink}
+        className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" 
+        strength={-500} 
+        bgClassName="opacity-30 blur" 
+        blur={{ min: 2, max: 4 }}
+        contentClassName="w-full"
+        >
+        <Parallax bgImage={FG} bgImageStyle={isMobile ? {position: "absolute", marginTop: "15em"} :
+         {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 "  blur={{ min: 0, max: 0.3 }}>
+        <div className="w-full p-2 mb-30">
+          <div className="float-right h-20 w-20 p-4 flex align-middle">
+            <img src={ICON} className="object-contain p-1" />
+          </div>
+        </div>
+        <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
+
+          {/* LEFT SIDE OF THE DIV */}
+          <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
+            <div className="m-10 md:m-auto font-bold text-7xl">
+              <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 PUBG
+              </div>
+                <Modal title="PUBG" text={<Rules/>} />
             </div>
-
-            <Modal title="PUBG" text="PUBG is for noobs" />
-
-            {/* <button className="transform skew-y-6 my-10 float-left transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
-             bg-blue-500 font-light hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded text-sm">
-                RULES
-            </button> */}
           </div>
-        </div>
 
-        {/* LINE THROUGH MIDDLE OF COMPONENT */}
-        <div className="flex flex-col" id="columnspace">
-        <div className="w-1 h-full">
-          </div>
-          <div className="bg-gray-800 w-1 h-full">
-          </div>
-          <div className=" w-1 h-full">
-          </div>
-        </div>
-        
-        {/* RIGHT SIDE OF THE DIV */}
-        <div className="h-full w-1/2 flex-col flex" id="rightside">
-        
-          <div className="p-10 m-auto">
-
-              <img src={Pikachu} onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
-
+          {/* LINE THROUGH MIDDLE OF COMPONENT */}
+          <div className="flex select-none mr-10 pl-10" id="columnspace">
+            <div className=" bg-white w-1 h-full transform skew-x-45">
             </div>
-        </div>
-      </section>
+          </div>
+          
+          {/* RIGHT SIDE OF THE DIV */}
+          <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
+            <div className="my-auto ml-12">
+                <Prizes />
+            </div>
+          </div>
+        </section>
+
       </Parallax>
+      </Parallax>
+      </div>
+      
+      
     );
   }
 }

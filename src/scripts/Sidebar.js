@@ -7,7 +7,6 @@ import Dance from '../images/dance.png'
 import Run from '@material-ui/icons/DirectionsRun';
 import Home from '@material-ui/icons/Home';
 import Register from '../images/register.png'
-import MenuIcon from '@material-ui/icons/Menu';
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
