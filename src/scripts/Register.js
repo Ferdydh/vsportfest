@@ -24,7 +24,8 @@ class Register extends React.Component {
                   <PersonIcon className="pr-2" />
                     Evan Christopher
                   </div>
-                  <a href="https://wa.me/4915207994846">
+                  {/*link to WA generator : https://postcron.com/en/blog/landings/whatsapp-link-generator/#page-block-he6t7wyxoh*/}
+                  <a href="https://api.whatsapp.com/send?phone=4915207994648&text=CP%20Vsportfest">
                   <WhatsAppIcon className="pr-2" />
                     (+49 42069888)
                   </a>

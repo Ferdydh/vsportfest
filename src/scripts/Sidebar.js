@@ -7,13 +7,10 @@ import Dance from '../images/dance.png'
 import Run from '@material-ui/icons/DirectionsRun';
 import Home from '@material-ui/icons/Home';
 import Register from '../images/register.png'
-import MenuIcon from '@material-ui/icons/Menu';
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import {isMobile} from 'react-device-detect';
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -37,43 +34,51 @@ class Sidebar extends React.Component {
       scrollComponent.toggleVisibility();
     })
 
+    if (isMobile) return;
 
-    window.addEventListener('DOMContentLoaded', () => {
-      // const sidebarButtons = {
-      //   mainwindow: document.querySelector(`nav div div a[href="#mainwindow"]`),
-      //   dota: document.querySelector(`nav div div a[href="#dota"]`),
-      //   moleg: document.querySelector(`nav div div a[href="#moleg"]`),
-      //   pubg: document.querySelector(`nav div div a[href="#pubg"]`),
-      //   catur: document.querySelector(`nav div div a[href="#catur"]`),
-      //   dance: document.querySelector(`nav div div a[href="#dance"]`),
-      //   virtualrun: document.querySelector(`nav div div a[href="#virtualrun"]`),
-      //   register: document.querySelector(`nav div div a[href="#register"]`)
-      // };
-
+    window.addEventListener('load', () => {
+      const sections = [
+        document.getElementById("mainwindow"),
+        document.getElementById("dota"),
+        document.getElementById("moleg"),
+        document.getElementById("pubg"),
+        document.getElementById("chess"),
+        document.getElementById("dance"),
+        document.getElementById("virtualrun"),
+        document.getElementById("register"),
+      ]
+      
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
-          // alert(id);
           if (!(id === "mainwindow" ||id === "virtualrun" || id === "dota" || id === "pubg" || id === "chess" || id === "dance" || id === "moleg" || id === "register")) {
             return;
           }
           
-          if (entry.intersectionRatio > 0.2) {
+          if (this.state.is_visible &&  entry.intersectionRatio > 0) {
             try {
               document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
-            } catch (error) {
+            } catch(e){
+              // alert(e);
+              // alert(id);
             }
           } else {
             try {
               document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.remove('active');
-            } catch (error) {
+            } catch(e){
+              // alert(e);
+              // alert(id);
             }
           }
         });
-      });
-    
+      }, {
+        // root: parent,
+        threshold: [0,1]
+      } );
+
       // Track all sections that have an `id` applied
-      document.querySelectorAll('section[id]').forEach((section) => {
+      sections.forEach((section) => {
+        // alert(section);
         observer.observe(section);
       });
       
@@ -96,7 +101,7 @@ class Sidebar extends React.Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <nav class="p-2">
+      <nav>
 
       {isMobile && is_visible && (
       <nav class="mobilesidebar">
@@ -155,7 +160,7 @@ class Sidebar extends React.Component {
         {!isMobile && is_visible && (
           <nav class="sidebar">
             <div>
-              <div class="bg-gray-400 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
+              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
                 <a href="#mainwindow">
                   <Home color="black" />
                 </a>
