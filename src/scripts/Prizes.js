@@ -20,7 +20,7 @@ export default class Prizes extends React.Component {
 
     render() {
         return (
-            <div class="outer text-white text-4xl font-sans font-extrabold transform skew-x-5"  style={{position: "relative"}} >
+            <div class="outer text-white text-4xl font-sans font-extrabold transform skew-x-5 relative" >
                 <div class="input flex flex-row" style={{position: "absolute" , top: "-5rem" , left: "0rem"}}>
                     <img src={MEDAL1} className = " h-12 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
                         100€
