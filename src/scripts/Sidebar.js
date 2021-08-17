@@ -75,7 +75,7 @@ class Sidebar extends React.Component {
 
       // Track all sections that have an `id` applied
       sections.forEach((section) => {
-        alert(section);
+        // alert(section);
         observer.observe(section);
       });
       
