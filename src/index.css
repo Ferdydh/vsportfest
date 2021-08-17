@@ -31,10 +31,6 @@ code {
   vertical-align: middle;
 }
 
-.sidebar .mobilemenu {
-  margin-top: -48rem;
-}
-
 .sidebar div {
   vertical-align: middle;
 }
@@ -49,6 +45,17 @@ code {
 .sidebar img {
   width: 24px;
   height: 24px;
+}
+
+.mobilesidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top*/
+  top: 5px; /* Stay at the top */
+  left: 5px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  display: flex;
+  flex-direction: column;
 }
 
 html {
