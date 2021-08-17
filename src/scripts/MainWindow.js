@@ -7,9 +7,29 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import Countdown from './Countdown'
 import EmailIcon from '@material-ui/icons/Email';
 import WhatsApp from '@material-ui/icons/WhatsApp';
-import PIC from '../images/Cover/CHESS.jpg'
+import PIC from '../images/Cover/CHESS.jpg';
+import CHESS_COVER from '../images/Cover/CHESS.jpg';
+import DANCE_COVER from '../images/Cover/DANCE.jpg';
+import DOTA_COVER from '../images/Cover/DOTA.jpg';
+import MOLEG_COVER from '../images/Cover/MOBILELEGENDS.jpg';
+import PUBG_COVER from '../images/Cover/PUBG.jpg';
+import RUN_COVER from '../images/Cover/RUN.jpg';
+
+import '../index.css'
 
 export default class MainWindow extends React.Component {
+    
+    MouseOut(event) {
+        event.target.style.height = '17rem'
+        event.target.style.width = '11.22rem'
+      }
+    
+      MouseOver(event){
+        event.target.style.height = '20rem'
+        event.target.style.width = '13rem'
+        event.target.style.transition = 'height 0.3s, width 0.3s, transform 0.3s';
+      }
+    
     render() {
         return (
             <section id="mainwindow" className="pt-6 pb-20 min-h-screen w-full bg-gradient-to-b to-purple-800 via-blue-900 from-pink-500">
@@ -34,25 +54,30 @@ export default class MainWindow extends React.Component {
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
-                {/* <div className="mt-8 flex-1 flex justify-center mr-auto">
-                    <div className="w-48 bg-yellow-100" >
-                        AUG - SEPT
-                    </div>
-                </div> */}
+                <div className="mt-8 flex-1 flex justify-center mr-auto font-sans font-medium text-3xl text-white">
+                        AUGUST - SEPTEMBER
+                </div>
 
-                <div> 
+                <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
+                    
+                    <div>
+
+                    </div>
+
                     <Link
                         activeClass="active"
-                        to="pembukaan"
+                        to="dota"
                         spy={true}
                         smooth={true}
                         duration={500}
                     >
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
-                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
-
-                            1
-                        </button>
+                        <div>
+                            <img src={MOLEG_COVER} className = "gamecover p-2" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}/>
+                            <div className="relative text-2xl font-thin text-white">
+                                MOLEG
+                            </div>
+                        </div>
+                    
                     </Link>
 
                     <Link
@@ -62,24 +87,27 @@ export default class MainWindow extends React.Component {
                         smooth={true}
                         duration={500}
                     >
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
-                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
-                            
-                            2
-                        </button>
+                        <div>
+                            <img src={PUBG_COVER} className = "gamecover p-2" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}/>
+                            <div className="relative text-2xl font-thin text-white">
+                               PUBG
+                            </div>
+                        </div>
                     </Link>
 
                     <Link
                         activeClass="active"
-                        to="penutup"
+                        to="dota"
                         spy={true}
                         smooth={true}
                         duration={500}
                     >
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
-                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
-                            3
-                        </button>
+                        <div>
+                            <img src={RUN_COVER} className = "gamecover p-2" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}/>
+                            <div className="relative text-2xl font-thin text-white">
+                                RUN
+                            </div>
+                        </div>
                     </Link>
                     
                     <Link
@@ -89,13 +117,48 @@ export default class MainWindow extends React.Component {
                         smooth={true}
                         duration={500}
                     >
-                        <img src={PIC} className = "h-2/4 rounded-md"></img>
-                        
-                        <button class="bg-gray-50 m-10 hover:bg-blue-500 text-blue-700 font-semibold 
-                        hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-24 h-32">
-                            
-                        </button>
+                        <div>
+                            <img src={CHESS_COVER} className = "gamecover p-2" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}/>
+                            <div className="relative text-2xl font-thin text-white">
+                                CHESS
+                            </div>
+                        </div>
                     </Link>
+
+                    <Link
+                        activeClass="active"
+                        to="register"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        <div>
+                            <img src={DANCE_COVER} className = "gamecover p-2" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}/>
+                            <div className="relative text-2xl font-thin text-white">
+                                DANCE
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link
+                        activeClass="active"
+                        to="register"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        <div>
+                            <img src={DOTA_COVER} className = "gamecover p-2" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}/>
+                            <div className="relative text-2xl font-thin text-white">
+                                DOTA 2
+                            </div>
+                        </div>
+                    </Link>
+
+                    <div>
+                        
+                    </div>
+                    
                 </div>
                 
                 <div className="font-bold text-white text-3xl p-10 font-mono">

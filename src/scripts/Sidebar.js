@@ -19,7 +19,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const heightOfMainWindow = document.getElementById('mainwindow').clientHeight;
+//const heightOfMainWindow = document.getElementById('mainwindow').clientHeight;
 
 class Sidebar extends React.Component {
 
@@ -81,7 +81,7 @@ class Sidebar extends React.Component {
   }
 
   toggleVisibility() {
-    if (window.pageYOffset > heightOfMainWindow) {
+    if (window.pageYOffset > 300) {
       this.setState({
         is_visible: true
       });

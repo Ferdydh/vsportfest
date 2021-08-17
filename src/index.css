@@ -185,3 +185,8 @@ html {
 .test {
   transition: 'max-width 0.5s';
 }
+
+.gamecover {
+  width: 11.22rem;
+  height: 17rem;
+}
