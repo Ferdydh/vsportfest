@@ -4,7 +4,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import VRMascot from '../images/vr-mascot.png';
-
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 class Register extends React.Component {
     render() {
@@ -21,9 +21,13 @@ class Register extends React.Component {
 
                 <div className="text-white text-xl float-left justify-start text-left m-3 ml-0 flex flex-col">
                   <div>
-                    <PersonIcon className="pr-2" />
+                  <PersonIcon className="pr-2" />
                     Evan Christopher
                   </div>
+                  <a href="https://wa.me/4915207994846">
+                  <WhatsAppIcon className="pr-2" />
+                    (+49 42069888)
+                  </a>
                   <a href="mailto:vsportfest@ppi-munich.org">
                     <EmailIcon className="pr-2" />
                     vsportfest@ppi-munich.org
