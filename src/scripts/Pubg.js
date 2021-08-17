@@ -39,7 +39,7 @@ class Pubg extends React.Component {
     }
 
     return (
-      <div id="pubg">
+      <section id="pubg">
         <Parallax 
         bgImage={backgroundLink}
         className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" 
@@ -83,7 +83,7 @@ class Pubg extends React.Component {
 
       </Parallax>
       </Parallax>
-      </div>
+      </section>
       
       
     );
