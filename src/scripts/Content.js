@@ -55,7 +55,7 @@ class Content extends React.Component {
           <img src={ICON} className="object-contain p-1" />
         </div>
       </div>
-      <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row" id={this.props.id}>
+      <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20" id={this.props.id}>
 
         {/* LEFT SIDE OF THE DIV */}
         <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
@@ -68,17 +68,13 @@ class Content extends React.Component {
         </div>
 
         {/* LINE THROUGH MIDDLE OF COMPONENT */}
-        <div className="flex flex-col select-none" id="columnspace">
-        <div className="w-1 h-1/6">
-          </div>
-          <div className=" bg-white w-1 h-full">
-          </div>
-          <div className=" w-1 h-1/6">
+        <div className="flex select-none mr-10 pl-10" id="columnspace">
+          <div className=" bg-white w-1 h-full transform skew-x-45">
           </div>
         </div>
         
         {/* RIGHT SIDE OF THE DIV */}
-        <div className="h-full w-1/2 flex-col flex select-none" id="rightside">
+        <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
           <div className="my-auto ml-12">
               <Prizes />
           </div>
