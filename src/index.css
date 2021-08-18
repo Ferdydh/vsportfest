@@ -16,6 +16,19 @@ code {
     monospace;
 }
 
+.font-futuristic{
+  font-family: chopsicregular;
+}
+
+
+@font-face {
+  font-family: chopsicregular;
+  src: url('fonts/chopsic-k6dp-webfont.woff2') format('woff2'),
+       url('fonts/chopsic-k6dp-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* for sidebar */
 .sidebar {

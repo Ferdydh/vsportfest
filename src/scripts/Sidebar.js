@@ -28,7 +28,7 @@ class Sidebar extends React.Component {
 
   componentDidMount() {
     var scrollComponent = this;
-    const height = document.getElementById('mainwindow').clientHeight -50;
+    const height = document.getElementById('mainwindow').clientHeight;
     this.setState({ sidebarHeight:height });    
     document.addEventListener("scroll", function (e) {
       scrollComponent.toggleVisibility();

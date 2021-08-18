@@ -15,8 +15,10 @@ import MOLEG_COVER from '../images/Cover/MOBILELEGENDS.jpg';
 import PUBG_COVER from '../images/Cover/PUBG.jpg';
 import RUN_COVER from '../images/Cover/RUN.jpg';
 import {isMobile} from 'react-device-detect';
+import ReactPlayer from "react-player";
 
-import '../index.css'
+
+import '../index.css' 
 
 export default class MainWindow extends React.Component {
     
@@ -62,9 +64,23 @@ export default class MainWindow extends React.Component {
 
                 {/* TODO: make an explanation about when the competitions are held and when the registration is open!! also pake bahasa indo harusnya*/}
 
-                <div className="mt-8 flex-1 flex justify-center mr-auto font-sans font-medium text-3xl text-white">
+                <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
                         7 Okt - 10 Okt
                 </div>
+
+                <div className="flex-1 flex justify-center mr-auto">
+                    <ReactPlayer
+                    url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
+                    playing={true}
+                    // width= "720"
+                    // height="405"
+                    />
+                </div>
+
+
+
+
+
 
                 <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
                     
