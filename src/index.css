@@ -39,7 +39,7 @@ code {
   background-color: rgb(226, 71, 152);
   font-weight: 500;
   backdrop-filter: blur(20px);
-  opacity: 75%;
+  /* opacity: 75%; */
 }
 
 .sidebar img {
