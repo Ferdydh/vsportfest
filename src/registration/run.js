@@ -3,7 +3,6 @@ import React from 'react'
 export const run = () => {
     return (
         <div className="text-left">
-			<h3 className="text-xl font-extrabold">Virtual Charity Run</h3>
 			<ol className="list-decimal p-8">
 				<li>Format transfer :</li>
                 <ul className="list-disc p-6">

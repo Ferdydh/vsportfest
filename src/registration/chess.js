@@ -3,7 +3,6 @@ import React from 'react'
 export const chess = () => {
     return (
         <div className="text-left">
-			<h3 className="text-xl font-extrabold">Pertandingan Catur</h3>
 			<ol className="list-decimal p-8">
 				<li>Format transfer 	: Nama - Catur - vSF21</li>
 				<li><a href="gg.gg/daftarcaturvsf21" className="text-indigo-700">Link pendaftaran</a></li>
