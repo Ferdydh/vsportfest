@@ -14,6 +14,7 @@ import DOTA_COVER from '../images/Cover/DOTA.jpg';
 import MOLEG_COVER from '../images/Cover/MOBILELEGENDS.jpg';
 import PUBG_COVER from '../images/Cover/PUBG.jpg';
 import RUN_COVER from '../images/Cover/RUN.jpg';
+import {isMobile} from 'react-device-detect';
 
 import '../index.css'
 
@@ -25,8 +26,13 @@ export default class MainWindow extends React.Component {
       }
     
       MouseOver(event){
-        event.target.style.height = '20rem'
-        event.target.style.width = '13rem'
+        if (!isMobile) {
+            event.target.style.height = '20rem'
+            event.target.style.width = '13rem'    
+        } else {
+            event.target.style.height = '18.5rem'
+            event.target.style.width = '12rem'        
+        }
         event.target.style.transition = 'height 0.3s, width 0.3s, transform 0.3s';
       }
     
@@ -54,8 +60,10 @@ export default class MainWindow extends React.Component {
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
+                {/* TODO: make an explanation about when the competitions are held and when the registration is open!! also pake bahasa indo harusnya*/}
+
                 <div className="mt-8 flex-1 flex justify-center mr-auto font-sans font-medium text-3xl text-white">
-                        AUGUST - SEPTEMBER
+                        7 Okt - 10 Okt
                 </div>
 
                 <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
