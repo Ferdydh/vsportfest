@@ -41,7 +41,7 @@ const Countdown = () => {
 
     return (
       <div className="flex flex-wrap content-center justify-center">
-        {timerComponents.length ?  <div>Regisration open for {timerComponents} </div>
+        {timerComponents.length ?  <div>Registration closes in {timerComponents}</div>
         : <div>Vsportfest is now LIVE!</div>}
       </div>
     );

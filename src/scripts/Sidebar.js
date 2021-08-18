@@ -233,7 +233,7 @@ class Sidebar extends React.Component {
 
 {/* ////////////////////////////// */}
         {!isMobile && is_visible && (
-          <nav class="sidebar">
+          <nav class="sidebar pl-3">
             <div>
               <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
                 <a href="#mainwindow">

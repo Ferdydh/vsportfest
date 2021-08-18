@@ -1,9 +1,9 @@
 import React from 'react';
 import '../index.css';
-import Pikachu from '../images/pikachu.jpg';
 import MEDAL1 from "../images/Medals/medal1.png"
 import MEDAL2 from "../images/Medals/medal2.png"
 import MEDAL3 from "../images/Medals/medal3.png"
+
 
 export default class Prizes extends React.Component {
 
@@ -19,20 +19,32 @@ export default class Prizes extends React.Component {
       }
 
     render() {
+        const first = this.props.first;
+        const second = this.props.second;
+        const third = this.props.third;
+
         return (
             <div class="outer text-white text-4xl font-sans font-extrabold transform skew-x-5 relative" >
-                <div class="input flex flex-row" style={{position: "absolute" , top: "-5rem" , left: "0rem"}}>
-                    <img src={MEDAL1} className = " h-12 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
-                        100€
-                </div>
-                <div class="input flex flex-row" style={{position: "absolute" , top: "0rem" , left: "3rem"}}>
-                    <img src={MEDAL2} className = " h-12 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
-                        200€
-                </div>
-                <div class="input flex flex-row" style={{position: "absolute" , top: "5rem" , left: "6rem"}}>
-                    <img src={MEDAL3} className = " h-12 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
-                        300€
-                </div>
+                { first && 
+                    <div class="input flex flex-row p-4" style={{position: "absolute" , top: "-4rem" , left: "3rem"}}>
+                        <img src={MEDAL1} className = " h-16" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+                        <div className="pl-4">{first}€</div>
+                    </div>
+                }
+
+                { second && 
+                    <div class="input flex flex-row p-6" style={{position: "absolute" , top: "1rem" , left: "-3rem"}}>
+                        <img src={MEDAL2} className = " h-16 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+                        <div className="pl-4">{second}€</div>
+                    </div>
+                }
+
+                { third && 
+                    <div class="input flex flex-row p-4" style={{position: "absolute" , top: "3rem" , left: "7rem"}}>
+                        <img src={MEDAL3} className = " h-16 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+                        <div className="pl-4">{third}€</div>
+                    </div>
+                }
             </div>
         );
     }
