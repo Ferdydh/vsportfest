@@ -39,6 +39,10 @@ class Content extends React.Component {
       backgroundLink = "";
     }
 
+    const text = `Gamers everywhere gather ‘round! 🎮 
+    Don’t miss your chance to compete and have fun with players all across the world 🌎 
+    so sign up now for our DOTA COMPETITION ‼️`;
+
     return (
       <section id="dota">
         <Parallax 
@@ -63,20 +67,26 @@ class Content extends React.Component {
               <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Dota
               </div>
-                <Modal title="Dota" text={<Rules />} />
+                <Modal 
+                  title="Dota" 
+                  text={<Rules />} 
+                  url="https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4zsB0fRkI4M1cITGRmUE0W19q77A/viewform"
+                />
             </div>
           </div>
 
           {/* LINE THROUGH MIDDLE OF COMPONENT */}
           <div className="flex select-none mr-10 pl-10" id="columnspace">
-            <div className=" bg-white w-1 h-full transform skew-x-45">
+            <div className=" bg-white w-1 h-full transform skew-x-25">
             </div>
           </div>
           
           {/* RIGHT SIDE OF THE DIV */}
-          <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
+          <div className=" h-64 md:h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
             <div className="my-auto ml-12">
-                <Prizes />
+                <Prizes 
+                  first="80"
+                />
             </div>
           </div>
         </section>

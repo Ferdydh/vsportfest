@@ -5,6 +5,8 @@ export default function Modal(props) {
   const text = props.text;
   const title = props.title;
   const ref = useRef();
+  const url = props.url;
+  const desc = props.desc;
   useOnClickOutside(ref, () => setShowModal(false));
 
 
@@ -36,17 +38,26 @@ function useOnClickOutside(ref, handler) {
   );
 }
 
+const handleRegistration = () => {
+  window.open(url);
+}
+
 
   return (
     <>
-      <button className="flex flex-wrap align-middle justify-center content-center transform skew-y-6 my-10 float-left transition-all duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
-             bg-blue-500 font-mono hover:bg-blue-700 text-white py-2 px-4 border border-black-700 h rounded text-sm" type="button"
-             onClick={() => setShowModal(true)}
+    {desc && <p className="text-base p-4 mt-14 mb-10 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-100 
+    bg-opacity-10 rounded hover:shadow-md">
+        {desc}
+    </p>}
+    <div className="mt-16">
+      <button className="flex flex-wrap align-middle justify-center content-center max-w-max transform skew-y-6 float-left transition-all duration-500 ease-in-out hover:-translate-y-1 hover:scale-110
+             bg-blue-500 font-mono hover:bg-cyan text-white py-2 px-4 mx-4 border border-black-700 rounded text-sm" type="button"
+             onClick={() => handleRegistration()}
         >
         <div className="mt-0.5">Registration</div>
         <span class="material-icons">chevron_right</span>
         </button>
-
+    </div>
       {showModal ? (
         <>
           <div
@@ -95,6 +106,7 @@ function useOnClickOutside(ref, handler) {
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
+      
     </>
   );
 }

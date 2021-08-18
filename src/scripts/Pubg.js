@@ -63,20 +63,27 @@ class Pubg extends React.Component {
               <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 PUBG
               </div>
-                <Modal title="PUBG" text={<Rules/>} />
+                <Modal 
+                title="PUBG" 
+                text={<Rules/>} 
+                url="https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
+              />
             </div>
           </div>
 
           {/* LINE THROUGH MIDDLE OF COMPONENT */}
           <div className="flex select-none mr-10 pl-10" id="columnspace">
-            <div className=" bg-white w-1 h-full transform skew-x-45">
+            <div className=" bg-white w-1 h-full transform skew-x-25">
             </div>
           </div>
           
           {/* RIGHT SIDE OF THE DIV */}
-          <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
+          <div className=" h-64 md:h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
             <div className="my-auto ml-12">
-                <Prizes />
+                <Prizes
+                  first="80"
+                  second="40"
+                />
             </div>
           </div>
         </section>

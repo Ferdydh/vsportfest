@@ -68,15 +68,22 @@ class VirtualRun extends React.Component {
           </div>
 
           {/* LINE THROUGH MIDDLE OF COMPONENT */}
-          <div className="flex select-none mr-10 pl-10" id="columnspace">
-            <div className=" bg-white w-1 h-full transform skew-x-45">
+          <div className="flex select-none mr-10 pl-10 ml-16" id="columnspace">
+            <div className=" bg-white w-1 h-full transform skew-x-25">
             </div>
           </div>
           
           {/* RIGHT SIDE OF THE DIV */}
           <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
-            <div className="my-auto ml-12">
-                <Prizes />
+            <div className="my-auto md:ml-12">
+              <p className="text-base p-4 mt-5 md:mt-14 mb-10 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-100 
+              bg-opacity-10 rounded hover:shadow-md">
+                  Calling out all runners all over the world! 🏃🏻‍♂️ Are you craving to get that amazing runner’s high? 
+                  Well here is your chance! Come register yourself for our VIRTUAL RUN COMPETITION ‼️ (OPEN FOR PUBLIC AROUND THE WORLD)
+                  More importantly, this VIRTUAL RUN COMPETITION is a CHARITY MARATHON in collaboration with 
+                  <a href="https://www.instagram.com/lindungihutan/" className="text-green-400"> @lindungihutan 🌳 </a>
+                  in which 100% of the ticket sales will be donated there to SAVE OUR PLANET! 🌏 This means that ONE TICKET = ONE DONATION 💚
+              </p>
             </div>
           </div>
         </section>
