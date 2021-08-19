@@ -73,18 +73,14 @@ export default class MainWindow extends React.Component {
 
                 <div className=" flex-1 flex justify-center w-auto h-auto relative player-wrapper">
                     <ReactPlayer
-                    url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
-                    playing={true}
-                    className="top-0 left-1/2 transform -translate-x-1/2 absolute"
-                    width= {!isMobile?"75%":"100%"}
-                    height= {!isMobile?"75%":"100%"}
+                        url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
+                        playing={true}
+                        className="top-0 left-1/2 transform -translate-x-1/2 absolute"
+                        width= {!isMobile?"75%":"100%"}
+                        height= {!isMobile?"75%":"100%"}
+                        loop="false"
                     />
                 </div>
-
-
-
-
-
 
                 <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
                     

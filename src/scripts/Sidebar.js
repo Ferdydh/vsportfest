@@ -178,10 +178,10 @@ class Sidebar extends React.Component {
                       href="#chess"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
+                        'block px-4 py-2 text-sm w-12 p-2 ml-2'
                       )}
                     >
-                  <img src={Chess} alt="Chess" className="object-contain w-24 h-16"></img>
+                  <img src={Chess} alt="Chess" className="object-contain w-24 h-12"></img>
                     </a>
                   )}
                 </Menu.Item>

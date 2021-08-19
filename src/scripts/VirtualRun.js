@@ -51,8 +51,8 @@ class VirtualRun extends React.Component {
         <Parallax bgImage={FG} bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
          {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 " blur={{ min: 0, max: 0.3 }}>
         <div className="w-full p-2 mb-30">
-          <div className="float-right h-20 w-20 p-4 flex align-middle">
-            <img src={<Run />} className="object-contain p-1" />
+          <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
+            <Run fontSize="large"/>
           </div>
         </div>
         <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">

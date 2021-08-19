@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
         extend: {
+            colors: {
+                'cyan': '#6ADDF4',
+            },
             skew: {
                 '25': '25deg',
                 '45': '45deg',
