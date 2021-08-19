@@ -29,6 +29,9 @@ code {
   font-style: normal;
 }
 
+.player-wrapper {
+  padding-top: 56.25%;
+}
 
 /* for sidebar */
 .sidebar {
