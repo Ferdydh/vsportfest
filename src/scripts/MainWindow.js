@@ -71,7 +71,7 @@ export default class MainWindow extends React.Component {
                         Berlangsung selama <br></br>7 Okt - 10 Okt
                 </div>
 
-                <div className=" flex-1 flex justify-center w-auto h-auto relative player-wrapper">
+                <div className=" flex-1 flex justify-center w-auto h-1/2 relative player-wrapper mx-4 mb-14 md:pb-8">
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
                         playing={true}

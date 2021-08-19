@@ -63,8 +63,8 @@ class Chess extends React.Component {
               <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Chess
               </div>
-              <p className="text-base p-4 mt-14 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-100 
-              bg-opacity-10 rounded hover:shadow-md">
+              <p className="text-base p-4 mt-14 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
+              bg-opacity-30 rounded hover:shadow-md">
                   Chess players, come join us! ♟ Brace yourself ‘cause the battle of the brains is coming your way!
                    🧠 Sign yourself up to compete in our CHESS COMPETITION ‼️
               </p>

@@ -76,8 +76,8 @@ class VirtualRun extends React.Component {
           {/* RIGHT SIDE OF THE DIV */}
           <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
             <div className="my-auto md:ml-12">
-              <p className="text-base p-4 mt-5 md:mt-14 mb-10 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-100 
-              bg-opacity-10 rounded hover:shadow-md">
+              <p className="text-base p-4 mt-5 md:mt-14 mb-10 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
+              bg-opacity-30 rounded hover:shadow-md">
                   Calling out all runners all over the world! 🏃🏻‍♂️ Are you craving to get that amazing runner’s high? 
                   Well here is your chance! Come register yourself for our VIRTUAL RUN COMPETITION ‼️ (OPEN FOR PUBLIC AROUND THE WORLD)
                   More importantly, this VIRTUAL RUN COMPETITION is a CHARITY MARATHON in collaboration with 
