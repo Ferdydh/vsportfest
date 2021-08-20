@@ -101,9 +101,9 @@ class Sidebar extends React.Component {
       <nav>
 
       {isMobile && is_visible && (
-      <nav class="mobilesidebar">
+      <nav class="mobilesidebar w-1/6">
         <Menu as="div" className="inline-block text-center flex-auto relative justify-center content-center">
-          <div className="p-4">
+          <div className="p-2">
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
               <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
             </Menu.Button>
@@ -118,16 +118,13 @@ class Sidebar extends React.Component {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute mt-2 w-216 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
+            <Menu.Items className="absolute mt-2 h-auto w-full p-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <div className="grid-block">
                 <Menu.Item>
                   {({ active }) => (
                     <a
                       href="#mainwindow"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
-                      )}
+                      className='text-gray-700 block text-sm'
                     >
                       <Home color="black" fontSize="large" />
                     </a>
@@ -137,10 +134,7 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#dota"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
-                      )}
+                      className='text-gray-700 block text-sm w-auto p-2'
                     >
                       <img src={Dota} alt="dota"></img>
                     </a>
@@ -150,12 +144,9 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#moleg"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
-                      )}
+                      className='text-gray-700 block text-sm w-auto p-2 h-auto'
                     >
-                  <img src={MoLeg} alt="Mobile Legends" className="object-contain w-24 h-16"></img>
+                  <img src={MoLeg} alt="Mobile Legends" className="object-contain"></img>
                     </a>
                   )}
                 </Menu.Item>
@@ -163,12 +154,9 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#pubg"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
-                      )}
+                      className='text-gray-700 block text-sm w-auto p-2'
                     >
-                  <img src={Pubg} alt="PUBG" className="object-contain w-24 h-16"></img>
+                  <img src={Pubg} alt="PUBG" className="object-contain"></img>
                     </a>
                   )}
                 </Menu.Item>
@@ -176,12 +164,9 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#chess"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-12 p-2 ml-2'
-                      )}
+                      className='text-gray-700 block text-sm w-auto h-auto p-3'
                     >
-                  <img src={Chess} alt="Chess" className="object-contain w-24 h-12"></img>
+                  <img src={Chess} alt="Chess" className="object-contain"></img>
                     </a>
                   )}
                 </Menu.Item>
@@ -189,12 +174,9 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#dance"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
-                      )}
+                      className='text-gray-700 block'
                     >
-                  <img src={Dance} alt="Dance" className="object-contain w-24 h-16"></img>
+                  <img src={Dance} alt="Dance" className="object-contain"></img>
                     </a>
                   )}
                 </Menu.Item>
@@ -202,12 +184,9 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#virtualrun"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
-                      )}
+                      className='text-gray-700 block'
                     >
-                  <Run color="black" />
+                  <Run color="black" fontSize="large"/>
                     </a>
                   )}
                 </Menu.Item>
@@ -215,12 +194,9 @@ class Sidebar extends React.Component {
                   {({ active }) => (
                     <a
                       href="#register"
-                      className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm w-16'
-                      )}
+                      className='text-gray-700 flex text-center flex-auto justify-center content-center'
                     >
-                  <img src={Register} alt="Register" className="object-contain w-24 h-16"></img>
+                  <img src={Register} alt="Register" className="object-contain"></img>
                     </a>
                   )}
                 </Menu.Item>

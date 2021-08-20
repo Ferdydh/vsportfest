@@ -39,7 +39,7 @@ class VirtualRun extends React.Component {
     }
 
     return (
-      <section id="virtualrun">
+      <section id="virtualrun" className="min-h-screen">
         <Parallax 
         bgImage={backgroundLink}
         className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec" 
@@ -55,7 +55,7 @@ class VirtualRun extends React.Component {
             <Run fontSize="large"/>
           </div>
         </div>
-        <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
+        <section className="min-h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
 
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
