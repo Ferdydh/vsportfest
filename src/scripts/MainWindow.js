@@ -25,8 +25,8 @@ export default class MainWindow extends React.Component {
 
     render() {
         return (
-            <section id="mainwindow" className="pt-6 pb-20 min-h-screen w-full bg-gradient-to-b to-purple-800 via-blue-900 from-pink-500">
-                <div className="w-full inline-block">
+            <section id="mainwindow" className="pb-20 min-h-screen w-full bg-gradient-to-b to-purple-800 via-blue-900 from-pink-500">
+                <div className="w-full inline-block mt-6">
                     <a href="https://ppi-munich.org/" target="_blank" rel="noreferrer" className="logo float-left ml-8 mt-2 w-20 h-12 hover:bg-gray-50 rounded-md">
                         <img src={logoWhite} alt="logo" className="logowhite w-20 h-12" />
                         <img src={logoBlack} alt="logo" className="logoblack w-20 h-12" />
@@ -43,7 +43,7 @@ export default class MainWindow extends React.Component {
                     </a>
                 </div>
 
-                <div className="mt-4 md:-mt-4 flex-1 flex justify-center mr-auto pt-8">
+                <div className="mt-4 md:-mt-6 flex-1 flex justify-center mr-auto">
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
@@ -54,7 +54,7 @@ export default class MainWindow extends React.Component {
                 </div>
 
                 <div className="flex-1 flex justify-center mr-auto">
-                <div className={!isMobile?"w-3/4":"w-screen"}>
+                <div className={!isMobile?"w-1/2":"w-screen"}>
                     <div className={"relative mx-2 player-wrapper" }>
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
@@ -70,9 +70,7 @@ export default class MainWindow extends React.Component {
 
                 <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
                     <Link
-                        activeClass="active"
                         to="dota"
-                        spy={true}
                         smooth={true}
                         duration={500}
                     >
@@ -86,9 +84,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        activeClass="active"
                         to="isi"
-                        spy={true}
                         smooth={true}
                         duration={500}
                     >
@@ -101,9 +97,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        activeClass="active"
                         to="dota"
-                        spy={true}
                         smooth={true}
                         duration={500}
                     >
@@ -116,9 +110,7 @@ export default class MainWindow extends React.Component {
                     </Link>
                     
                     <Link
-                        activeClass="active"
                         to="register"
-                        spy={true}
                         smooth={true}
                         duration={500}
                     >
@@ -131,9 +123,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        activeClass="active"
                         to="register"
-                        spy={true}
                         smooth={true}
                         duration={500}
                     >
@@ -146,9 +136,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        activeClass="active"
                         to="register"
-                        spy={true}
                         smooth={true}
                         duration={500}
                     >
