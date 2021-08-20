@@ -65,10 +65,8 @@ export default class MainWindow extends React.Component {
 
                 {/* TODO: make an explanation about when the competitions are held and when the registration is open!! also pake bahasa indo harusnya*/}
 
-                <a href ={pdf} target = "_blank" className="">Download Pdf</a>
-
                 <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
-                        Berlangsung selama <br></br>7 Okt - 10 Okt
+                        Event <br></br>7 Okt - 10 Okt
                 </div>
 
                 <div className=" flex-1 flex justify-center w-auto h-1/2 relative player-wrapper mx-4 mb-14 md:pb-8">
@@ -180,7 +178,8 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <div>
-                        
+                        <div>Learn More</div>
+                        <a href ={pdf} target = "_blank" className="">Download Pdf</a>
                     </div>
                     
                 </div>

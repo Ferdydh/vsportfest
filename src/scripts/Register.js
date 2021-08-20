@@ -26,7 +26,7 @@ class Register extends React.Component {
                     Rachel Lauren
                   </div>
                   {/*link to WA generator : https://postcron.com/en/blog/landings/whatsapp-link-generator/#page-block-he6t7wyxoh*/}
-                  <a href="https://api.whatsapp.com/send?phone=4915207994648&text=CP%20Vsportfest">
+                  <a href="https://api.whatsapp.com/send?phone=4917644547544&text=CP%20Vsportfest">
                   <WhatsAppIcon className="pr-2" />
                     +49 176 4454 7544
                   </a>
