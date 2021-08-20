@@ -50,7 +50,7 @@ export default class MainWindow extends React.Component {
                 {/* TODO: make an explanation about when the competitions are held and when the registration is open!! also pake bahasa indo harusnya*/}
 
                 <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
-                    Event <br></br>7 Okt - 10 Okt
+                    Live on <br></br>7 Oct - 10 Oct
                 </div>
 
                 <div className="flex-1 flex justify-center mb-10 mx-6">
