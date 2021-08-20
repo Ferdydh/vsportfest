@@ -50,22 +50,22 @@ export default class MainWindow extends React.Component {
                 {/* TODO: make an explanation about when the competitions are held and when the registration is open!! also pake bahasa indo harusnya*/}
 
                 <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
-                        Event <br></br>7 Okt - 10 Okt
+                    Event <br></br>7 Okt - 10 Okt
                 </div>
 
-                <div className="flex-1 flex justify-center mr-auto">
-                <div className={!isMobile?"w-1/2":"w-screen"}>
-                    <div className={"relative mx-2 player-wrapper" }>
-                    <ReactPlayer
-                        url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
-                        playing={false}
-                        className="top-0 left-1/2 transform -translate-x-1/2 absolute"
-                        width= "100%"
-                        height= "100%"
-                        loop="false"
-                    />
+                <div className="flex-1 flex justify-center mb-10 mx-6">
+                    <div className={!isMobile?"w-1/2":"w-screen"}>
+                        <div className={"relative mx-2 player-wrapper glow-cyan-xl"}>
+                            <ReactPlayer
+                                url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
+                                playing={false}
+                                className="top-0 left-1/2 transform -translate-x-1/2 absolute"
+                                width= "100%"
+                                height= "100%"
+                                loop="false"
+                            />
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <div id="mainwindowx" className="flex-wrap flex-row flex justify-center"> 
