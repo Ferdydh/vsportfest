@@ -33,12 +33,6 @@ code {
   padding-top: 56.25%;
 }
 
-.grid-block{
-  /* display: grid;
-  grid-template-rows: repeat(8, 8%);
-  row-gap: 1%; */
-}
-
 /* for sidebar */
 .sidebar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
