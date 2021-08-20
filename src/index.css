@@ -208,3 +208,12 @@ html {
 .test {
   transition: 'max-width 0.5s';
 }
+
+.mainwindow {
+  background-image: url('C:/Users/Evan Christopher/Documents/Projects/vsportfest/src/images/CompressedImages/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}
