@@ -7,15 +7,8 @@ import {isMobile} from 'react-device-detect';
 // media imports for section
 import FG from '../images/CompressedImages/MASCOT_PUBG.png';
 import ICON from '../images/pubg.png';
-import Rules from '../registration/pubg'
-
 
 class Pubg extends React.Component {
-
-  constructor(props){
-    super(props);
-  }
-
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -43,7 +36,7 @@ class Pubg extends React.Component {
          {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 "  blur={{ min: 0, max: 0.3 }}>
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
-            <img src={ICON} className="object-contain p-1" />
+            <img src={ICON} alt="" className="object-contain p-1" />
           </div>
         </div>
         <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
@@ -56,7 +49,6 @@ class Pubg extends React.Component {
               </div>
                 <Modal 
                 title="PUBG" 
-                text={<Rules/>} 
                 url="https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
               />
             </div>

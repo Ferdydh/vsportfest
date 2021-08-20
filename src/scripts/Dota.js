@@ -7,13 +7,8 @@ import Modal from './Modal';
 import FG from '../images/CompressedImages/MASCOT_DOTA.png';
 import ICON from '../images/dota.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/dota';
 
-class Content extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
+class Dota extends React.Component {
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -57,7 +52,6 @@ class Content extends React.Component {
               </div>
                 <Modal 
                   title="Dota" 
-                  text={<Rules />} 
                   url="https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4zsB0fRkI4M1cITGRmUE0W19q77A/viewform"
                 />
             </div>
@@ -88,4 +82,4 @@ class Content extends React.Component {
   }
 }
   
-export default Content;
+export default Dota;
