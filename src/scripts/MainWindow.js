@@ -157,16 +157,20 @@ export default class MainWindow extends React.Component {
                     </Link>
                 </div>
                     
-                <div className="animate-pulse text-3xl p-10 pb-5 text-red-600 font-bold font-mono">
+                <div className="animate-pulse text-3xl p-10 pb-5 text-red-600 hover:scale-110 transform duration-700 font-bold font-mono">
                     <Countdown />
                 </div>
 
-                <a href ={pdf} target = "_blank" rel="noreferrer" className="flex align-middle justify-center content-center">
-                    <div className="font-mono text-2xl p-4 flex align-middle text-cyan hover:scale-110">
-                        Learn more
-                        <div className="mt-1"><span class="material-icons">chevron_right</span></div>
-                    </div>
-                </a>
+                <div className="font-mono text-2xl p-4 flex align-middle text-cyan transform duration-700 hover:scale-110 justify-center content-center">
+                    <a href ={pdf} target = "_blank" rel="noreferrer">
+                        <div className="mt-1">
+                            Learn more
+                            <span class="material-icons align-middle">
+                                chevron_right
+                            </span>
+                        </div>
+                    </a>
+                </div>
                 
                 {/* <div className="flex-1 mr-auto text-3xl  md:text-5xl font-extrabold font-mono p-3 m-3 content-center justify-center rounded-lg items-center animate-pulse">
                     <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer" className="p-3 rounded-xl"  style={{backgroundColor: "#EEC184"}}>Register now!</a>
