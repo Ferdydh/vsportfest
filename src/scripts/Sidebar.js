@@ -118,89 +118,63 @@ class Sidebar extends React.Component {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute mt-2 h-auto w-full p-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="grid-block">
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#mainwindow"
-                      className='text-gray-700 block text-sm'
-                    >
-                      <Home color="black" fontSize="large" />
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#dota"
-                      className='text-gray-700 block text-sm w-auto p-2'
-                    >
-                      <img src={Dota} alt="dota"></img>
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#moleg"
-                      className='text-gray-700 block text-sm w-auto p-2 h-auto'
-                    >
-                  <img src={MoLeg} alt="Mobile Legends" className="object-contain"></img>
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#pubg"
-                      className='text-gray-700 block text-sm w-auto p-2'
-                    >
-                  <img src={Pubg} alt="PUBG" className="object-contain"></img>
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#chess"
-                      className='text-gray-700 block text-sm w-auto h-auto p-3'
-                    >
-                  <img src={Chess} alt="Chess" className="object-contain"></img>
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#dance"
-                      className='text-gray-700 block'
-                    >
-                  <img src={Dance} alt="Dance" className="object-contain"></img>
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#virtualrun"
-                      className='text-gray-700 block'
-                    >
-                  <Run color="black" fontSize="large"/>
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#register"
-                      className='text-gray-700 flex text-center flex-auto justify-center content-center'
-                    >
-                  <img src={Register} alt="Register" className="object-contain"></img>
-                    </a>
-                  )}
-                </Menu.Item>
+            <Menu.Items className="absolute mt-2 h-auto w-full"> 
+              <Menu.Item>
+                <div class="h-10 bg-gray-400 bg-opacity-40 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto items-center">
+                  <a href="#mainwindow">
+                    <Home color="black"/>
+                  </a>
+                </div>              
+              </Menu.Item>
+              <Menu.Item>
+                <div class="h-10 bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto items-center">
+                  <a href="#dota">
+                    <img src={Dota} alt="dota" className="w-6 h-6"></img>
+                  </a>
+                </div>
+              </Menu.Item>
+              <Menu.Item>
+                <div class="h-10 bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto items-center">
+                  <a href="#moleg">
+                    <img src={MoLeg} alt="Mobile Legends" className="w-6 h-4"></img>
+                  </a>
+                </div>
+              </Menu.Item>
+              <Menu.Item>
+                <div class="h-10 items-center bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                  <a href="#pubg">
+                    <img src={Pubg} alt="PUBG" className="w-6 h-4"></img>
+                  </a>
+                </div>
+              </Menu.Item>
+              <Menu.Item>
+                <div class="h-10 items-center bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                  <a href="#chess">
+                    <img src={Chess} alt="Chess" className="w-4 h-6"></img>
+                  </a>
+                </div>
+              </Menu.Item>
+              <Menu.Item>
+                <div class="h-10 items-center bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                  <a href="#dance">
+                    <img src={Dance} alt="Dance" className="w-4 h-6"></img>
+                  </a>
+                </div>
+              </Menu.Item>
+              <Menu.Item>
+              <div class="h-10 items-center bg-gray-400 bg-opacity-40  font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                <a href="#virtualrun">
+                  <Run color="black" />
+                </a>
               </div>
+              </Menu.Item>
+              <Menu.Item>
+                <div class="h-10 items-center bg-gray-400 bg-opacity-40 font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                  <a href="#register">
+                    <img src={Register} alt="Register" className="w-6 h-6"></img>
+                  </a>
+                </div>
+              </Menu.Item>
             </Menu.Items>
           </Transition>
         </Menu>
