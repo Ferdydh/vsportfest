@@ -75,7 +75,7 @@ export default class MainWindow extends React.Component {
                         duration={500}
                     >
                         <div>
-                            <img src={MOLEG_COVER} className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={MOLEG_COVER} alt="moleg" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
                                 MOLEG
                             </div>
@@ -89,7 +89,7 @@ export default class MainWindow extends React.Component {
                         duration={500}
                     >
                         <div>
-                            <img src={PUBG_COVER} className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={PUBG_COVER} alt="pubg" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
                                PUBG
                             </div>
@@ -102,7 +102,7 @@ export default class MainWindow extends React.Component {
                         duration={500}
                     >
                         <div>
-                            <img src={RUN_COVER} className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={RUN_COVER} alt="virtualrun" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
                                 RUN
                             </div>
@@ -115,7 +115,7 @@ export default class MainWindow extends React.Component {
                         duration={500}
                     >
                         <div>
-                            <img src={CHESS_COVER} className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={CHESS_COVER} alt="chess" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
                                 CHESS
                             </div>
@@ -128,7 +128,7 @@ export default class MainWindow extends React.Component {
                         duration={500}
                     >
                         <div>
-                            <img src={DANCE_COVER} className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={DANCE_COVER} alt="dance" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
                                 DANCE
                             </div>
@@ -141,7 +141,7 @@ export default class MainWindow extends React.Component {
                         duration={500}
                     >
                         <div>
-                            <img src={DOTA_COVER} className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={DOTA_COVER} alt="dota" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
                                 DOTA 2
                             </div>

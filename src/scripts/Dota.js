@@ -9,11 +9,7 @@ import ICON from '../images/dota.png';
 import {isMobile} from 'react-device-detect';
 import Rules from '../registration/dota';
 
-class Content extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
+class Dota extends React.Component {
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -88,4 +84,4 @@ class Content extends React.Component {
   }
 }
   
-export default Content;
+export default Dota;

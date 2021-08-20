@@ -10,11 +10,6 @@ import Run from '@material-ui/icons/DirectionsRun';
 
 
 class VirtualRun extends React.Component {
-
-  constructor(props){
-    super(props);
-  }
-
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
