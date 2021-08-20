@@ -1,8 +1,8 @@
 import React from 'react';
-import logoWhite from '../images/PPIMunich_White.png';
-import logoBlack from '../images/PPIMunich_Black.png';
+import logoWhite from '../images/CompressedImages/PPIMunich_White.png';
+import logoBlack from '../images/CompressedImages/PPIMunich_Black.png';
 import { Link } from "react-scroll";
-import LogoLarge from '../images/vr.png';
+import LogoLarge from '../images/CompressedImages/VR_SMALL.png';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Countdown from './Countdown'
 import EmailIcon from '@material-ui/icons/Email';

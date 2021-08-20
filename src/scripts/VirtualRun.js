@@ -5,9 +5,7 @@ import Modal from './Modal';
 // media imports for section
 import FG from '../images/CompressedImages/MASCOT_RUN.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/run'
 import Run from '@material-ui/icons/DirectionsRun';
-
 
 class VirtualRun extends React.Component {
   MouseOver(event) {
@@ -39,7 +37,7 @@ class VirtualRun extends React.Component {
               <div id="virtualrunx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Virtual Run
               </div>
-                <Modal title="Virtual Run" text={<Rules />}/>
+                <Modal title="Virtual Run" />
             </div>
           </div>
 

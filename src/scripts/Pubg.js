@@ -7,8 +7,6 @@ import {isMobile} from 'react-device-detect';
 // media imports for section
 import FG from '../images/CompressedImages/MASCOT_PUBG.png';
 import ICON from '../images/pubg.png';
-import Rules from '../registration/pubg'
-
 
 class Pubg extends React.Component {
   MouseOver(event) {
@@ -51,7 +49,6 @@ class Pubg extends React.Component {
               </div>
                 <Modal 
                 title="PUBG" 
-                text={<Rules/>} 
                 url="https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
               />
             </div>

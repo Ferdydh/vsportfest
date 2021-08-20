@@ -7,7 +7,6 @@ import Modal from './Modal';
 import FG from '../images/CompressedImages/MASCOT_CHESS.png';
 import ICON from '../images/chess.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/chess'
 
 class Chess extends React.Component {
   MouseOver(event) {
@@ -41,7 +40,6 @@ class Chess extends React.Component {
               </div>
                 <Modal 
                 title="Chess" 
-                text={<Rules />}
                 url="https://docs.google.com/forms/d/e/1FAIpQLSd3wcW6HhYWDf4_M4arSCy7ZJSpLJtG5cQHuLQJJh6LW8y_3Q/viewform"
               />
             </div>

@@ -7,8 +7,6 @@ import Modal from './Modal';
 import FG from '../images/CompressedImages/MASCOT_MOLEG.png';
 import ICON from '../images/ml.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/moleg'
-
 
 class MoLeg extends React.Component {
   MouseOver(event) {
@@ -42,7 +40,6 @@ class MoLeg extends React.Component {
               </div>
                 <Modal 
                 title="Mobile Legends" 
-                text={<Rules />}
                 url="https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
               />
             </div>
