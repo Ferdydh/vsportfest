@@ -5,8 +5,7 @@ import Modal from './Modal';
 import {isMobile} from 'react-device-detect';
 
 // media imports for section
-import FG from '../images/mascot-pubg.png';
-import BG from '../images/DOTAWALLPAPER.jpg';
+import FG from '../images/CompressedImages/MASCOT_PUBG.png';
 import ICON from '../images/pubg.png';
 import Rules from '../registration/pubg'
 
@@ -15,7 +14,6 @@ class Pubg extends React.Component {
 
   constructor(props){
     super(props);
-    console.log(BG);
   }
 
   MouseOver(event) {
@@ -31,13 +29,6 @@ class Pubg extends React.Component {
 
   render() {
     var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
-    if(this.props.background == "on"){
-      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-    } else {
-      backgroundLink = "";
-    }
-
     return (
       <section id="pubg">
         <Parallax 

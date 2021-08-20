@@ -36,7 +36,7 @@ class Sidebar extends React.Component {
 
     if (isMobile) return;
 
-    window.addEventListener('load', () => {
+    window.addEventListener('DOMContentLoaded', () => {
       const sections = [
         document.getElementById("mainwindow"),
         document.getElementById("dota"),
@@ -51,6 +51,7 @@ class Sidebar extends React.Component {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
+          // alert(id);
           if (!(id === "mainwindow" ||id === "virtualrun" || id === "dota" || id === "pubg" || id === "chess" || id === "dance" || id === "moleg" || id === "register")) {
             return;
           }

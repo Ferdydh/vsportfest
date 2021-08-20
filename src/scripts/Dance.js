@@ -4,18 +4,14 @@ import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/mascot-dance.png';
-import BG from '../images/DOTAWALLPAPER.jpg';
+import FG from '../images/CompressedImages/MASCOT_DANCE.png';
 import ICON from '../images/dance.png';
 import {isMobile} from 'react-device-detect';
 import Rules from '../registration/dance'
 
-
 class Dance extends React.Component {
-
   constructor(props){
     super(props);
-    console.log(BG);
   }
 
   MouseOver(event) {
@@ -31,12 +27,6 @@ class Dance extends React.Component {
 
   render() {
     var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
-    if(this.props.background == "on"){
-      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-    } else {
-      backgroundLink = "";
-    }
 
     return (
       <section id="dance">

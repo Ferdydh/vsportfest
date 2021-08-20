@@ -4,19 +4,14 @@ import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/mascot-dota.png';
-import BG from '../images/DOTAWALLPAPER.jpg';
+import FG from '../images/CompressedImages/MASCOT_DOTA.png';
 import ICON from '../images/dota.png';
 import {isMobile} from 'react-device-detect';
 import Rules from '../registration/dota';
 
-
-
 class Content extends React.Component {
-
   constructor(props){
     super(props);
-    console.log(BG);
   }
 
   MouseOver(event) {
@@ -32,13 +27,6 @@ class Content extends React.Component {
 
   render() {
     var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
-    if(this.props.background == "on"){
-      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-    } else {
-      backgroundLink = "";
-    }
-
     const text = `Gamers everywhere gather ‘round! 🎮 
     Don’t miss your chance to compete and have fun with players all across the world 🌎 
     so sign up now for our DOTA COMPETITION ‼️`;
@@ -65,7 +53,7 @@ class Content extends React.Component {
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
               <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
-                Dota
+                DOTA
               </div>
                 <Modal 
                   title="Dota" 
