@@ -53,15 +53,19 @@ export default class MainWindow extends React.Component {
                         Event <br></br>7 Okt - 10 Okt
                 </div>
 
-                <div className={"flex-1 flex justify-center mb-0 relative player-wrapper mx-4 " + isMobile?"h-1":"h-3/4" }>
+                <div className="flex-1 flex justify-center mr-auto">
+                <div className={!isMobile?"w-3/4":"w-screen"}>
+                    <div className={"relative mx-2 player-wrapper" }>
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
                         playing={false}
                         className="top-0 left-1/2 transform -translate-x-1/2 absolute"
-                        width= {!isMobile?"75%":"100%"}
-                        height= {!isMobile?"75%":"100%"}
+                        width= "100%"
+                        height= "100%"
                         loop="false"
                     />
+                    </div>
+                </div>
                 </div>
 
                 <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
