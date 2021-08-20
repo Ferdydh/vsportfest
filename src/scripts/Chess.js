@@ -63,11 +63,6 @@ class Chess extends React.Component {
               <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Chess
               </div>
-              <p className="text-base p-4 mt-14 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
-              bg-opacity-30 rounded hover:shadow-md">
-                  Chess players, come join us! ♟ Brace yourself ‘cause the battle of the brains is coming your way!
-                   🧠 Sign yourself up to compete in our CHESS COMPETITION ‼️
-              </p>
                 <Modal 
                 title="Chess" 
                 text={<Rules />}
@@ -83,13 +78,21 @@ class Chess extends React.Component {
           </div>
           
           {/* RIGHT SIDE OF THE DIV */}
-          <div className="h-64 md:h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
-            <div className="my-auto ml-12">
-                <Prizes
-                  first="50"
-                  second="25"
-                />
+          <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
+            <div className="md:m-10 md:mt-36">
+              <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
+                  bg-opacity-30 rounded hover:shadow-md m-10 mb-24">
+                      Chess players, come join us! ♟ Brace yourself ‘cause the battle of the brains is coming your way!
+                      🧠 Sign yourself up to compete in our CHESS COMPETITION ‼️
+              </p>
+              <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
+                  <Prizes
+                    first="50"
+                    second="25"
+                  />
+              </div>
             </div>
+            
           </div>
         </section>
 

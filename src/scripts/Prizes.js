@@ -24,7 +24,7 @@ export default class Prizes extends React.Component {
         const third = this.props.third;
 
         return (
-            <div class="outer text-white text-4xl font-sans font-extrabold transform skew-x-5 relative" >
+            <div class="text-white text-4xl font-sans font-extrabold transform skew-x-5 relative" >
                 { first && 
                     <div class="input flex flex-row p-4" style={{position: "absolute" , top: "-4rem" , left: "3rem"}}>
                         <img src={MEDAL1} className = " h-16" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
