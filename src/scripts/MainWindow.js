@@ -68,7 +68,7 @@ export default class MainWindow extends React.Component {
                 </div>
                 </div>
 
-                <div id="SelectionDiv" className="flex-wrap flex-row flex justify-center"> 
+                <div id="mainwindowx" className="flex-wrap flex-row flex justify-center"> 
                     <Link
                         to="dota"
                         smooth={true}
