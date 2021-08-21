@@ -47,8 +47,6 @@ export default class MainWindow extends React.Component {
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
-                {/* TODO: make an explanation about when the competitions are held and when the registration is open!! also pake bahasa indo harusnya*/}
-
                 <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
                     Event <br></br>7 Okt - 10 Okt
                 </div>
@@ -149,24 +147,20 @@ export default class MainWindow extends React.Component {
                     </Link>
                 </div>
                     
-                <div className="animate-pulse text-3xl p-10 pb-5 text-red-600 hover:scale-110 transform duration-700 font-bold font-mono">
+                <div className="animate-pulse text-3xl p-10 pb-5 text-yellow-300 transform duration-700 font-bold font-mono">
                     <Countdown />
                 </div>
 
                 <div className="font-mono text-2xl p-4 flex align-middle text-cyan transform duration-700 hover:scale-110 justify-center content-center">
                     <a href ={pdf} target = "_blank" rel="noreferrer">
                         <div className="mt-1">
-                            Learn more
+                            Learn more about the competitions
                             <span class="material-icons align-middle">
                                 chevron_right
                             </span>
                         </div>
                     </a>
                 </div>
-                
-                {/* <div className="flex-1 mr-auto text-3xl  md:text-5xl font-extrabold font-mono p-3 m-3 content-center justify-center rounded-lg items-center animate-pulse">
-                    <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer" className="p-3 rounded-xl"  style={{backgroundColor: "#EEC184"}}>Register now!</a>
-                </div> */}
             </section>
         );
     }
