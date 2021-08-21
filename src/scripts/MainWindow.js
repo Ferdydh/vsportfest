@@ -68,7 +68,20 @@ export default class MainWindow extends React.Component {
 
                 <div id="mainwindowx" className="flex-wrap flex-row flex justify-center"> 
                     <Link
-                        to="dota"
+                            to="dota"
+                            smooth={true}
+                            duration={500}
+                        >
+                        <div>
+                            <img src={DOTA_COVER} alt="dota" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <div className="relative text-2xl font-thin text-white">
+                                DOTA
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link
+                        to="moleg"
                         smooth={true}
                         duration={500}
                     >
@@ -82,7 +95,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        to="isi"
+                        to="pubg"
                         smooth={true}
                         duration={500}
                     >
@@ -93,22 +106,9 @@ export default class MainWindow extends React.Component {
                             </div>
                         </div>
                     </Link>
-
-                    <Link
-                        to="dota"
-                        smooth={true}
-                        duration={500}
-                    >
-                        <div>
-                            <img src={RUN_COVER} alt="virtualrun" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
-                            <div className="relative text-2xl font-thin text-white">
-                                RUN
-                            </div>
-                        </div>
-                    </Link>
                     
                     <Link
-                        to="register"
+                        to="chess"
                         smooth={true}
                         duration={500}
                     >
@@ -121,7 +121,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        to="register"
+                        to="dance"
                         smooth={true}
                         duration={500}
                     >
@@ -134,24 +134,26 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        to="register"
+                        to="run"
                         smooth={true}
                         duration={500}
                     >
                         <div>
-                            <img src={DOTA_COVER} alt="dota" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
+                            <img src={RUN_COVER} alt="virtualrun" className = "hover:scale-125 transition duration-700 transform w-40 p-4"/>
                             <div className="relative text-2xl font-thin text-white">
-                                DOTA 2
+                                RUN
                             </div>
                         </div>
                     </Link>
+
+                    
                 </div>
                     
                 <div className="animate-pulse text-3xl p-10 pb-5 text-yellow-300 transform duration-700 font-bold font-mono">
                     <Countdown />
                 </div>
 
-                <div className="font-mono text-2xl p-4 flex align-middle text-cyan transform duration-700 hover:scale-110 justify-center content-center">
+                <div className="font-mono text-2xl p-4 flex align-middle neonText text-cyan transform duration-700 hover:scale-110 justify-center content-center">
                     <a href ={pdf} target = "_blank" rel="noreferrer">
                         <div className="mt-1">
                             Learn more about the competitions
