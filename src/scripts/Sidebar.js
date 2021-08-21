@@ -47,11 +47,6 @@ class Sidebar extends React.Component {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
-          // alert(id);
-          // if (!(id === "mainwindowx" ||id === "virtualrunx" || id === "dotax" || id === "pubgx" || id === "chessx" || id === "dancex" || id === "molegx" || id === "registerx")) {
-          //   return;
-          // }
-          
           if (this.state.is_visible &&  entry.intersectionRatio > 0) {
             try {
               document.querySelector(`nav div div a[href="#${id.substring(0, id.length - 1)}"]`).parentElement.classList.add('active');

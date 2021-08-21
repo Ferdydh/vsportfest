@@ -48,7 +48,7 @@ export default class MainWindow extends React.Component {
                 </div>
 
                 <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
-                    Event <br></br>7 Okt - 10 Okt
+                    Live on <br></br>7 Oct - 10 Oct
                 </div>
 
                 <div className="flex-1 flex justify-center mb-10 mx-6">
