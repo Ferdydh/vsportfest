@@ -45,7 +45,7 @@ class Dance extends React.Component {
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
-              <div id="dancex" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+              <div id="dancex" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                 Dance
               </div>
                 <Modal 
@@ -65,7 +65,7 @@ class Dance extends React.Component {
           <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
             <div className="md:m-10 md:mt-36">
               <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
-                  bg-opacity-30 rounded hover:shadow-md m-10 mb-24">
+                  bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
                       Calling all dancers! 💃🏻
                    Don’t miss the opportunity to express your creativity and develop your talent through our MODERN DANCE COMPETITION ‼️
               </p>

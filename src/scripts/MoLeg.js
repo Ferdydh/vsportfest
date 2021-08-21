@@ -35,7 +35,7 @@ class MoLeg extends React.Component {
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
-              <div id="molegx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+              <div id="molegx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                 Mobile Legends
               </div>
                 <Modal 
@@ -52,12 +52,20 @@ class MoLeg extends React.Component {
           </div>
           
           {/* RIGHT SIDE OF THE DIV */}
-          <div className=" h-64 md:h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
-            <div className="my-auto ml-12">
-                <Prizes
-                  first="75"
-                />
+          <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
+            <div className="md:m-10 md:mt-36">
+              <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
+                  bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
+                      Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 🌎
+                      so sign up now for our MOBILE LEGENDS COMPETITION ‼️
+              </p>
+              <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
+                  <Prizes
+                    first="75"
+                  />
+              </div>
             </div>
+            
           </div>
         </section>
 

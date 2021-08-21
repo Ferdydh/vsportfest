@@ -64,9 +64,9 @@ class Pubg extends React.Component {
           <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
             <div className="md:m-10 md:mt-36">
               <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
-                  bg-opacity-30 rounded hover:shadow-md m-10 mb-24">
-                      Calling all dancers! 💃🏻
-                   Don’t miss the opportunity to express your creativity and develop your talent through our MODERN DANCE COMPETITION ‼️
+                  bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
+                    Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 
+                    🌎 so sign up now for our PUBG MOBILE COMPETITION ‼️
               </p>
               <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
                   <Prizes
