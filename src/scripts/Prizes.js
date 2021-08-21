@@ -27,21 +27,21 @@ export default class Prizes extends React.Component {
             <div class="text-white text-4xl font-sans font-extrabold transform skew-x-5 relative" >
                 { first && 
                     <div class="input flex flex-row p-4" style={{position: "absolute" , top: "-4rem" , left: "3rem"}}>
-                        <img src={MEDAL1} className = " h-16" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+                        <img src={MEDAL1} alt="first place" className = " h-16" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
                         <div className="pl-4">{first}€</div>
                     </div>
                 }
 
                 { second && 
                     <div class="input flex flex-row p-6" style={{position: "absolute" , top: "1rem" , left: "-3rem"}}>
-                        <img src={MEDAL2} className = " h-16 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+                        <img src={MEDAL2} alt="second place" className = " h-16 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
                         <div className="pl-4">{second}€</div>
                     </div>
                 }
 
                 { third && 
                     <div class="input flex flex-row p-4" style={{position: "absolute" , top: "3rem" , left: "7rem"}}>
-                        <img src={MEDAL3} className = " h-16 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
+                        <img src={MEDAL3} alt="third place" className = " h-16 " onMouseOver={this.MouseOver} onMouseOut={this.MouseOut} />
                         <div className="pl-4">{third}€</div>
                     </div>
                 }

@@ -1,6 +1,4 @@
 import React, {Component} from "react";
-import img from "../images/scrollup.svg"
-import img2 from "../images/pikachu.jpg"
 import icon from "../images/icon.svg"
 
 class ScrollToTopBtn extends Component {
@@ -15,7 +13,7 @@ class ScrollToTopBtn extends Component {
 
     componentDidMount() {
         var scrollComponent = this;
-        const height = document.getElementById('mainwindow').clientHeight -50;
+        const height = document.getElementById('mainwindow').clientHeight *2/3;
         this.setState({ windowHeight:height });    
         document.addEventListener("scroll", function(e) {
             scrollComponent.toggleVisibility();

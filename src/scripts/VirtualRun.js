@@ -1,23 +1,13 @@
 import React from 'react';
-import Prizes from './Prizes';
 import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/mascot.marathon.png';
-import BG from '../images/DOTAWALLPAPER.jpg';
+import FG from '../images/CompressedImages/MASCOT_RUN.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/run'
 import Run from '@material-ui/icons/DirectionsRun';
 
-
 class VirtualRun extends React.Component {
-
-  constructor(props){
-    super(props);
-    console.log(BG);
-  }
-
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -30,25 +20,9 @@ class VirtualRun extends React.Component {
   }
 
   render() {
-    var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
-    if(this.props.background == "on"){
-      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-    } else {
-      backgroundLink = "";
-    }
-
     return (
-      <section id="virtualrun" className="min-h-screen">
-        <Parallax 
-        bgImage={backgroundLink}
-        className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec" 
-        strength={-500} 
-        bgClassName="opacity-30 blur" 
-        blur={{ min: 2, max: 4 }}
-        contentClassName="w-full"
-        >
-        <Parallax bgImage={FG} bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
+      <section id="virtualrun" className="min-h-screen bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
+        <Parallax bgImage={FG} className="w-full" bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
          {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 " blur={{ min: 0, max: 0.3 }}>
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
@@ -60,10 +34,10 @@ class VirtualRun extends React.Component {
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
-              <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+              <div id="virtualrunx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Virtual Run
               </div>
-                <Modal title="Virtual Run" text={<Rules />}/>
+                <Modal title="Virtual Run" />
             </div>
           </div>
 
@@ -88,7 +62,6 @@ class VirtualRun extends React.Component {
           </div>
         </section>
 
-      </Parallax>
       </Parallax>
       </section>
     );

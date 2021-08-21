@@ -4,20 +4,11 @@ import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/mascot-chess.png';
-import BG from '../images/DOTAWALLPAPER.jpg';
+import FG from '../images/CompressedImages/MASCOT_CHESS.png';
 import ICON from '../images/chess.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/chess'
-
 
 class Chess extends React.Component {
-
-  constructor(props){
-    super(props);
-    console.log(BG);
-  }
-
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -30,29 +21,13 @@ class Chess extends React.Component {
   }
 
   render() {
-    var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
-    if(this.props.background == "on"){
-      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-    } else {
-      backgroundLink = "";
-    }
-
     return (
-      <section id="chess">
-        <Parallax 
-        bgImage={backgroundLink}
-        className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec" 
-        strength={-500} 
-        bgClassName="opacity-30 blur" 
-        blur={{ min: 2, max: 4 }}
-        contentClassName="w-full"
-        >
-        <Parallax bgImage={FG} bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
+      <section id="chess" className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
+        <Parallax bgImage={FG} className="w-full" bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
          {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 " blur={{ min: 0, max: 0.3 }}>
         <div className="w-full p-2 mb-30">
-          <div className="float-right h-20 w-20 p-4 flex align-middle align-middle content-center justify-center">
-            <img src={ICON} className="object-contain p-1" />
+          <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
+            <img src={ICON} alt="" className="object-contain p-1" />
           </div>
         </div>
         <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
@@ -60,12 +35,11 @@ class Chess extends React.Component {
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
-              <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+              <div id="chessx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Chess
               </div>
                 <Modal 
                 title="Chess" 
-                text={<Rules />}
                 url="https://docs.google.com/forms/d/e/1FAIpQLSd3wcW6HhYWDf4_M4arSCy7ZJSpLJtG5cQHuLQJJh6LW8y_3Q/viewform"
               />
             </div>
@@ -96,7 +70,6 @@ class Chess extends React.Component {
           </div>
         </section>
 
-      </Parallax>
       </Parallax>
       </section>
     );

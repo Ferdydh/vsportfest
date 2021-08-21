@@ -4,20 +4,11 @@ import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/mascot-dance.png';
-import BG from '../images/DOTAWALLPAPER.jpg';
+import FG from '../images/CompressedImages/MASCOT_DANCE.png';
 import ICON from '../images/dance.png';
 import {isMobile} from 'react-device-detect';
-import Rules from '../registration/dance'
-
 
 class Dance extends React.Component {
-
-  constructor(props){
-    super(props);
-    console.log(BG);
-  }
-
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -31,12 +22,6 @@ class Dance extends React.Component {
 
   render() {
     var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
-    if(this.props.background == "on"){
-      backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-    } else {
-      backgroundLink = "";
-    }
 
     return (
       <section id="dance">
@@ -52,7 +37,7 @@ class Dance extends React.Component {
          {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 " blur={{ min: 0, max: 0.3 }}>
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
-            <img src={ICON} className="object-contain p-1" />
+            <img src={ICON} alt="" className="object-contain p-1" />
           </div>
         </div>
         <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
@@ -60,12 +45,11 @@ class Dance extends React.Component {
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
-              <div className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+              <div id="dancex" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                 Dance
               </div>
                 <Modal 
                 title="Dance" 
-                text={<Rules />}
                 url="https://docs.google.com/forms/d/e/1FAIpQLSdkBAeDrxeLgLYnJ7Lr6wevKaGH87U1VqUimbpVfw89DGyUxw/viewform"
               />
             </div>

@@ -12,10 +12,6 @@ import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import {isMobile} from 'react-device-detect';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 class Sidebar extends React.Component {
 
   constructor(props) {
@@ -28,7 +24,7 @@ class Sidebar extends React.Component {
 
   componentDidMount() {
     var scrollComponent = this;
-    const height = document.getElementById('mainwindow').clientHeight;
+    const height = document.getElementById('mainwindow').clientHeight *2/3;
     this.setState({ sidebarHeight:height });    
     document.addEventListener("scroll", function (e) {
       scrollComponent.toggleVisibility();
@@ -36,35 +32,31 @@ class Sidebar extends React.Component {
 
     if (isMobile) return;
 
-    window.addEventListener('load', () => {
+    window.addEventListener('DOMContentLoaded', () => {
       const sections = [
-        document.getElementById("mainwindow"),
-        document.getElementById("dota"),
-        document.getElementById("moleg"),
-        document.getElementById("pubg"),
-        document.getElementById("chess"),
-        document.getElementById("dance"),
-        document.getElementById("virtualrun"),
-        document.getElementById("register"),
+        document.getElementById("mainwindowx"),
+        document.getElementById("dotax"),
+        document.getElementById("molegx"),
+        document.getElementById("pubgx"),
+        document.getElementById("chessx"),
+        document.getElementById("dancex"),
+        document.getElementById("virtualrunx"),
+        document.getElementById("registerx"),
       ]
       
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.getAttribute('id');
-          if (!(id === "mainwindow" ||id === "virtualrun" || id === "dota" || id === "pubg" || id === "chess" || id === "dance" || id === "moleg" || id === "register")) {
-            return;
-          }
-          
           if (this.state.is_visible &&  entry.intersectionRatio > 0) {
             try {
-              document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.add('active');
+              document.querySelector(`nav div div a[href="#${id.substring(0, id.length - 1)}"]`).parentElement.classList.add('active');
             } catch(e){
               // alert(e);
               // alert(id);
             }
           } else {
             try {
-              document.querySelector(`nav div div a[href="#${id}"]`).parentElement.classList.remove('active');
+              document.querySelector(`nav div div a[href="#${id.substring(0, id.length - 1)}"]`).parentElement.classList.remove('active');
             } catch(e){
               // alert(e);
               // alert(id);
