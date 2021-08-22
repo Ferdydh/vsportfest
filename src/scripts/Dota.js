@@ -51,6 +51,7 @@ class Dota extends React.Component {
             {/* LEFT SIDE OF THE DIV */}
             <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
               <div className="realtive m-10 md:m-auto font-bold text-7xl">
+                
                 <div className="absolute transform -translate-y-20">
                   <img src={IRING} style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}}></img>
                 </div>
