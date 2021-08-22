@@ -200,13 +200,36 @@ html {
 }
 
 .spacer {
-  aspect-ratio: 900 / 300;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.spacerAspect {
+  aspect-ratio: 900 / 300;
+}
+
 .wave1 {
   background-image: url('./images/waves/wave1.svg');
+}
+
+.wave2 {
+  background-image: url('./images/waves/wave1.svg');
+}
+
+@media (max-width: 992px) {
+  .spacerAspect {
+    aspect-ratio: 900 / 450;
+  }
+}
+
+@media (max-width: 450px) {
+  .spacerAspect {
+    aspect-ratio: 150 / 200;
+  }
+
+  .wave1 {
+    background-image: url('./images/waves/wave1v.svg');
+  }
 }
