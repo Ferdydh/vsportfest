@@ -21,15 +21,13 @@ class VirtualRun extends React.Component {
 
   render() {
     return (
-      <section id="virtualrun" className="min-h-screen bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
-        <Parallax bgImage={FG} className="w-full" bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
-         {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 " blur={{ min: 0, max: 0.3 }}>
-        <div className="w-full p-2 mb-30">
+      <section id="virtualrun" className="min-h-screen container bg-purple-900 blur flex align-middle content-center justify-center flex-col w-full">
+        <div className=" min-w-full p-2 mb-30 h-20">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
             <Run fontSize="large"/>
           </div>
         </div>
-        <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
+        <section className="h-screen md:py-20 flex flex-col float-left md:flex-row md:ml-20">
 
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
@@ -61,8 +59,6 @@ class VirtualRun extends React.Component {
             </div>
           </div>
         </section>
-
-      </Parallax>
       </section>
     );
   }

@@ -35,16 +35,17 @@ code {
 
 /* for sidebar */
 .sidebar {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top*/
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden; /* Disable horizontal scroll */
   display: flex;
   flex-direction: column;
   justify-content: center;
   vertical-align: middle;
+  width: clamp(60px, 5%, 100px);
 }
 
 .sidebar div {
@@ -54,13 +55,6 @@ code {
 .sidebar div div.active {
   background-color: rgb(226, 71, 152);
   font-weight: 500;
-  backdrop-filter: blur(20px);
-  /* opacity: 75%; */
-}
-
-.sidebar img {
-  width: 24px;
-  height: 24px;
 }
 
 .mobilesidebar {
@@ -72,6 +66,8 @@ code {
   overflow-x: hidden; /* Disable horizontal scroll */
   display: flex;
   flex-direction: column;
+  /* w-1/6 */
+  width: clamp(30px, 15%, 100px);
 }
 
 html {
@@ -83,20 +79,9 @@ html {
   display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
-/* .sidebar a:hover {
-  color: #f1f1f1;
-} */
-
 /* Style page content */
 .main {
   padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 .scroll-to-top {
@@ -112,7 +97,6 @@ html {
 }
 
 /* +++++++++++++++++++MODAL STYLING++++++++++++++++ */
- 
 
 .modal {
   font-size: 12px;
@@ -179,6 +163,15 @@ html {
 
 }
 
+.registerSection {
+  background-image: url('./images/CompressedImages/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}
+
 .neonText {
   animation: flicker 3.5s infinite alternate;
   color: #fff;
@@ -204,4 +197,16 @@ html {
   20%, 24%, 55% {        
       text-shadow: none;
   }    
+}
+
+.spacer {
+  aspect-ratio: 900 / 300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave1 {
+  background-image: url('./images/waves/wave1.svg');
 }

@@ -15,7 +15,6 @@ function App() {
   return (
     <main className="App">
       <MainWindow />
-      {/* The topmost slide gets extra padding due to the first slide*/}
 
       <Dota id="dota" sectionName="Dota" parallaxStrength="300" background="on" />
 
@@ -28,8 +27,6 @@ function App() {
       <Dance id="dance" sectionName="Dance" parallaxStrength="300" background="on"></Dance>
 
       <VirtualRun id="virtualrun" sectionName="Virtual Run" parallaxStrength="-500" background="off"></VirtualRun>
-
-      {/* */}
 
       <Register id="register" />
       <Sidebar />
