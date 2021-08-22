@@ -179,6 +179,15 @@ html {
 
 }
 
+.registerSection {
+  background-image: url('./images/CompressedImages/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}
+
 .neonText {
   animation: flicker 3.5s infinite alternate;
   color: #fff;
@@ -204,4 +213,16 @@ html {
   20%, 24%, 55% {        
       text-shadow: none;
   }    
+}
+
+.spacer {
+  aspect-ratio: 900 / 300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave1 {
+  background-image: url('./images/waves/wave1.svg');
 }
