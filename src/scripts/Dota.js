@@ -28,7 +28,7 @@ class Dota extends React.Component {
     return (
       <div>
         <div className="spacer spacerAspect wave1"></div>
-        <section id="dota" className="container min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
+        <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
             <div className="min-h-full p-2 mb-30 h-20 w-screen">
               <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
                 <img src={ICON} className="object-contain p-1" alt="icon"/>
