@@ -10,7 +10,7 @@ import BG from '../images/CompressedImages/bg1.jpg'
 class Register extends React.Component {
     render() {
       return (
-          <section className={"h-auto md:h-screen flex flex-auto relative justify-center content-center registerSection p-10"} id={this.props.id}>
+          <section className="h-auto md:h-screen flex flex-auto relative justify-center content-center registerSection p-10" id={this.props.id}>
             <div className="flex flex-wrap container justify-center mt-10 content-center sm:mt-30">
               <div className="transform -skew-y-6 mr-4 max-w-screen-md">
                 <div className="text-5xl font-extrabold font-mono p-3 m-3 rounded-lg justify-center items-center animate-bounce" style={{backgroundColor: "#EEC184"}}>

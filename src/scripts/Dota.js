@@ -31,26 +31,17 @@ class Dota extends React.Component {
     return (
       <div>
         <div className="spacer spacerAspect wave1"></div>
-        <section id="dota">
-          <Parallax 
-          bgImage={backgroundLink}
-          className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" 
-          strength={-500} 
-          bgClassName="opacity-30 blur" 
-          blur={{ min: 2, max: 4 }}
-          contentClassName="w-full"
-          >
-          <Parallax bgImage={FG} bgImageStyle={isMobile ? {position: "absolute", marginTop: "15em"} : {}} strength={300} bgClassName="opacity-80" blur={{ min: 0, max: 0.3 }}>
-          <div className="w-full p-2 mb-30">
-            <div className="float-right h-20 w-20 p-4 flex align-middle">
+        <section id="dota" className="min-h-screen blur flex align-middle flex-col w-screen"
+        style={{backgroundColor: "#411582"}}>
+          <div className="min-h-full p-2 mb-30 h-20 w-screen">
+            <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
               <img src={ICON} className="object-contain p-1" alt="icon"/>
             </div>
-          </div>
-          <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
+            <section className="min-h-screen sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
 
             {/* LEFT SIDE OF THE DIV */}
-            <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
-              <div className="realtive m-10 md:m-auto font-bold text-7xl">
+            <div className="sm:h-full sm:w-1/2 flex flex-col" id="leftside">
+              <div className="m-10 md:m-auto font-bold text-7xl">
                 <div className="absolute transform -translate-y-20">
                   <img src={IRING} style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}}></img>
                 </div>
@@ -68,15 +59,8 @@ class Dota extends React.Component {
                   />
               </div>
             </div>
-
-            {/* LINE THROUGH MIDDLE OF COMPONENT */}
-            <div className="flex select-none mr-10 pl-10" id="columnspace">
-              <div className=" bg-white w-1 h-full transform skew-x-25">
-              </div>
-            </div>
-            
             {/* RIGHT SIDE OF THE DIV */}
-            <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
+            <div className="h-1/2 md:h-full sm:w-1/2 flex flex-col" id="rightside">
               <div className="md:m-10 md:mt-36">
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
@@ -88,13 +72,10 @@ class Dota extends React.Component {
                     />
                 </div>
               </div>
-              
             </div>
-          </section>
-
-        </Parallax>
-        </Parallax>
-      </section>  
+           </section>
+          </div>
+        </section>  
       </div>
     );
   }
