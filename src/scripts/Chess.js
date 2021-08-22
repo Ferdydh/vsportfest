@@ -23,8 +23,7 @@ class Chess extends React.Component {
   render() {
     return (
       <section id="chess" className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
-        <Parallax bgImage={FG} className="w-full" bgImageStyle={isMobile? {position: "absolute", marginTop: "15em"} :
-         {objectFit: "contain", maxHeight: "95%", maxWidth:"90%", marginTop: "5em"}} strength={300} bgClassName="opacity-80 " blur={{ min: 0, max: 0.3 }}>
+        <div className="w-full">
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
             <img src={ICON} alt="" className="object-contain p-1" />
@@ -70,7 +69,7 @@ class Chess extends React.Component {
           </div>
         </section>
 
-      </Parallax>
+      </div>
       </section>
     );
   }
