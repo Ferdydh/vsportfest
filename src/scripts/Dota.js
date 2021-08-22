@@ -1,6 +1,7 @@
 import React from 'react';
 import Prizes from './Prizes';
 import Modal from './Modal';
+import BG from '../images/chessbg.jpg'
 
 // media imports for section
 import ICON from '../images/dota.png';
@@ -27,7 +28,7 @@ class Dota extends React.Component {
 
     return (
       <div>
-        <div className="spacer spacerAspect wave1"></div>
+        <div className="spacer spacerAspect wave1 relative"></div>
         <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
             <div className="min-h-full p-2 mb-30 h-20 w-screen">
               <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
@@ -40,11 +41,11 @@ class Dota extends React.Component {
             <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
               <div className="mt-20 sm:m-10 md:m-auto font-bold text-7xl">
                 <div className="absolute transform -translate-y-20">
-                  <img src={IRING} style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}}></img>
+                  <img src={IRING} style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}} className="h-80"></img>
                 </div>
 
                 <div className="absolute transform -translate-y-20">
-                  <img src={ORING} style={{"animation":"spin 7s linear infinite","animation-direction": "reverse"}}></img>
+                  <img src={ORING} style={{"animation":"spin 7s linear infinite","animation-direction": "reverse"}} className="h-80"></img>
                 </div>
 
                 <div id="dotax" className="neonText transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
@@ -59,17 +60,24 @@ class Dota extends React.Component {
             {/* RIGHT SIDE OF THE DIV */}
             <div className="h-1/2 sm:h-full sm:w-1/2 flex flex-col" id="rightside">
               <div className="md:m-10 md:mt-36">
-                <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
+                <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
                       {text}
-                    <br/>
+
+                    <div className="font-bold text-3xl transform skew-x-12 ">
+                      <br/>
+                      <div className="bg-white h-px ">
+
+                      </div>
                     <br/>
                     #1 : 70% dari Prize Pool + Gold Medal
                     <br/>
                     #2 : 30% dari Prize Pool
+                    </div>
                 </p>
               </div>
             </div>
+
           </section>
       </section>  
     </div>
