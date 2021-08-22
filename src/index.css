@@ -173,7 +173,7 @@ html {
 }
 
 .neonText {
-  /* animation: flicker 3.5s infinite alternate; */
+  animation: flicker 3.5s infinite alternate;
   color: #fff;
 }
 
