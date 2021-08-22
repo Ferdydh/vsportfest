@@ -49,15 +49,17 @@ class Dota extends React.Component {
           {/* LEFT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="realtive m-10 md:m-auto font-bold text-7xl">
-              <div className="absolute transform -translate-y-20">
-                <img src={IRING} style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}}></img>
-              </div>
 
-              <div className="absolute transform -translate-y-20">
-                <img src={ORING} style={{"animation":"spin 7s linear infinite","animation-direction": "reverse"}}></img>
-              </div>
+                  <div id="RINGS">
+                    <div className="absolute transform -translate-y-20">
+                      <img src={IRING} style={{ "animation": "spin 5s linear infinite", "animation-direction": "normal" }}></img>
+                    </div>
 
-              <div id="dotax" className="neonText transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+                    <div className="absolute transform -translate-y-20">
+                      <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }}></img>
+                    </div>
+                  </div>
+              <div id="dotax" className="neonText transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none" >
                 DOTA
               </div>
                 <Modal 
