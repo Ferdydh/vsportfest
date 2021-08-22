@@ -1,10 +1,8 @@
 import React from 'react';
 import Prizes from './Prizes';
-import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/CompressedImages/MASCOT_DOTA.png';
 import ICON from '../images/dota.png';
 import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
@@ -23,25 +21,24 @@ class Dota extends React.Component {
   }
 
   render() {
-    var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
     const text = `Gamers everywhere gather ‘round! 🎮 
     Don’t miss your chance to compete and have fun with players all across the world 🌎 
     so sign up now for our DOTA COMPETITION ‼️`;
 
     return (
       <div>
-        <div className="spacer spacerAspect wave1">
-        <section id="dota" className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
-          <div class="w-full">
-          <div className="w-full p-2 mb-30">
-            <div className="float-right h-20 w-20 p-4 flex align-middle">
-              <img src={ICON} className="object-contain p-1" alt="icon"/>
+        <div className="spacer spacerAspect wave1"></div>
+        <section id="dota" className="container min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
+            <div className="min-h-full p-2 mb-30 h-20 w-screen">
+              <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
+                <img src={ICON} className="object-contain p-1" alt="icon"/>
+              </div>
             </div>
             <section className="min-h-screen sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
 
             {/* LEFT SIDE OF THE DIV */}
-            <div className="sm:h-full sm:w-1/2 flex flex-col" id="leftside">
-              <div className="m-10 md:m-auto font-bold text-7xl">
+            <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
+              <div className="mt-20 sm:m-10 md:m-auto font-bold text-7xl">
                 <div className="absolute transform -translate-y-20">
                   <img src={IRING} style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}}></img>
                 </div>
@@ -60,19 +57,21 @@ class Dota extends React.Component {
               </div>
             </div>
             {/* RIGHT SIDE OF THE DIV */}
-            <div className="h-1/2 md:h-full sm:w-1/2 flex flex-col" id="rightside">
+            <div className="h-1/2 sm:h-full sm:w-1/2 flex flex-col" id="rightside">
               <div className="md:m-10 md:mt-36">
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
-                        Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 🌎 so sign up now for our DOTA COMPETITION‼️
+                      {text}
+                    <br/>
+                    <br/>
+                    #1 : 70% dari Prize Pool + Gold Medal
+                    <br/>
+                    #2 : 30% dari Prize Pool
                 </p>
               </div>
             </div>
           </section>
-        </div>
-        </div>
       </section>  
-      </div>
     </div>
     );
   }
