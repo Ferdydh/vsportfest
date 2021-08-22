@@ -180,7 +180,9 @@ html {
 /* Flickering animation */
 @keyframes flicker {
     
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  /* 0%, 18%, 22%, 25%, 53%, 57%, 100% { */
+  0%, 22%, 53%, 100% {
+
 
       text-shadow:
       0 0 4px #16B29E,
