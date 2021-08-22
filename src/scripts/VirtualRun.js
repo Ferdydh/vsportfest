@@ -21,7 +21,7 @@ class VirtualRun extends React.Component {
 
   render() {
     return (
-      <section id="virtualrun" className="min-h-screen container bg-purple-900 blur flex align-middle content-center justify-center flex-col w-full">
+      <section id="virtualrun" className="min-h-screen container bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen">
         <div className=" min-w-full p-2 mb-30 h-20">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
             <Run fontSize="large"/>
@@ -47,7 +47,7 @@ class VirtualRun extends React.Component {
           
           {/* RIGHT SIDE OF THE DIV */}
           <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
-            <div className="my-auto md:ml-12">
+            <div className="my-auto sm:ml-12">
               <p className="text-base p-4 mt-5 md:mt-14 mb-10 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
               bg-opacity-30 rounded hover:shadow-md glow-cyan-xl">
                   Calling out all runners all over the world! 🏃🏻‍♂️ Are you craving to get that amazing runner’s high? 

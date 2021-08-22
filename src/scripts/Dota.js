@@ -30,11 +30,11 @@ class Dota extends React.Component {
 
     return (
       <div>
-        <div className="spacer wave1"></div>
+        <div className="spacer spacerAspect wave1"></div>
         <section id="dota">
           <Parallax 
           bgImage={backgroundLink}
-          className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" 
+          className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" 
           strength={-500} 
           bgClassName="opacity-30 blur" 
           blur={{ min: 2, max: 4 }}
