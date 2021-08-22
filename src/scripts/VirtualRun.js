@@ -21,16 +21,16 @@ class VirtualRun extends React.Component {
 
   render() {
     return (
-      <section id="virtualrun" className="min-h-screen container bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen">
-        <div className=" min-w-full p-2 mb-30 h-20">
+      <section id="virtualrun" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen">
+        <div className="min-h-full p-2 mb-30 h-20 w-screen">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
             <Run fontSize="large"/>
           </div>
         </div>
-        <section className="h-screen md:py-20 flex flex-col float-left md:flex-row md:ml-20">
+        <section className="min-h-screen sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
 
           {/* LEFT SIDE OF THE DIV */}
-          <div className="md:h-full sm:w-1/2 flex flex-col" id="leftside">
+          <div className="sm:h-full sm:w-1/2 flex flex-col" id="leftside">
             <div className="m-10 md:m-auto font-bold text-7xl">
               <div id="virtualrunx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                 Virtual Run
@@ -38,17 +38,11 @@ class VirtualRun extends React.Component {
                 <Modal title="Virtual Run" />
             </div>
           </div>
-
-          {/* LINE THROUGH MIDDLE OF COMPONENT */}
-          <div className="flex select-none mr-10 pl-10 ml-16" id="columnspace">
-            <div className=" bg-white w-1 h-full transform skew-x-25">
-            </div>
-          </div>
           
           {/* RIGHT SIDE OF THE DIV */}
-          <div className="h-full sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
+          <div className="h-1/2 sm:w-1/2 flex-col flex select-none mx-10" id="rightside">
             <div className="my-auto sm:ml-12">
-              <p className="text-base p-4 mt-5 md:mt-14 mb-10 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
+              <p className="text-base p-4 mt-5 sm:mt-14 mb-10 sm:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
               bg-opacity-30 rounded hover:shadow-md glow-cyan-xl">
                   Calling out all runners all over the world! 🏃🏻‍♂️ Are you craving to get that amazing runner’s high? 
                   Well here is your chance! Come register yourself for our VIRTUAL RUN COMPETITION ‼️ (OPEN FOR PUBLIC AROUND THE WORLD)
