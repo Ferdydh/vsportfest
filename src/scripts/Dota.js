@@ -31,16 +31,8 @@ class Dota extends React.Component {
     return (
       <div>
         <div className="spacer spacerAspect wave1"></div>
-        <section id="dota">
-          <Parallax 
-          bgImage={backgroundLink}
-          className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" 
-          strength={-500} 
-          bgClassName="opacity-30 blur" 
-          blur={{ min: 2, max: 4 }}
-          contentClassName="w-full"
-          >
-          <Parallax bgImage={FG} bgImageStyle={isMobile ? {position: "absolute", marginTop: "15em"} : {}} strength={300} bgClassName="opacity-80" blur={{ min: 0, max: 0.3 }}>
+        <section id="dota" className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
+          <div class="w-full">
           <div className="w-full p-2 mb-30">
             <div className="float-right h-20 w-20 p-4 flex align-middle">
               <img src={ICON} className="object-contain p-1" alt="icon"/>
@@ -82,18 +74,10 @@ class Dota extends React.Component {
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
                         Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 🌎 so sign up now for our DOTA COMPETITION‼️
                 </p>
-                <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
-                    <Prizes
-                      first="80"
-                    />
-                </div>
               </div>
-              
             </div>
           </section>
-
-        </Parallax>
-        </Parallax>
+        </div>
       </section>  
       </div>
     );
