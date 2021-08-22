@@ -48,7 +48,7 @@ class Dota extends React.Component {
                   <img src={ORING} style={{"animation":"spin 7s linear infinite","animation-direction": "reverse"}} className="h-80"></img>
                 </div>
 
-                <div id="dotax" className="neonText transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
+                <div id="dotax" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-black select-none" style={{"text-shadow": "0 0 150px #6ADDF4"}}>
                   DOTA
                 </div>
                   <Modal 

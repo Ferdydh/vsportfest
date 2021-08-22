@@ -47,7 +47,7 @@ export default class MainWindow extends React.Component {
                     <img src={LogoLarge} alt="Vsportfest Logo" className="w-3/4 h-3/4 md:w-1/3 sm:w-1/2" />
                 </div>
 
-                <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic">
+                <div className="my-16 flex-1 flex justify-center mr-auto text-3xl text-white font-futuristic" style={{"text-shadow": "0 0 50px #6ADDF4"}}>
                     Live on <br></br>7 Oct - 10 Oct
                 </div>
 

@@ -173,14 +173,14 @@ html {
 }
 
 .neonText {
-  /* animation: flicker 3.5s infinite alternate; */
-  color: #fff;
+  /* animation: flicker 3.5s infinite alternate;
+  color: #fff; */
 }
 
 /* Flickering animation */
 @keyframes flicker {
     
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  /* 0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
       text-shadow:
       0 0 4px #16B29E,
@@ -196,7 +196,11 @@ html {
   
   20%, 24%, 55% {        
       text-shadow: none;
-  }    
+  }     */
+  0%, 100%{
+    text-shadow: 0 0 150px #6ADDF4;
+  }
+  
 }
 
 .spacer {
