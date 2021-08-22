@@ -23,7 +23,7 @@ class Chess extends React.Component {
 
   render() {
     return (
-      <section id="chess" className="bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
+      <section id="chess" className="bg-pink-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
         <div className="w-full">
           <div className="w-full p-2 mb-30">
             <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">

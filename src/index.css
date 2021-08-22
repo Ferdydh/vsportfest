@@ -178,6 +178,10 @@ html {
   /* , 0 10px 10px #5353c7; */
 }
 
+.chessBackground {
+  background-color: #b43484;
+}
+
 .flickeringText{
   animation: flicker 1.5s infinite alternate;
   color: #fff;
