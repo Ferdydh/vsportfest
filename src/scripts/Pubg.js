@@ -24,7 +24,7 @@ class Pubg extends React.Component {
     var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
     return (
       <section id="pubg">
-        <div className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
+        <div className=" bg-pink-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
         <div className="w-full">
         {/* <Parallax 
         bgImage={backgroundLink}
