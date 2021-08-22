@@ -1,16 +1,18 @@
 import React from 'react';
-import Dota from '../images/dota.png'
-import MoLeg from '../images/ml.png'
-import Pubg from '../images/pubg.png'
-import Chess from '../images/chess.png'
-import Dance from '../images/dance.png'
-import Run from '@material-ui/icons/DirectionsRun';
 import Home from '@material-ui/icons/Home';
 import Register from '../images/register.png'
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import {isMobile} from 'react-device-detect';
+
+import CHESS_COVER from '../images/CompressedImages/CHESSSMALL.png';
+import DANCE_COVER from '../images/CompressedImages/DANCESMALL.png'
+import DOTA_COVER from '../images/CompressedImages/DOTASMALL.png'
+import MOLEG_COVER from '../images/CompressedImages/MOLEGSMALL.png'
+import PUBG_COVER from '../images/CompressedImages/PUBGSMALL.png'
+import RUN_COVER from '../images/CompressedImages/RUNSMALL.png'
+
 
 class Sidebar extends React.Component {
 
@@ -34,14 +36,12 @@ class Sidebar extends React.Component {
 
     window.addEventListener('DOMContentLoaded', () => {
       const sections = [
-        document.getElementById("mainwindowx"),
         document.getElementById("dotax"),
         document.getElementById("molegx"),
         document.getElementById("pubgx"),
         document.getElementById("chessx"),
         document.getElementById("dancex"),
         document.getElementById("virtualrunx"),
-        document.getElementById("registerx"),
       ]
       
       const observer = new IntersectionObserver(entries => {
@@ -112,60 +112,47 @@ class Sidebar extends React.Component {
           >
             <Menu.Items className="absolute mt-2 h-auto w-full"> 
               <Menu.Item>
-                <div class="h-10 bg-gray-400 bg-opacity-40 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto items-center">
-                  <a href="#mainwindow">
-                    <Home color="black"/>
-                  </a>
-                </div>              
-              </Menu.Item>
-              <Menu.Item>
-                <div class="h-10 bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto items-center">
+                <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
+                  {/* ring-2 ring-offset-2 ring-offset-gray-100 ring-indigo-500 */}
                   <a href="#dota">
-                    <img src={Dota} alt="dota" className="w-6 h-6"></img>
+                    <img src={DOTA_COVER} alt="DOTA"/>
                   </a>
                 </div>
               </Menu.Item>
               <Menu.Item>
-                <div class="h-10 bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto items-center">
+                <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                   <a href="#moleg">
-                    <img src={MoLeg} alt="Mobile Legends" className="w-6 h-4"></img>
+                    <img src={MOLEG_COVER} alt="Mobile Legends"></img>
                   </a>
                 </div>
               </Menu.Item>
               <Menu.Item>
-                <div class="h-10 items-center bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                   <a href="#pubg">
-                    <img src={Pubg} alt="PUBG" className="w-6 h-4"></img>
+                    <img src={PUBG_COVER} alt="PUBG"></img>
                   </a>
                 </div>
               </Menu.Item>
               <Menu.Item>
-                <div class="h-10 items-center bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                   <a href="#chess">
-                    <img src={Chess} alt="Chess" className="w-4 h-6"></img>
+                    <img src={CHESS_COVER} alt="Chess"></img>
                   </a>
                 </div>
               </Menu.Item>
               <Menu.Item>
-                <div class="h-10 items-center bg-gray-400 bg-opacity-40 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                   <a href="#dance">
-                    <img src={Dance} alt="Dance" className="w-4 h-6"></img>
+                    <img src={DANCE_COVER} alt="Dance"></img>
                   </a>
                 </div>
               </Menu.Item>
               <Menu.Item>
-              <div class="h-10 items-center bg-gray-400 bg-opacity-40  font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
+                <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 <a href="#virtualrun">
-                  <Run color="black" />
+                  <img src={RUN_COVER} alt="Virtual Run"/>
                 </a>
               </div>
-              </Menu.Item>
-              <Menu.Item>
-                <div class="h-10 items-center bg-gray-400 bg-opacity-40 font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4 flex-1 flex justify-center mr-auto">
-                  <a href="#register">
-                    <img src={Register} alt="Register" className="w-6 h-6"></img>
-                  </a>
-                </div>
               </Menu.Item>
             </Menu.Items>
           </Transition>
@@ -175,46 +162,37 @@ class Sidebar extends React.Component {
 
 {/* ////////////////////////////// */}
         {!isMobile && is_visible && (
-          <nav class="sidebar pl-3">
+          <nav class="sidebar ml-3 h-screen">
             <div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 font-bold py-2 px-2 rounded-full backdrop-filter-blur mb-4">
-                <a href="#mainwindow">
-                  <Home color="black" />
-                </a>
-              </div>
-              <div class=" bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
+              <div class="bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
+                {/* ring-2 ring-offset-2 ring-offset-gray-100 ring-indigo-500 */}
                 <a href="#dota">
-                  <img src={Dota} alt="dota"></img>
+                  <img src={DOTA_COVER} alt="DOTA"/>
                 </a>
               </div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
+              <div class="bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 <a href="#moleg">
-                  <img src={MoLeg} alt="Mobile Legends" className="object-contain w-24 h-16"></img>
+                  <img src={MOLEG_COVER} alt="Mobile Legends"></img>
                 </a>
               </div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
+              <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 <a href="#pubg">
-                  <img src={Pubg} alt="PUBG" className="object-contain w-24 h-16"></img>
+                  <img src={PUBG_COVER} alt="PUBG"></img>
                 </a>
               </div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
+              <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 <a href="#chess">
-                  <img src={Chess} alt="Chess" className="object-contain w-24 h-16"></img>
+                  <img src={CHESS_COVER} alt="Chess"></img>
                 </a>
               </div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200 text-white font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
+              <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 <a href="#dance">
-                  <img src={Dance} alt="Dance" className="object-contain w-24 h-16"></img>
+                  <img src={DANCE_COVER} alt="Dance"></img>
                 </a>
               </div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200  font-bold py-2 px-4 rounded-full backdrop-filter-blur mb-4">
+              <div class="h-auto w-auto bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 <a href="#virtualrun">
-                  <Run color="black" />
-                </a>
-              </div>
-              <div class="bg-gray-400 bg-opacity-40 hover:bg-gray-200  font-bold py-2 px-4 mb-2 rounded-full backdrop-filter-blur mb-4">
-                <a href="#register">
-                  <img src={Register} alt="Register" className="object-contain w-24 h-16"></img>
+                  <img src={RUN_COVER} alt="Virtual Run"/>
                 </a>
               </div>
             </div>
