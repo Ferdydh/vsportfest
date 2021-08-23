@@ -48,10 +48,6 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
       }
     },
-    fontFamily: {
-      'ferdy': ['ui-serif'],
-      'evan': ['ui-monospace'],
-     }
   },
   variants: {},
   plugins: [

@@ -44,7 +44,7 @@ class Template extends React.Component {
 
         <div className=" h-2/4 w-screen flex flex-row">
 
-          <div className="w-full bg-green-500 ">
+          <div className="w-full z-10">
             <div className="flex-1 flex justify-end mr-auto">
               <RegistrationButton 
                 title="Dance" 
@@ -52,10 +52,10 @@ class Template extends React.Component {
               />
             </div>
 
-            <div className="h-1/2 sm:h-full flex flex-col">
-              <div className="">
+            <div className="h-1/2 sm:h-full flex flex-col z-10">
+              <div className="z-10">
                 <p className="text-base p-4 md:text-lg whitespace-normal text-white text-center font-sans bg-gray-300 
-                    bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
+                    bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl z-20">
                       Registration Fee: 69 €
                 </p>
               </div>
@@ -69,6 +69,14 @@ class Template extends React.Component {
             <div className="flex flex-row align-middle justify-center z-10">
             <img src={MASCOT} className="h-40"></img>
             </div>
+            <div>
+            <div className="absolute w-1/3 text-white z-20 text-2xl font-thin font-sans select-none">
+            `Gamers everywhere gather ‘round! 🎮 
+    Don’t miss your chance to compete and have fun with players all across the world 🌎 
+    so sign up now for our DOTA COMPETITION ‼️
+            </div>
+            </div>
+
           </div>
 
           <div className="w-full bg-black ">
