@@ -34,9 +34,7 @@ class Dota extends React.Component {
             <img src={GP} className="object-contain h-1/2 w-1/2"></img>
           </div>
           <div className="spacer spacerAspect wave1 flip relative flex justify-center content-center align-middle" />
-
         </div>
-
 
         <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
             <div className="min-h-full p-2 mb-30 h-20 w-screen">
