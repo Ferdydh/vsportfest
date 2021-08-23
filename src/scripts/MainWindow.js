@@ -16,8 +16,6 @@ import RUN_COVER from '../images/CompressedImages/RUNSMALL.png'
 import {isMobile} from 'react-device-detect';
 import ReactPlayer from "react-player";
 import pdf from "../Guideline.pdf"
-import Template from "./Template"
-
 
 import '../index.css' 
 
