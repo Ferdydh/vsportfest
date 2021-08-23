@@ -133,7 +133,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        to="run"
+                        to="virtualrun"
                         smooth={true}
                         duration={500}
                     >
