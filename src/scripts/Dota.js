@@ -10,16 +10,6 @@ import background from '../images/CompressedImages/bgsection/dota2section.jpg'
 
 const products = ['1st place: 70% from Prize Pool + Gold Medal', '2nd place : 30% from Prize Pool'];
 
-const prizes = []
-
-const medals = ["🥇", "🥈", "🥉"]
-
-for (let i = 0; i < products.length; i++) {
-  prizes.push(<div>{
-    medals[i] + products[i]
-  }</div>)
-}
-
 const text = `Gamers everywhere gather ‘round! 🎮 
 Don’t miss your chance to compete and have fun with players all across the world 🌎 
 so sign up now for our DOTA COMPETITION ‼️
