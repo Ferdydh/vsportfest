@@ -17,7 +17,7 @@ function App() {
     <main className="App">
       <MainWindow />
 
-      <Template id="Template"></Template>
+      {/* <Template id="Template"></Template> */}
 
       <Dota id="dota" sectionName="Dota" parallaxStrength="300" background="on" />
 

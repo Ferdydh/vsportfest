@@ -178,10 +178,6 @@ html {
   /* , 0 10px 10px #5353c7; */
 }
 
-.chessBackground {
-  background-color: #b43484;
-}
-
 .flickeringText{
   animation: flicker 1.5s infinite alternate;
   color: #fff;
@@ -209,6 +205,10 @@ html {
   }     
 }
 
+.flip {
+  transform: rotate(180deg);
+}
+
 .spacer {
   width: 100%;
   background-repeat: no-repeat;
@@ -225,7 +225,15 @@ html {
 }
 
 .wave2 {
-  background-image: url('./images/waves/wave1.svg');
+  background-image: url('./images/waves/wave2.svg');
+}
+
+.wave3 {
+  background-image: url('./images/waves/wave3.svg');
+}
+
+.wave4 {
+  background-image: url('./images/waves/wave4.svg');
 }
 
 @media (max-width: 992px) {
@@ -242,4 +250,17 @@ html {
   .wave1 {
     background-image: url('./images/waves/wave1v.svg');
   }
+
+  .wave2 {
+    background-image: url('./images/waves/wave2v.svg');
+  }
+
+  .wave3 {
+    background-image: url('./images/waves/wave3v.svg');
+  }
+
+  .wave4 {
+    background-image: url('./images/waves/wave4v.svg');
+  }
+
 }

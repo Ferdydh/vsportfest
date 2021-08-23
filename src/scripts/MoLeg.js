@@ -22,7 +22,11 @@ class MoLeg extends React.Component {
 
   render() {
     return (
-      <section id="moleg" className=" bg-indigo-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec" >
+      <>
+      <div className="spacer spacerAspect wave2 relative flex justify-center content-center align-middle">
+        
+      </div>
+      <section id="moleg" className="blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" style={{backgroundColor: "#b43484"}} >
         <div className="w-full">
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
@@ -37,7 +41,7 @@ class MoLeg extends React.Component {
               <div id="molegx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                 Mobile Legends
               </div>
-                <Modal 
+                <Modal   
                 title="Mobile Legends" 
                 url="https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
               />
@@ -59,7 +63,7 @@ class MoLeg extends React.Component {
 
       </div>
       </section>
-      
+      </>
       
     );
   }

@@ -1,10 +1,10 @@
 import React from 'react';
-import Prizes from './Prizes';
 import Modal from './Modal';
 import BG from '../images/chessbg.jpg'
 
 // media imports for section
 import ICON from '../images/dota.png';
+import GP from '../images/gameplay.png';
 import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
@@ -28,10 +28,19 @@ class Dota extends React.Component {
 
     return (
       <div>
-        <div className="spacer spacerAspect wave1 relative"></div>
+        <div>
+          <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle" />
+          <div style={{backgroundColor: "#411582"}} className="border-none flex justify-center content-center align-middle ">
+            <img src={GP} className="object-contain h-1/2 w-1/2"></img>
+          </div>
+          <div className="spacer spacerAspect wave1 flip relative flex justify-center content-center align-middle" />
+
+        </div>
+
+
         <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
             <div className="min-h-full p-2 mb-30 h-20 w-screen">
-              <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
+              <div className="float-right h-20 w-20 p-4">
                 <img src={ICON} className="object-contain p-1" alt="icon"/>
               </div>
             </div>
