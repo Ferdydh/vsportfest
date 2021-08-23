@@ -73,7 +73,7 @@ caption
 
 function App() {
   return (
-    <main className="App">
+    <main className="App container">
       <MainWindow />
 
       <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} backgroundColor="#411582" url={urlDota}></Template>
@@ -84,7 +84,7 @@ function App() {
       <Template id="virtualrun" wave="wave6" title="Virtual Run" caption={textVirtualRun} prizes={prizeVirtualRun} backgroundColor="#3B82F6" url={urlRun}></Template>
 
       <Register id="register" />
-      <Sidebar />
+      <Sidebar className=" z-50"/>
       <ScrollToTopBtn />
 
     </main>
