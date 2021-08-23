@@ -52,18 +52,4 @@ class ScrollToTopBtn extends Component {
         );
     }
 }
-
-/*
-link to drive: https://drive.google.com/drive/folders/11c60SqhlJDhZy62KPdyUVtO3P-f1qjBs
-
-Sections: rules, Contact person, hadiah, signup, 
-
-lomba -> catur, moleg, pubg, virtual run, dota, dance
-
-link to google form
-
-cp: ig, email, cp?
-opt: merch, faq, money collection
-
-*/
 export default ScrollToTopBtn;

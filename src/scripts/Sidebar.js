@@ -1,6 +1,4 @@
 import React from 'react';
-import Home from '@material-ui/icons/Home';
-import Register from '../images/register.png'
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'

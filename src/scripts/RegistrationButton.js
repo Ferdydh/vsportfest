@@ -1,4 +1,4 @@
-import React,{ useRef, useEffect } from "react";
+import React from "react";
 
 export default function RegistrationButton(props) {
   const url = props.url;
