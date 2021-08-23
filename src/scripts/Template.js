@@ -107,9 +107,9 @@ class Template extends React.Component {
               </div>
             </div>
           </section>
-
-          <img src={logo} className="absolute min-h-0 z-0" alt=""></img>
-          <div className="absolute h-1/2 z-0 w-full opacity-40" style={{ backgroundColor: this.props.backgroundColor }}></div>
+          {/* background image*/}
+          <img src={logo} className="absolute z-0 object-cover h-1/2 sm:h-auto" alt=""></img>
+          <div className="absolute h-1/2 z-0 w-full opacity-60" style={{ backgroundColor: this.props.backgroundColor }}></div>
 
         </section>
         <div className="flex-1 flex justify-center" style={{ backgroundColor: this.props.backgroundColor }}>
