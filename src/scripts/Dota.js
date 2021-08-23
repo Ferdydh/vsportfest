@@ -40,8 +40,8 @@ class Dota extends React.Component {
   render() {
     return (
       <div className="w-screen">
-        <div>
-          <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle" />
+        <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle">
+          <img src={Mascot} className="m-5 mt-20 object-contain h-1/2" alt="Vr mascot"/>
         </div>
 
         <section id="dota" className="bg-purple-900 -mb-32 -mt-16 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
