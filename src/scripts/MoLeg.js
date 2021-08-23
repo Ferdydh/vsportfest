@@ -7,6 +7,26 @@ import Modal from './Modal';
 import Mascot from '../images/CompressedImages/MASCOT_MOLEG.png';
 import ICON from '../images/ml.png';
 
+const products = ['1st place: 50% from Prize Pool + Gold Medal','2nd place: 30% from Prize Pool', '3rd place: 20% dari Prize Pool'];
+
+const prizes = []
+
+const medals = ["🥇", "🥈", "🥉"]
+
+for (let i =0; i < products.length; i++){
+  prizes.push(<div>{
+    medals[i] + products[i]
+    }</div>)
+}
+
+const text =  `Gamers everywhere gather ‘round! 🎮 
+Don’t miss your chance to compete and have fun with players all across the world 🌎 
+so sign up now for our DOTA COMPETITION ‼️
+Slots are only available for the first 16 registrants! So be quick and sign your team up for only 15€ / Rp 262.500,- 💶😆
+Competition guidelines and registration links are available on our website. Link in bio!
+`;
+
+
 class MoLeg extends React.Component {
   MouseOver(event) {
     event.target.style.height = '120%';

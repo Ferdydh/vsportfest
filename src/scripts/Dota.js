@@ -8,7 +8,7 @@ import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 import Mascot from '../images/CompressedImages/MASCOT_DOTA.png';
 import background from '../images/CompressedImages/bgsection/dota2section.jpg'
 
-const products = ['1st place: 80€ + Gold Medal', '2nd place: 40€'];
+const products = ['1st place: 70% from Prize Pool + Gold Medal', '2nd place : 30% from Prize Pool'];
 
 const prizes = []
 
@@ -22,7 +22,8 @@ for (let i = 0; i < products.length; i++) {
 
 const text = `Gamers everywhere gather ‘round! 🎮 
 Don’t miss your chance to compete and have fun with players all across the world 🌎 
-so sign up now for our DOTA COMPETITION ‼️`;
+so sign up now for our DOTA COMPETITION ‼️
+Only 8 slots are available! So be quick and sign your team up for only 20€ / Rp 350.000,- 💶😆`;
 
 
 class Dota extends React.Component {

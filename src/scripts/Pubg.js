@@ -3,6 +3,24 @@ import Modal from './Modal';
 import Mascot from '../images/CompressedImages/MASCOT_PUBG.png';
 import ICON from '../images/pubg.png';
 
+const products = ['1st place: 70€ / Rp 1.225.000.- + Gold Medal','2nd place: 35€ / Rp 612.500,-'];
+
+const prizes = []
+
+const medals = ["🥇", "🥈", "🥉"]
+
+for (let i =0; i < products.length; i++){
+  prizes.push(<div>{
+    medals[i] + products[i]
+    }</div>)
+}
+
+const text =  `Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 
+🌎 so sign up now for our PUBG MOBILE COMPETITION ‼️
+Slots are available for 25 Squads! So be quick and sign up for only 12€ / Rp 210.000 for each team💶😆
+`;
+
+
 class Pubg extends React.Component {
   MouseOver(event) {
     event.target.style.height = '120%';
@@ -49,8 +67,7 @@ class Pubg extends React.Component {
               <div className="md:m-10 md:mt-36">
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-mono bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
-                      Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 
-                      🌎 so sign up now for our PUBG MOBILE COMPETITION ‼️
+                      
                 </p>
               </div>
             </div>           
