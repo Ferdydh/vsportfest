@@ -12,6 +12,12 @@ import VirtualRun from './scripts/VirtualRun';
 import Chess from './scripts/Chess';
 import Template from './scripts/Template';
 
+/*
+prices
+reg
+caption
+*/
+
 function App() {
   return (
     <main className="App">
