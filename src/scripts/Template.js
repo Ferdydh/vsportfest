@@ -54,7 +54,7 @@ class Template extends React.Component {
 
   render() {
     return (
-      <section id="Template" className=" bg-purple-900 m-0 p-0 align-middle content-center justify-center h-screen w-screen flex flex-col" >
+      <section id="Template" className="bg-purple-900 m-0 p-0 align-middle content-center justify-center min-h-screen w-screen flex flex-col" >
         <div className=" h-1/4 bg-transparent ">
           {/* TOP BORDER */}
         </div>
@@ -79,19 +79,19 @@ class Template extends React.Component {
             </div>
           </div>
 
+          {/* middle part */}
           <div className="w-full flex align-middle justify-center flex-col">
-            <div className="font-white text-white text-center text-7xl font-bold z-10 ">
-            <img src={ICON} className=""></img>
+            <div className="font-white text-white text-center text-7xl font-bold z-10 flex flex-row align-middle justify-center">
+              <img src={ICON} className=""></img>
             </div>
             <div className="flex flex-row align-middle justify-center z-10">
-            <img src={MASCOT} className="h-40"></img>
+              <img src={MASCOT} className="h-40"></img>
             </div>
-            <div>
-            <div className="absolute w-1/3 text-white z-20 text-2xl font-thin font-sans select-none">
-            `Gamers everywhere gather ‘round! 🎮 
-    Don’t miss your chance to compete and have fun with players all across the world 🌎 
-    so sign up now for our DOTA COMPETITION ‼️
-            </div>
+            <div class="flex flex-row align-middle justify-center">
+              <div className="absolute max-w-full text-base p-4 md:text-lg whitespace-normal text-white text-center font-sans bg-gray-300 
+                    bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl select-none z-20">
+                {text}
+              </div>
             </div>
 
           </div>
