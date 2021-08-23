@@ -19,6 +19,11 @@ so sign up now for our DOTA COMPETITION ‼️`;
 
 
 
+/*
+prices
+reg
+caption
+*/
 
 function App() {
   return (
