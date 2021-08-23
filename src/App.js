@@ -56,13 +56,6 @@ Group of 5 : 15km 🏃🏻
 const prizeVirtualRun = ['Gold medal for each winner '];
 
 
-const textMoleg =  `Gamers everywhere gather ‘round! 🎮 
-Don’t miss your chance to compete and have fun with players all across the world 🌎 
-so sign up now for our DOTA COMPETITION ‼️
-Slots are only available for the first 16 registrants! So be quick and sign your team up for only 15€ / Rp 262.500,- 💶😆
-Competition guidelines and registration links are available on our website. Link in bio!
-`;
-
 const urlMoleg = "https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
 
 
