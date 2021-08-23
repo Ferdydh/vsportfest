@@ -2,6 +2,7 @@ import React from 'react';
 import Prizes from './Prizes';
 import { Parallax } from 'react-parallax';
 import Modal from './Modal';
+import RegistrationButton from './RegistrationButton'; 
 
 // media imports for section
 import FG from '../images/CompressedImages/MASCOT_MOLEG.png';
@@ -22,13 +23,20 @@ class Template extends React.Component {
 
   render() {
     return (
-      <section id="Template" className=" bg-purple-900 m-0 p-0 flex align-middle content-center justify-center h-screen w-screen flex flex-col" >
+      <section id="Template" className=" bg-purple-900 m-0 p-0 align-middle content-center justify-center h-screen w-screen flex flex-col" >
         <div className=" h-1/4 bg-transparent ">
           {/* TOP BORDER */}
         </div>
         <div className=" h-2/4 bg-white w-screen flex flex-row">
 
-          <div className="w-full bg-black ">
+          <div className="w-full bg-green-500 ">
+            <div className="flex-1 flex justify-end mr-auto">
+              <RegistrationButton 
+                title="Dance" 
+                url="https://docs.google.com/forms/d/e/1FAIpQLSdkBAeDrxeLgLYnJ7Lr6wevKaGH87U1VqUimbpVfw89DGyUxw/viewform"
+              />
+            </div>
+
             WUII
           </div>
 
