@@ -10,11 +10,14 @@ import Pubg from './scripts/Pubg'
 import Dance from './scripts/Dance'
 import VirtualRun from './scripts/VirtualRun';
 import Chess from './scripts/Chess';
+import Template from './scripts/Template';
 
 function App() {
   return (
     <main className="App">
       <MainWindow />
+
+      <Template id="Template"></Template>
 
       <Dota id="dota" sectionName="Dota" parallaxStrength="300" background="on" />
 

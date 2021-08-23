@@ -25,7 +25,7 @@ class Dance extends React.Component {
 
     return (
       <section id="dance">
-        <div className=" bg-purple-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec">
+        <div className=" bg-blue-800 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec">
         <div className="w-full">
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
@@ -61,12 +61,6 @@ class Dance extends React.Component {
                       Calling all dancers! 💃🏻
                    Don’t miss the opportunity to express your creativity and develop your talent through our MODERN DANCE COMPETITION ‼️
               </p>
-              <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
-                  <Prizes
-                    first="85"
-                    second="45"
-                  />
-              </div>
             </div>
             
           </div>

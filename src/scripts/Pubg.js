@@ -19,7 +19,7 @@ class Pubg extends React.Component {
     var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
     return (
       <section id="pubg">
-        <div className=" bg-pink-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
+        <div className="chessBackground blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
         <div className="w-full">
         <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
