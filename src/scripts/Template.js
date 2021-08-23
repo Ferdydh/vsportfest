@@ -8,6 +8,9 @@ import RegistrationButton from './RegistrationButton';
 import FG from '../images/CompressedImages/MASCOT_MOLEG.png';
 import ICON from '../images/ml.png';
 import {isMobile} from 'react-device-detect';
+import IRING from '../images/CompressedImages/RINGS/IRING1.png'
+import ORING from '../images/CompressedImages/RINGS/ORING1.png'
+import MASCOT from '../images/CompressedImages/MASCOT_PUBG.png'
 
 const text =  `Gamers everywhere gather ‘round! 🎮 
 Don’t miss your chance to compete and have fun with players all across the world 🌎 
@@ -61,10 +64,10 @@ class Template extends React.Component {
 
           <div className="w-full flex align-middle justify-center flex-col">
             <div className="font-white text-white text-center text-7xl font-bold z-10 ">
-              MOBILE LEGENDS
+            <img src={ICON} className=""></img>
             </div>
             <div className="flex flex-row align-middle justify-center z-10">
-            <img src={ICON} className=""></img>
+            <img src={MASCOT} className="h-40"></img>
             </div>
           </div>
 
@@ -78,8 +81,8 @@ class Template extends React.Component {
           {/* BOTTOM BORDER */}
         </div>
 
-        <img src={ICON} className="absolute left-0 right-0 ml-auto mr-auto w-3/5 z-0" style={{"animation":"spin 5s linear infinite","animation-direction": "normal"}}></img>
-        <img src={ICON} className="absolute left-0 right-0 ml-auto mr-auto w-3/5 z-0" style={{"animation":"spin 3s linear infinite","animation-direction": "normal"}}></img>
+        <img src={IRING} className="absolute left-0 right-0 ml-auto mr-auto w-3/5 z-0" style={{"animation":"spin 100s linear infinite","animation-direction": "normal"}}></img>
+        <img src={ORING} className="absolute left-0 right-0 ml-auto mr-auto w-3/5 z-0" style={{"animation":"spin 4s linear infinite","animation-direction": "reverse"}}></img>
 
       </section>
     );
