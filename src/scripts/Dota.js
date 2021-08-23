@@ -6,7 +6,7 @@ import BG from '../images/chessbg.jpg'
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 import Mascot from '../images/CompressedImages/MASCOT_DOTA.png';
-
+import background from '../images/SectionImages/dota.png'
 
 const products = ['1st place: 80€ + Gold Medal','2nd place: 40€'];
 
@@ -39,12 +39,13 @@ class Dota extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle">
+      <div className="w-screen">
+        <div>
+          <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle" />
         </div>
 
-        <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
-          <section className="min-h-screen sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
+        <section id="dota" className="bg-purple-900 -mb-32 -mt-16 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
+          <section className="sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
             {/* LEFT SIDE OF THE DIV */}
             <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
               <div className="mt-20 sm:m-10 md:m-auto font-bold text-7xl">
@@ -78,8 +79,10 @@ class Dota extends React.Component {
               </div>
             </div>
           </section>
-          <div></div>
       </section>  
+      <div className="flex-1 flex justify-center" style={{backgroundColor: "#411582"}}>
+        <img src={background} className="h-80"></img>
+      </div>
     </div>
     );
   }
