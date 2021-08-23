@@ -111,7 +111,7 @@ class Template extends React.Component {
             {/* RIGHT SIDE OF THE DIV */}
             <div className="h-1/2 sm:h-full sm:w-1/2 flex flex-col z-10" id="rightside">
               <div className="md:m-10 md:mt-36">
-                <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-300 
+                <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-700 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
                       <div>{this.props.caption}</div>
                       <hr/>
@@ -122,8 +122,8 @@ class Template extends React.Component {
             </div>
           </section>
 
-          <img src={logo} className="absolute h-1/2 z-0 w-full"></img>
-          <div className="absolute h-1/2 z-0 w-full bg-purple-700 opacity-30"></div>
+          <img src={logo} className="absolute min-h-0 z-0"></img>
+          <div className="absolute h-1/2 z-0 w-full opacity-40" style={{ backgroundColor: this.props.backgroundColor }}></div>
 
         </section>
         <div className="flex-1 flex justify-center" style={{ backgroundColor: this.props.backgroundColor }}>
