@@ -80,7 +80,7 @@ class Dota extends React.Component {
             </div>
           </section>
 
-          <img src={background} className=" absolute h-1/2 z-0 w-full blur blur-md"></img>
+          <img src={background} className=" absolute h-1/2 z-0 w-full"></img>
 
         </section>
 
