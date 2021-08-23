@@ -19,7 +19,7 @@ function App() {
 
       {/* <Template id="Template"></Template> */}
 
-      <Template id="dota" wave="wave1" picture="../images/SectionImages/dota.png" caption="" prizes={[]} color=""></Template>
+      <Template id="dota" wave="wave1" title="DOTA" caption="" prizes={[]} color=""></Template>
       {/* <Template id="moleg" wave="wave2" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="pubg" wave="wave3" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>

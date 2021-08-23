@@ -8,6 +8,7 @@ import GP from '../images/gameplay.png';
 import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
+import dota from '../images/SectionImages/dota.png'
 
 const products = ['1st place: 80€ + Gold Medal','2nd place: 40€'];
 
@@ -39,7 +40,13 @@ class Template extends React.Component {
   }
 
   render() {
-    const logo = require('../images/SectionImages/dota.png');
+    let logo;
+    if(this.props.title === "DOTA") {
+      logo = dota;
+    } else {
+      logo = null;
+    }
+
     return (
       <div className="w-screen">
         <div>
@@ -60,7 +67,7 @@ class Template extends React.Component {
                 </div>
 
                 <div id="dotax" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
-                  DOTA
+                  {this.props.title}
                 </div>
                   <Modal 
                     title="Dota" 
