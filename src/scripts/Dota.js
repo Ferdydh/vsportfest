@@ -65,7 +65,6 @@ class Dota extends React.Component {
                   <div>{text}</div>
                   <hr />
                   <div>Prizes 🏆</div>
-                  <div>{prizes}</div>
                 </p>
               </div>
             </div>
