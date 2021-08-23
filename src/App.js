@@ -22,8 +22,33 @@ const urlDota = "https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4
 const prizeDota = ['1st place: 70% from Prize Pool + Gold Medal', '2nd place : 30% from Prize Pool'];
 
 
+const textMoleg =  `Gamers everywhere gather ‘round! 🎮 
+Don’t miss your chance to compete and have fun with players all across the world 🌎 
+so sign up now for our DOTA COMPETITION ‼️
+Slots are only available for the first 16 registrants! So be quick and sign your team up for only 15€ / Rp 262.500,- 💶😆
+Competition guidelines and registration links are available on our website. Link in bio!
+`;
 
 const urlMoleg = "https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
+
+
+
+
+
+const textPubg =  `Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 
+🌎 so sign up now for our PUBG MOBILE COMPETITION ‼️
+Slots are available for 25 Squads! So be quick and sign up for only 12€ / Rp 210.000 for each team💶😆
+`;
+
+const urlPubg = "https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
+
+// .bg-indigo-900 {
+//   --tw-bg-opacity: 1;
+//   background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+// }
+
+
+
 /*
 prices
 reg
@@ -31,14 +56,6 @@ caption
 */
 
 function App() {
-
-  const textMolegTemporary =  `Gamers everywhere gather ‘round! 🎮 
-Don’t miss your chance to compete and have fun with players all across the world 🌎 
-so sign up now for our DOTA COMPETITION ‼️
-Slots are only available for the first 16 registrants! So be quick and sign your team up for only 15€ / Rp 262.500,- 💶😆
-Competition guidelines and registration links are available on our website. Link in bio!
-`;
-
   return (
     <main className="App">
       <MainWindow />
@@ -46,9 +63,9 @@ Competition guidelines and registration links are available on our website. Link
       {/* <Template id="Template"></Template> */}
 
       <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} backgroundColor="#411582" url={urlDota}></Template>
-      <Template id="moleg" wave="wave2" title="Mobile Legends" caption={textMolegTemporary} prizes={prizeDota} backgroundColor="#b43484" url={urlMoleg}></Template>
-      {/* <Template id="pubg" wave="wave3" picture="" caption="" prizes={[]} color=""></Template>
-      <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>
+      <Template id="moleg" wave="wave2" title="Mobile Legends" caption={textMoleg} prizes={prizeDota} backgroundColor="#b43484" url={urlMoleg}></Template>
+      <Template id="pubg" wave="wave3" title="PUBG" caption={textPubg} prizes={prizeDota} backgroundColor="#312E81" url={urlPubg}></Template>
+      {/* <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="dance" wave="wave5" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="virtualrun" wave="wave6" picture="" caption="" prizes={[]} color=""></Template> */}
 
