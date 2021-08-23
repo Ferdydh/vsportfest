@@ -27,6 +27,7 @@ class Template extends React.Component {
         <div className=" h-1/4 bg-transparent ">
           {/* TOP BORDER */}
         </div>
+
         <div className=" h-2/4 bg-white w-screen flex flex-row">
 
           <div className="w-full bg-green-500 ">
@@ -44,7 +45,9 @@ class Template extends React.Component {
             <div className="font-white text-white text-center text-7xl font-bold">
               MOBILE LEGENDS
             </div>
-            <img src={ICON} className="w-1/2"></img>
+            <div className="flex flex-row align-middle justify-center">
+            <img src={ICON} className=""></img>
+            </div>
           </div>
 
           <div className="w-full bg-black ">
@@ -52,9 +55,13 @@ class Template extends React.Component {
           </div>
 
         </div>
+
         <div className=" h-1/4 bg-transparent ">
           {/* BOTTOM BORDER */}
         </div>
+
+        <img src={ICON} className="absolute left-0 right-0 ml-auto mr-auto w-80"></img>
+
       </section>
     );
   }
