@@ -1,12 +1,9 @@
 import React from 'react';
-import Prizes from './Prizes';
-import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/CompressedImages/MASCOT_DANCE.png';
+import Mascot from '../images/CompressedImages/MASCOT_DANCE.png';
 import ICON from '../images/dance.png';
-import {isMobile} from 'react-device-detect';
 
 class Dance extends React.Component {
   MouseOver(event) {
@@ -23,7 +20,9 @@ class Dance extends React.Component {
   render() {
     return (
       <>
-        <div className="spacer spacerAspect wave5 relative flex justify-center content-center align-middle" />
+        <div className="spacer spacerAspect wave5 relative flex justify-center content-center align-middle">
+          <img src={Mascot} className="m-5 object-contain w-3/8 h-3/4" alt="Vr mascot"/>  
+        </div>
         <section id="dance">
         <div className=" bg-blue-800 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec">
         <div className="w-full">

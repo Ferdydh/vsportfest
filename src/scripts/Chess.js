@@ -1,13 +1,9 @@
 import React from 'react';
-import Prizes from './Prizes';
-import { Parallax } from 'react-parallax';
 import Modal from './Modal';
-import BG from '../images/chessbg.jpg'
 
 // media imports for section
-import FG from '../images/CompressedImages/MASCOT_CHESS.png';
+import Mascot from '../images/CompressedImages/MASCOT_CHESS.png';
 import ICON from '../images/chess.png';
-import { isMobile } from 'react-device-detect';
 
 class Chess extends React.Component {
   MouseOver(event) {
@@ -25,7 +21,7 @@ class Chess extends React.Component {
     return (
       <>
         <div className="spacer spacerAspect wave4 relative flex justify-center content-center align-middle">
-        
+          <img src={Mascot} className="m-5 ml-0 object-contain sm:w-3/8 md:h-1/2 xl:h-3/4" alt="Vr mascot"/>
         </div>
         <section id="chess" className="bg-pink-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none w-screen">
         <div className="w-full">
