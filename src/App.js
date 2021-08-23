@@ -36,7 +36,7 @@ const textChess = `Chess players, come join us! ♟ Brace yourself ‘cause the 
 Sign yourself up to compete in our CHESS COMPETITION ‼️
 Only 30 slots are available! So be quick and sign up for only 3€ / Rp 52.500,- for each person 💶😆`
 
-const prizeChess = ['1st place: 40€ / Rp 700.000,- + Gold Medal', '2nd place: 20€ / Rp 350.000,- + Silver Medal 🥈']
+const prizeChess = ['1st place: 40€ / Rp 700.000,- + Gold Medal', '2nd place: 20€ / Rp 350.000,- + Silver Medal']
 
 const textDance = `Calling all dancers! 💃🏻 Don’t miss the opportunity to express yourselves and develop your creativity and talent through our MODERN DANCE COMPETITION ‼️
 So be quick and sign up for only 4€ / Rp 70.000,- for each person 💶😆`;
@@ -84,7 +84,7 @@ function App() {
       <Template id="virtualrun" wave="wave6" title="Virtual Run" caption={textVirtualRun} prizes={prizeVirtualRun} backgroundColor="#3B82F6" url={urlRun}></Template>
 
       <Register id="register" />
-      <Sidebar />
+      <Sidebar className=" z-50"/>
       <ScrollToTopBtn />
 
     </main>

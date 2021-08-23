@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal';
+// import Modal from './Modal';
 import BG from '../images/chessbg.jpg'
 
 // media imports for section
@@ -51,10 +51,10 @@ class Dota extends React.Component {
                 <div id="dotax" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                   DOTA
                 </div>
-                <Modal
+                {/* <Modal
                   title="Dota"
                   url="https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4zsB0fRkI4M1cITGRmUE0W19q77A/viewform"
-                />
+                /> */}
               </div>
             </div>
             {/* RIGHT SIDE OF THE DIV */}
