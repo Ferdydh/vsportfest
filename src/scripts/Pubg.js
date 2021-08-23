@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal';
+// import Modal from './Modal';
 import Mascot from '../images/CompressedImages/MASCOT_PUBG.png';
 import ICON from '../images/pubg.png';
 
@@ -44,10 +44,10 @@ class Pubg extends React.Component {
                 <div id="pubgx" className="neonText transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none">
                   PUBG
                 </div>
-                  <Modal 
+                  {/* <Modal 
                   title="PUBG" 
                   url="https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
-                />
+                /> */}
               </div>
             </div>
           

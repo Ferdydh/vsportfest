@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal';
+// import Modal from './Modal';
 
 // media imports for section
 import Mascot from '../images/CompressedImages/MASCOT_CHESS.png';
@@ -38,10 +38,10 @@ class Chess extends React.Component {
                 <div id="chessx" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                   Chess
                 </div>
-                <Modal
+                {/* <Modal
                   title="Chess"
                   url="https://docs.google.com/forms/d/e/1FAIpQLSd3wcW6HhYWDf4_M4arSCy7ZJSpLJtG5cQHuLQJJh6LW8y_3Q/viewform"
-                />
+                /> */}
               </div>
             </div>
 
