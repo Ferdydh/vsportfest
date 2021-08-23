@@ -3,11 +3,9 @@ import Modal from './Modal';
 import BG from '../images/chessbg.jpg'
 
 // media imports for section
-import ICON from '../images/dota.png';
-import GP from '../images/gameplay.png';
-import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
+import Mascot from '../images/CompressedImages/MASCOT_DOTA.png';
 import background from '../images/SectionImages/dota.png'
 
 const products = ['1st place: 80€ + Gold Medal','2nd place: 40€'];
