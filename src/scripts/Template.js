@@ -1,5 +1,4 @@
 import React from 'react';
-import Modal from './Modal';
 import GP from '../images/gameplay.png';
 import { isMobile } from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
