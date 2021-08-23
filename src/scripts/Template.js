@@ -6,10 +6,19 @@ import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 import dotabg from '../images/CompressedImages/bgsection/dota2section.jpg'
 import molegbg from '../images/CompressedImages/bgsection/molegsection.jpg'
+import pubgbg from '../images/CompressedImages/bgsection/pubgsection.jpg'
+import chessbg from '../images/CompressedImages/bgsection/chesssection.jpg'
+import dancebg from '../images/CompressedImages/bgsection/dancesection.jpg'
+import virtualrunbg from '../images/CompressedImages/bgsection/virtualrunsection.jpg'
+
 
 import RegistrationButton from "./RegistrationButton"
 import MASCOT_DOTA from '../images/CompressedImages/MASCOT_DOTA.png';
 import MASCOT_MOLEG from '../images/CompressedImages/MASCOT_MOLEG.png';
+import MASCOT_PUBG from '../images/CompressedImages/MASCOT_PUBG.png';
+import MASCOT_CHESS from '../images/CompressedImages/MASCOT_CHESS.png';
+import MASCOT_DANCE from '../images/CompressedImages/MASCOT_DANCE.png';
+import MASCOT_RUN from '../images/CompressedImages/MASCOT_RUN.png';
 
 
 class Template extends React.Component {
@@ -45,11 +54,27 @@ class Template extends React.Component {
     if (this.props.title === "DOTA") {
       logo = dotabg;
       mascot = MASCOT_DOTA;
-    } else if (this.props.title === "Mobile Legends"){
+    } 
+    else if (this.props.title === "Mobile Legends"){
       logo = molegbg;
       mascot = MASCOT_MOLEG;
     }
-    
+    else if (this.props.title === "PUBG"){
+      logo = pubgbg;
+      mascot = MASCOT_PUBG;
+    }
+    else if (this.props.title === "Chess"){
+      logo = chessbg;
+      mascot = MASCOT_CHESS;
+    }
+    else if (this.props.title === "Dance"){
+      logo = dancebg;
+      mascot = MASCOT_DANCE;
+    }
+    else if (this.props.title === "Virtual Run"){
+      logo = virtualrunbg;
+      mascot = MASCOT_RUN;
+    }
     
     else {
       logo = null;

@@ -58,22 +58,11 @@ const prizeVirtualRun = ['Gold medal for each winner '];
 
 const urlMoleg = "https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
 
-
-
-
-
-const textPubg =  `Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 
-🌎 so sign up now for our PUBG MOBILE COMPETITION ‼️
-Slots are available for 25 Squads! So be quick and sign up for only 12€ / Rp 210.000 for each team💶😆
-`;
-
 const urlPubg = "https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
 
-// .bg-indigo-900 {
-//   --tw-bg-opacity: 1;
-//   background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
-// }
-
+const urlChess = "https://docs.google.com/forms/d/e/1FAIpQLSd3wcW6HhYWDf4_M4arSCy7ZJSpLJtG5cQHuLQJJh6LW8y_3Q/viewform"
+const urlDance = "https://docs.google.com/forms/d/e/1FAIpQLSdkBAeDrxeLgLYnJ7Lr6wevKaGH87U1VqUimbpVfw89DGyUxw/viewform"
+const urlRun = ""
 
 
 /*
@@ -87,22 +76,12 @@ function App() {
     <main className="App">
       <MainWindow />
 
-      {/* <Template id="Template"></Template> */}
-
       <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} backgroundColor="#411582" url={urlDota}></Template>
-      <Template id="moleg" wave="wave2" title="Mobile Legends" caption={textMoleg} prizes={prizeDota} backgroundColor="#b43484" url={urlMoleg}></Template>
-      <Template id="pubg" wave="wave3" title="PUBG" caption={textPubg} prizes={prizeDota} backgroundColor="#312E81" url={urlPubg}></Template>
-      {/* <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>
-      <Template id="dance" wave="wave5" picture="" caption="" prizes={[]} color=""></Template>
-      <Template id="virtualrun" wave="wave6" picture="" caption="" prizes={[]} color=""></Template> */}
-
-      <Pubg id="pubg" sectionName="Pubg" parallaxStrength="300" background="on"></Pubg>
-
-      <Chess id="chess" sectionName="Chess" parallaxStrength="-500" background="off"></Chess>
-
-      <Dance id="dance" sectionName="Dance" parallaxStrength="300" background="on"></Dance>
-
-      <VirtualRun id="virtualrun" sectionName="Virtual Run" parallaxStrength="-500" background="off"></VirtualRun>
+      <Template id="moleg" wave="wave2" title="Mobile Legends" caption={textMoleg} prizes={prizeMoleg} backgroundColor="#b43484" url={urlMoleg}></Template>
+      <Template id="pubg" wave="wave3" title="PUBG" caption={textPUBG} prizes={prizePUBG} backgroundColor="#312E81" url={urlPubg}></Template>
+      <Template id="chess" wave="wave4" title="Chess" caption={textChess} prizes={prizeChess} backgroundColor="#831843" url={urlChess}></Template>
+      <Template id="dance" wave="wave5" title="Dance" caption={textDance} prizes={prizeDance} backgroundColor="#1E40AF" url={urlDance}></Template>
+      <Template id="virtualrun" wave="wave6" title="Virtual Run" caption={textVirtualRun} prizes={prizeVirtualRun} backgroundColor="#3B82F6" url={urlRun}></Template>
 
       <Register id="register" />
       <Sidebar />
