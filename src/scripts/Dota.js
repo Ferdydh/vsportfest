@@ -3,11 +3,9 @@ import Modal from './Modal';
 import BG from '../images/chessbg.jpg'
 
 // media imports for section
-import ICON from '../images/dota.png';
-import GP from '../images/gameplay.png';
-import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
+import Mascot from '../images/CompressedImages/MASCOT_DOTA.png';
 
 
 const products = ['1st place: 80€ + Gold Medal','2nd place: 40€'];
@@ -42,8 +40,7 @@ class Dota extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle" />
+        <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle">
         </div>
 
         <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
