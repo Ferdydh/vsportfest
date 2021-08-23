@@ -16,7 +16,7 @@ class Register extends React.Component {
             <div className="flex flex-wrap container justify-center mt-10 content-center sm:mt-30">
               <div className="transform -skew-y-6 mr-4 max-w-screen-md">
                 <div className="text-5xl font-extrabold font-mono p-3 m-3 rounded-lg justify-center items-center animate-bounce" style={{backgroundColor: "#EEC184"}}>
-                  <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">Register now!</a>
+                  Register now!
                 </div>
                 <div id="registerx" className="animate-pulse glow-cyan-md text-2xl text-red-600 font-bold font-mono border-2 border-double p-3 md:w-96 bg-gray-100 
               bg-opacity-20">

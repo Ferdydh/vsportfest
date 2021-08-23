@@ -71,7 +71,7 @@ class Template extends React.Component {
       <div className="w-screen">
         <div>
           <div className={"spacer spacerAspect relative flex justify-center content-center align-middle " + this.props.wave} >
-            <img src={mascot} className="m-5 mt-20 object-contain h-1/2" alt="Vr mascot"/>
+            <img src={mascot} className="m-5 mt-20 object-contain h-1/3 sm:h-1/2" alt="Vr mascot"/>
           </div>
         </div>
 
