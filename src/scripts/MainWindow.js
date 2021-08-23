@@ -24,7 +24,7 @@ export default class MainWindow extends React.Component {
 
     render() {
         return (
-            <section id="mainwindow" className="pt-6 pb-20 min-h-screen w-full bg-retro mainwindow">
+            <section id="mainwindow" className="pt-6 pb-20 min-h-screen bg-retro mainwindow w-screen">
                 <div className="w-full inline-block">
                     <a href="https://ppi-munich.org/" target="_blank" rel="noreferrer" className="logo float-left ml-8 mt-2 w-20 h-12 hover:bg-gray-50 rounded-md">
                         <img src={logoWhite} alt="logo" className="logowhite w-20 h-12" />
