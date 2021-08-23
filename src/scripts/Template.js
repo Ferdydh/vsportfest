@@ -1,33 +1,27 @@
 import React from 'react';
 import Modal from './Modal';
-// import BG from '../images/chessbg.jpg'
-
-// media imports for section
-// import ICON from '../images/dota.png';
 import GP from '../images/gameplay.png';
 import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 import dota from '../images/SectionImages/dota.png'
 
-const products = ['1st place: 80€ + Gold Medal','2nd place: 40€'];
-
-const prizes = []
-
-const medals = ["🥇", "🥈", "🥉"]
-
-for (let i =0; i < products.length; i++){
-  prizes.push(<div>{
-    medals[i] + products[i]
-    }</div>)
-}
-
-const text =  `Gamers everywhere gather ‘round! 🎮 
-Don’t miss your chance to compete and have fun with players all across the world 🌎 
-so sign up now for our DOTA COMPETITION ‼️`;
-
-
 class Template extends React.Component {
+  constructor(props){
+    super(props);
+    const prizesText = []
+    const medals = ["🥇", "🥈", "🥉"]
+
+    for (let i =0; i < this.props.prizes.length; i++){
+      prizesText.push(<div>{
+        medals[i] + this.props.prizes[i]
+      }</div>)
+    }
+
+    this.state = { prizes : prizesText }
+
+  }
+
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -80,10 +74,10 @@ class Template extends React.Component {
               <div className="md:m-10 md:mt-36">
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
-                      <div>{text}</div>
+                      <div>{this.props.caption}</div>
                       <hr/>
                       <div>Prizes 🏆</div>
-                      <div>{prizes}</div>
+                      <div>{this.state.prizes}</div>
                 </p>
               </div>
             </div>

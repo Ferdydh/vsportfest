@@ -12,6 +12,14 @@ import VirtualRun from './scripts/VirtualRun';
 import Chess from './scripts/Chess';
 import Template from './scripts/Template';
 
+
+const textDota =  `Gamers everywhere gather ‘round! 🎮 
+Don’t miss your chance to compete and have fun with players all across the world 🌎 
+so sign up now for our DOTA COMPETITION ‼️`;
+
+
+
+
 function App() {
   return (
     <main className="App">
@@ -19,7 +27,7 @@ function App() {
 
       {/* <Template id="Template"></Template> */}
 
-      <Template id="dota" wave="wave1" title="DOTA" caption="" prizes={[]} color=""></Template>
+      <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={[]} color=""></Template>
       {/* <Template id="moleg" wave="wave2" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="pubg" wave="wave3" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>
