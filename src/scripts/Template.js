@@ -9,7 +9,18 @@ import FG from '../images/CompressedImages/MASCOT_MOLEG.png';
 import ICON from '../images/ml.png';
 import {isMobile} from 'react-device-detect';
 
+const text =  `Gamers everywhere gather ‘round! 🎮 
+Don’t miss your chance to compete and have fun with players all across the world 🌎 
+so sign up now for our DOTA COMPETITION ‼️`;
+
 class Template extends React.Component {
+  constructor(props){
+    super(props);
+    // this.state.text = `Gamers everywhere gather ‘round! 🎮 
+    // Don’t miss your chance to compete and have fun with players all across the world 🌎 
+    // so sign up now for our DOTA COMPETITION ‼️`;
+  }
+
   MouseOver(event) {
     event.target.style.height = '120%';
     event.target.style.transform = 'rotate(20deg)'
@@ -38,7 +49,14 @@ class Template extends React.Component {
               />
             </div>
 
-            WUII
+            <div className="h-1/2 sm:h-full flex flex-col">
+              <div className="">
+                <p className="text-base p-4 md:text-lg whitespace-normal text-white text-center font-sans bg-gray-300 
+                    bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
+                      Registration Fee: 69 €
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="w-full bg-purple-300 flex align-middle justify-center flex-col">
