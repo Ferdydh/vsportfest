@@ -17,6 +17,8 @@ const textDota =  `Gamers everywhere gather ‘round! 🎮
 Don’t miss your chance to compete and have fun with players all across the world 🌎 
 so sign up now for our DOTA COMPETITION ‼️`;
 
+const urlDota = "https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4zsB0fRkI4M1cITGRmUE0W19q77A/viewform"
+
 const prizeDota = ['1st place: 70% from Prize Pool + Gold Medal', '2nd place : 30% from Prize Pool'];
 
 /*
@@ -32,7 +34,7 @@ function App() {
 
       {/* <Template id="Template"></Template> */}
 
-      <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} color=""></Template>
+      <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} backgroundColor="#411582" url={urlDota}></Template>
       {/* <Template id="moleg" wave="wave2" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="pubg" wave="wave3" picture="" caption="" prizes={[]} color=""></Template>
       <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>

@@ -5,6 +5,7 @@ import { isMobile } from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 import dota from '../images/CompressedImages/bgsection/dota2section.jpg'
+import RegistrationButton from "./RegistrationButton"
 
 class Template extends React.Component {
   constructor(props){
@@ -47,7 +48,7 @@ class Template extends React.Component {
           <div className={"spacer spacerAspect relative flex justify-center content-center align-middle " + this.props.wave} />
         </div>
 
-        <section id="dota" className="bg-purple-900 -mb-32 -mt-16 blur flex align-middle content-center justify-center flex-col w-screen" style={{ backgroundColor: "#411582" }}>
+        <section id={this.props.id} className="-mb-32 -mt-16 blur flex align-middle content-center justify-center flex-col w-screen" style={{ backgroundColor: this.props.backgroundColor }}>
           <section className="sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20 z-10">
             {/* LEFT SIDE OF THE DIV */}
             <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
@@ -60,13 +61,10 @@ class Template extends React.Component {
                   <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }} className="h-80"></img>
                 </div>
 
-                <div id="dotax" className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
+                <div id={this.props.id + "x"} className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
                   {this.props.title}
                 </div>
-                <Modal
-                  title="Dota"
-                  url="https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4zsB0fRkI4M1cITGRmUE0W19q77A/viewform"
-                />
+                <RegistrationButton url={this.props.url} />
               </div>
             </div>
             {/* RIGHT SIDE OF THE DIV */}
@@ -86,7 +84,7 @@ class Template extends React.Component {
           <img src={logo} className="absolute h-1/2 z-0 w-full"></img>
 
         </section>
-        <div className="flex-1 flex justify-center" style={{ backgroundColor: "#411582" }}>
+        <div className="flex-1 flex justify-center" style={{ backgroundColor: this.props.backgroundColor }}>
         </div>
       </div>
     );
