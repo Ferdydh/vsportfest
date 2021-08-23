@@ -18,13 +18,6 @@ Don’t miss your chance to compete and have fun with players all across the wor
 so sign up now for our DOTA COMPETITION ‼️`;
 
 
-
-/*
-prices
-reg
-caption
-*/
-
 function App() {
   return (
     <main className="App">
