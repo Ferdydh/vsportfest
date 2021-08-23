@@ -50,13 +50,11 @@ class Template extends React.Component {
       mascot = MASCOT_MOLEG;
     }
     
-    
     else {
       logo = null;
       mascot = null;
     }
     
-
     return (
       <div className="w-screen">
         <div>
