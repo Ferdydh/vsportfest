@@ -19,6 +19,15 @@ function App() {
 
       {/* <Template id="Template"></Template> */}
 
+      <Template id="dota" wave="wave1" picture="../images/SectionImages/dota.png" caption="" prizes={[]} color=""></Template>
+      {/* <Template id="moleg" wave="wave2" picture="" caption="" prizes={[]} color=""></Template>
+      <Template id="pubg" wave="wave3" picture="" caption="" prizes={[]} color=""></Template>
+      <Template id="chess" wave="wave4" picture="" caption="" prizes={[]} color=""></Template>
+      <Template id="dance" wave="wave5" picture="" caption="" prizes={[]} color=""></Template>
+      <Template id="virtualrun" wave="wave6" picture="" caption="" prizes={[]} color=""></Template> */}
+
+
+
       <Dota id="dota" sectionName="Dota" parallaxStrength="300" background="on" />
 
       <MoLeg id="moleg" sectionName="Mobile Legends" parallaxStrength="-500" background="off" />
