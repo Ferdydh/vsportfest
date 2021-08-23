@@ -61,18 +61,16 @@ class Template extends React.Component {
 
         <div className=" h-2/4 w-screen flex flex-row">
 
+          {/* Left side */}
           <div className="w-full z-10">
-            <div className="flex-1 flex justify-end mr-auto">
-              <RegistrationButton 
-                title="Dance" 
-                url="https://docs.google.com/forms/d/e/1FAIpQLSdkBAeDrxeLgLYnJ7Lr6wevKaGH87U1VqUimbpVfw89DGyUxw/viewform"
-              />
-            </div>
-
-            <div className="h-1/2 sm:h-full flex flex-col z-10">
+            <div className="h-1/2 sm:h-full flex flex-1 flex-col z-10 justify-end mr-auto">
               <div className="z-10">
                 <p className="text-base p-4 md:text-lg whitespace-normal text-white text-center font-sans bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl z-20">
+                      <RegistrationButton 
+                        title="Dance" 
+                        url="https://docs.google.com/forms/d/e/1FAIpQLSdkBAeDrxeLgLYnJ7Lr6wevKaGH87U1VqUimbpVfw89DGyUxw/viewform"
+                      />
                       Registration Fee: 69 €
                 </p>
               </div>
