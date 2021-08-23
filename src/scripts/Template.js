@@ -4,8 +4,13 @@ import GP from '../images/gameplay.png';
 import { isMobile } from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
-import dota from '../images/CompressedImages/bgsection/dota2section.jpg'
+import dotabg from '../images/CompressedImages/bgsection/dota2section.jpg'
+import molegbg from '../images/CompressedImages/bgsection/molegsection.jpg'
+
 import RegistrationButton from "./RegistrationButton"
+import MASCOT_DOTA from '../images/CompressedImages/MASCOT_DOTA.png';
+import MASCOT_MOLEG from '../images/CompressedImages/MASCOT_MOLEG.png';
+
 
 class Template extends React.Component {
   constructor(props){
@@ -36,16 +41,28 @@ class Template extends React.Component {
 
   render() {
     let logo;
+    let mascot;
     if (this.props.title === "DOTA") {
-      logo = dota;
-    } else {
-      logo = null;
+      logo = dotabg;
+      mascot = MASCOT_DOTA;
+    } else if (this.props.title === "Mobile Legends"){
+      logo = molegbg;
+      mascot = MASCOT_MOLEG;
     }
+    
+    
+    else {
+      logo = null;
+      mascot = null;
+    }
+    
 
     return (
       <div className="w-screen">
         <div>
-          <div className={"spacer spacerAspect relative flex justify-center content-center align-middle " + this.props.wave} />
+          <div className={"spacer spacerAspect relative flex justify-center content-center align-middle " + this.props.wave} >
+            <img src={mascot} className="m-5 mt-20 object-contain h-1/2" alt="Vr mascot"/>
+          </div>
         </div>
 
         <section id={this.props.id} className="-mb-32 -mt-16 blur flex align-middle content-center justify-center flex-col w-screen" style={{ backgroundColor: this.props.backgroundColor }}>
