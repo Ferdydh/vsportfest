@@ -73,7 +73,7 @@ caption
 
 function App() {
   return (
-    <main className="App">
+    <main className="App container">
       <MainWindow />
 
       <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} backgroundColor="#411582" url={urlDota}></Template>
