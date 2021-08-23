@@ -55,7 +55,7 @@ export default class MainWindow extends React.Component {
                         <div className={"relative mx-2 player-wrapper glow-cyan-xl"}>
                             <ReactPlayer
                                 url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
-                                playing={false}
+                                playing={true}
                                 className="top-0 left-1/2 transform -translate-x-1/2 absolute"
                                 width= "100%"
                                 height= "100%"
