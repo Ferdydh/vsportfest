@@ -73,6 +73,7 @@ code {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  line-height: 0;
 }
 
 .sidebar a {
@@ -214,7 +215,6 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: none;
 }
 
 .spacerAspect {

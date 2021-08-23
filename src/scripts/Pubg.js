@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from './Modal';
-import {isMobile} from 'react-device-detect';
+import Mascot from '../images/CompressedImages/MASCOT_PUBG.png';
 import ICON from '../images/pubg.png';
 
 class Pubg extends React.Component {
@@ -19,7 +19,7 @@ class Pubg extends React.Component {
     return (
       <>
         <div className="spacer spacerAspect wave3 relative flex justify-center content-center align-middle">
-        
+          <img src={Mascot} className="m-5 object-contain w-3/8 h-3/4" alt="Vr mascot"/>
         </div>
         <section id="pubg">
           <div className="bg-indigo-900 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none">
@@ -41,12 +41,6 @@ class Pubg extends React.Component {
                   title="PUBG" 
                   url="https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t8E_JrhhEQ9uUMgTgxWg55kVGDww/viewform"
                 />
-              </div>
-            </div>
-
-            {/* LINE THROUGH MIDDLE OF COMPONENT */}
-            <div className="flex select-none mr-10 pl-10" id="columnspace">
-              <div className=" bg-white w-1 h-full transform skew-x-25">
               </div>
             </div>
           

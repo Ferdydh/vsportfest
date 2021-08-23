@@ -1,10 +1,8 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/CompressedImages/MASCOT_RUN.png';
-import {isMobile} from 'react-device-detect';
+import Mascot from '../images/CompressedImages/MASCOT_RUN.png';
 import Run from '@material-ui/icons/DirectionsRun';
 
 class VirtualRun extends React.Component {
@@ -22,7 +20,9 @@ class VirtualRun extends React.Component {
   render() {
     return (
       <>
-        <div className="spacer spacerAspect wave6 relative flex justify-center content-center align-middle" />
+        <div className="spacer spacerAspect wave6 relative flex justify-center content-center align-middle">
+          <img src={Mascot} className="m-5 object-contain w-3/8 h-3/4" alt="Vr mascot"/>
+        </div>
         <section id="virtualrun" className="container min-h-screen bg-blue-500 blur flex align-middle content-center justify-center flex-col w-screen">
         <div className="min-h-full p-2 mb-30 h-20 w-screen">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">

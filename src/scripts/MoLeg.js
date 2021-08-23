@@ -4,9 +4,8 @@ import { Parallax } from 'react-parallax';
 import Modal from './Modal';
 
 // media imports for section
-import FG from '../images/CompressedImages/MASCOT_MOLEG.png';
+import Mascot from '../images/CompressedImages/MASCOT_MOLEG.png';
 import ICON from '../images/ml.png';
-import {isMobile} from 'react-device-detect';
 
 class MoLeg extends React.Component {
   MouseOver(event) {
@@ -24,7 +23,7 @@ class MoLeg extends React.Component {
     return (
       <>
       <div className="spacer spacerAspect wave2 relative flex justify-center content-center align-middle">
-        
+        <img src={Mascot} className="m-5 object-contain w-3/8 h-3/4" alt="Vr mascot"/>
       </div>
       <section id="moleg" className="blur m-0 p-0 flex align-middle content-center justify-center md:flex-none" style={{backgroundColor: "#b43484"}} >
         <div className="w-full">
