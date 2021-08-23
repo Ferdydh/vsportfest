@@ -44,12 +44,6 @@ class MoLeg extends React.Component {
             </div>
           </div>
 
-          {/* LINE THROUGH MIDDLE OF COMPONENT */}
-          <div className="flex select-none mr-10 pl-10" id="columnspace">
-            <div className=" bg-white w-1 h-full transform skew-x-25">
-            </div>
-          </div>
-          
           {/* RIGHT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
             <div className="md:m-10 md:mt-36">
@@ -57,12 +51,18 @@ class MoLeg extends React.Component {
                   bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
                       Gamers everywhere gather ‘round! 🎮 Don’t miss your chance to compete and have fun with players all across the world 🌎
                       so sign up now for our MOBILE LEGENDS COMPETITION ‼️
-              </p>
-              <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
+                      <div className=" text-xl font-bold m-4 mt-6">Prizes</div>
+                      #1 : 50% dari Prize Pool + Gold Medal
+                      <br/>
+                      #2 : 30% dari Prize Pool
+                      <br/>
+                      #3 : 20% dari Prize Pool
+                      </p>
+              {/* <div className=" ml-20 sm:ml-28 mt-6 flex align-middle">
                   <Prizes
                     first="75"
                   />
-              </div>
+              </div> */}
             </div>
             
           </div>
