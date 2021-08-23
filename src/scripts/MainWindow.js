@@ -15,7 +15,7 @@ import PUBG_COVER from '../images/CompressedImages/PUBGSMALL.png'
 import RUN_COVER from '../images/CompressedImages/RUNSMALL.png'
 import {isMobile} from 'react-device-detect';
 import ReactPlayer from "react-player";
-import pdf from "../Guideline.pdf"
+import pdf from "../E-Booklet.pdf"
 
 import '../index.css' 
 
