@@ -66,7 +66,7 @@ const urlRun = "https://docs.google.com/forms/d/e/1FAIpQLScilLNOH6HQuEjP7wqTYkn-
 
 function App() {
   return (
-    <main className="App container">
+    <main className="App container w-screen">
       <MainWindow />
 
       <Template id="dota" wave="wave1" title="DOTA" caption={textDota} prizes={prizeDota} backgroundColor="#411582" url={urlDota}></Template>

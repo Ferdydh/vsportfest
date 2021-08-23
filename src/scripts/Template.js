@@ -7,7 +7,7 @@ import pubgbg from '../images/CompressedImages/bgsection/pubgsection.jpg'
 import chessbg from '../images/CompressedImages/bgsection/chesssection.jpg'
 import dancebg from '../images/CompressedImages/bgsection/dancesection.jpg'
 import virtualrunbg from '../images/CompressedImages/bgsection/virtualrunsection.jpg'
-
+import {isMobile} from 'react-device-detect';
 
 import RegistrationButton from "./RegistrationButton"
 import MASCOT_DOTA from '../images/CompressedImages/MASCOT_DOTA.png';
@@ -88,7 +88,7 @@ class Template extends React.Component {
                   <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }} className="h-80" alt="" />
                 </div>
 
-                <div id={this.props.id + "x"} className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
+                <div id={this.props.id + "x"} className={"transform -skew-y-6 transition duration-500 ease-in-out text-white select-none neonText " + (isMobile?"":"hover:-translate-y-1 hover:scale-110")}>
                   {this.props.title}
                 </div>
                 <RegistrationButton url={this.props.url} />
