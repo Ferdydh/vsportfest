@@ -123,7 +123,7 @@ class Template extends React.Component {
             </div>
           </section>
 
-          <img src={logo} className="absolute h-1/2 z-0 w-full"></img>
+          <img src={logo} className="absolute min-h-0 z-0"></img>
           <div className="absolute h-1/2 z-0 w-full opacity-40" style={{ backgroundColor: this.props.backgroundColor }}></div>
 
         </section>

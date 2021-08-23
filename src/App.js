@@ -62,7 +62,7 @@ const urlPubg = "https://docs.google.com/forms/d/e/1FAIpQLSddjc5IyeFe_uhzX0VVb_t
 
 const urlChess = "https://docs.google.com/forms/d/e/1FAIpQLSd3wcW6HhYWDf4_M4arSCy7ZJSpLJtG5cQHuLQJJh6LW8y_3Q/viewform"
 const urlDance = "https://docs.google.com/forms/d/e/1FAIpQLSdkBAeDrxeLgLYnJ7Lr6wevKaGH87U1VqUimbpVfw89DGyUxw/viewform"
-const urlRun = ""
+const urlRun = "https://docs.google.com/forms/d/e/1FAIpQLScilLNOH6HQuEjP7wqTYkn-eNY-SJ_-uioyIuLDhcjGScvEJw/viewform"
 
 
 /*
