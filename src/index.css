@@ -214,6 +214,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border: none;
 }
 
 .spacerAspect {
@@ -234,6 +235,18 @@ html {
 
 .wave4 {
   background-image: url('./images/waves/wave4.svg');
+}
+
+.wave5 {
+  background-image: url('./images/waves/wave5.svg');
+}
+
+.wave6 {
+  background-image: url('./images/waves/wave6.svg');
+}
+
+.wave7 {
+  background-image: url('./images/waves/wave7.svg');
 }
 
 @media (max-width: 992px) {
@@ -261,6 +274,18 @@ html {
 
   .wave4 {
     background-image: url('./images/waves/wave4v.svg');
+  }
+
+  .wave5 {
+    background-image: url('./images/waves/wave5v.svg');
+  }
+
+  .wave6 {
+    background-image: url('./images/waves/wave6v.svg');
+  }
+
+  .wave7 {
+    background-image: url('./images/waves/wave7v.svg');
   }
 
 }

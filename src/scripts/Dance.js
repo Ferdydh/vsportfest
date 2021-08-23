@@ -21,16 +21,14 @@ class Dance extends React.Component {
   }
 
   render() {
-    var backgroundLink = "/static/media/DOTAWALLPAPER.d92f6470.jpg";
-
     return (
-      <section id="dance">
+      <>
+        <div className="spacer spacerAspect wave5 relative flex justify-center content-center align-middle" />
+        <section id="dance">
         <div className=" bg-blue-800 blur m-0 p-0 flex align-middle content-center justify-center md:flex-none objec">
         <div className="w-full">
-        <div className="w-full p-2 mb-30">
           <div className="float-right h-20 w-20 p-4 flex align-middle">
             <img src={ICON} alt="" className="object-contain p-1" />
-          </div>
         </div>
         <section className="h-screen container md:py-20 flex flex-col float-left md:flex-row md:ml-20">
 
@@ -47,12 +45,6 @@ class Dance extends React.Component {
             </div>
           </div>
 
-          {/* LINE THROUGH MIDDLE OF COMPONENT */}
-          <div className="flex select-none mr-10 pl-10" id="columnspace">
-            <div className=" bg-white w-1 h-full transform skew-x-25">
-            </div>
-          </div>
-          
           {/* RIGHT SIDE OF THE DIV */}
           <div className="md:h-full sm:w-1/2 flex flex-col" id="rightside">
             <div className="md:m-10 md:mt-36">
@@ -62,13 +54,13 @@ class Dance extends React.Component {
                    Don’t miss the opportunity to express your creativity and develop your talent through our MODERN DANCE COMPETITION ‼️
               </p>
             </div>
-            
           </div>
-        </section>
 
+        </section>
       </div>
       </div>
       </section>
+    </>
     );
   }
 }

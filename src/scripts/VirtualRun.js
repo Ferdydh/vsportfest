@@ -21,7 +21,9 @@ class VirtualRun extends React.Component {
 
   render() {
     return (
-      <section id="virtualrun" className="container min-h-screen bg-blue-500 blur flex align-middle content-center justify-center flex-col w-screen">
+      <>
+        <div className="spacer spacerAspect wave6 relative flex justify-center content-center align-middle" />
+        <section id="virtualrun" className="container min-h-screen bg-blue-500 blur flex align-middle content-center justify-center flex-col w-screen">
         <div className="min-h-full p-2 mb-30 h-20 w-screen">
           <div className="float-right h-20 w-20 p-4 flex align-middle content-center justify-center">
             <Run fontSize="large"/>
@@ -54,6 +56,7 @@ class VirtualRun extends React.Component {
           </div>
         </section>
       </section>
+    </>
     );
   }
 }
