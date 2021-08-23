@@ -9,6 +9,24 @@ import {isMobile} from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 
+
+const products = ['1st place: 80€ + Gold Medal','2nd place: 40€'];
+
+const prizes = []
+
+const medals = ["🥇", "🥈", "🥉"]
+
+for (let i =0; i < products.length; i++){
+  prizes.push(<div>{
+    medals[i] + products[i]
+    }</div>)
+}
+
+const text =  `Gamers everywhere gather ‘round! 🎮 
+Don’t miss your chance to compete and have fun with players all across the world 🌎 
+so sign up now for our DOTA COMPETITION ‼️`;
+
+
 class Dota extends React.Component {
   MouseOver(event) {
     event.target.style.height = '120%';
@@ -22,30 +40,14 @@ class Dota extends React.Component {
   }
 
   render() {
-    const text = `Gamers everywhere gather ‘round! 🎮 
-    Don’t miss your chance to compete and have fun with players all across the world 🌎 
-    so sign up now for our DOTA COMPETITION ‼️`;
-
     return (
       <div>
         <div>
           <div className="spacer spacerAspect wave1 relative flex justify-center content-center align-middle" />
-          <div style={{backgroundColor: "#411582"}} className="border-none flex justify-center content-center align-middle ">
-            <img src={GP} className="object-contain h-1/2 w-1/2"></img>
-          </div>
-          <div className="spacer spacerAspect wave1 flip relative flex justify-center content-center align-middle" />
-
         </div>
 
-
         <section id="dota" className="min-h-screen bg-purple-900 blur flex align-middle content-center justify-center flex-col w-screen" style={{backgroundColor: "#411582"}}>
-            <div className="min-h-full p-2 mb-30 h-20 w-screen">
-              <div className="float-right h-20 w-20 p-4">
-                <img src={ICON} className="object-contain p-1" alt="icon"/>
-              </div>
-            </div>
-            <section className="min-h-screen sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
-
+          <section className="min-h-screen sm:py-20 flex flex-col float-left sm:flex-row sm:ml-20">
             {/* LEFT SIDE OF THE DIV */}
             <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
               <div className="mt-20 sm:m-10 md:m-auto font-bold text-7xl">
@@ -71,23 +73,15 @@ class Dota extends React.Component {
               <div className="md:m-10 md:mt-36">
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-300 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
-                      {text}
-
-                    <div className="font-bold text-3xl transform skew-x-12 ">
-                      <br/>
-                      <div className="bg-white h-px ">
-
-                      </div>
-                    <br/>
-                    #1 : 70% dari Prize Pool + Gold Medal
-                    <br/>
-                    #2 : 30% dari Prize Pool
-                    </div>
+                      <div>{text}</div>
+                      <hr/>
+                      <div>Prizes 🏆</div>
+                      <div>{prizes}</div>
                 </p>
               </div>
             </div>
-
           </section>
+          <div></div>
       </section>  
     </div>
     );
