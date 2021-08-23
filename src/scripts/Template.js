@@ -1,6 +1,4 @@
 import React from 'react';
-import GP from '../images/gameplay.png';
-import { isMobile } from 'react-device-detect';
 import IRING from '../images/CompressedImages/RINGS/IRING1.png'
 import ORING from '../images/CompressedImages/RINGS/ORING1.png'
 import dotabg from '../images/CompressedImages/bgsection/dota2section.jpg'
@@ -34,17 +32,6 @@ class Template extends React.Component {
 
     this.state = { prizes : prizesText }
 
-  }
-
-  MouseOver(event) {
-    event.target.style.height = '120%';
-    event.target.style.transform = 'rotate(20deg)'
-    event.target.style.transition = 'height 0.5s, transform 1s';
-  }
-
-  MouseOut(event) {
-    event.target.style.height = '100%';
-    event.target.style.transform = 'rotate(0deg)'
   }
 
   render() {
@@ -94,11 +81,11 @@ class Template extends React.Component {
             <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
               <div className="mt-20 sm:m-10 md:m-auto font-bold text-7xl">
                 <div className="absolute transform -translate-y-20">
-                  <img src={IRING} style={{ "animation": "spin 5s linear infinite", "animation-direction": "normal" }} className="h-80"></img>
+                  <img src={IRING} style={{ "animation": "spin 5s linear infinite", "animation-direction": "normal" }} className="h-80" alt="" />
                 </div>
 
                 <div className="absolute transform -translate-y-20">
-                  <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }} className="h-80"></img>
+                  <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }} className="h-80" alt="" />
                 </div>
 
                 <div id={this.props.id + "x"} className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
@@ -121,7 +108,7 @@ class Template extends React.Component {
             </div>
           </section>
 
-          <img src={logo} className="absolute min-h-0 z-0"></img>
+          <img src={logo} className="absolute min-h-0 z-0" alt=""></img>
           <div className="absolute h-1/2 z-0 w-full opacity-40" style={{ backgroundColor: this.props.backgroundColor }}></div>
 
         </section>
