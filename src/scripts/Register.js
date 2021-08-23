@@ -3,7 +3,7 @@ import Countdown from './Countdown'
 import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import VRMascot from '../images/vr-mascot.png';
+import VRMascot from '../images/CompressedImages/MASCOT_VR.png';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import BG from '../images/CompressedImages/bg1.jpg'
 
