@@ -118,7 +118,7 @@ class Template extends React.Component {
             </div>
           </section>
           {/* background image*/}
-          <img src={logo} className="absolute z-0 object-cover h-1/2"
+          <img src={logo} className="absolute z-0 object-cover h-1/2 w-screen"
            alt=""
            style={{boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}} 
           />
