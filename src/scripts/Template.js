@@ -103,6 +103,9 @@ class Template extends React.Component {
                       <hr/>
                       <div>Prizes 🏆</div>
                       <div>{this.state.prizes}</div>
+                      {(this.props.title === "Dance")? <div>🥇Public’s Favorite: Gold Medal</div>: null}
+                      <hr/>
+                      <div>{this.props.footer}</div>
                 </p>
               </div>
             </div>
