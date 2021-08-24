@@ -37,7 +37,7 @@ export default class MainWindow extends React.Component {
                     <a href="mailto:vsportfest@ppi-munich.org" target="_blank" rel="noreferrer">
                         <EmailIcon fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
-                    <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">
+                    <a href="#register">
                         <WhatsApp fontSize="large" className="float-right mr-3 mt-2 text-white hover:text-black hover:bg-gray-50 rounded-md"/>
                     </a>
                 </div>
