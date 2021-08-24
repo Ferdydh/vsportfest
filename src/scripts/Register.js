@@ -11,7 +11,7 @@ class Register extends React.Component {
       return (
         <>
         <div className="spacer spacerAspect wave7 relative flex justify-center content-center align-middle w-screen" />
-        <div className="h-14 shadow-green sm:shadow-darkGreen" style={{backgroundColor:"#5BCCCA"}} />
+        <div className="h-14 shadow-green sm:shadow-darkGreen w-screen" style={{backgroundColor:"#5BCCCA"}} />
           <section className="h-auto md:h-screen flex flex-auto relative justify-center content-center registerSection p-10" id={this.props.id}>
             <div className="flex flex-wrap container justify-center mt-10 content-center sm:mt-30">
               <div className="transform -skew-y-6 mr-4 max-w-screen-md">
