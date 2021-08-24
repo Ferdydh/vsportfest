@@ -100,19 +100,18 @@ class Template extends React.Component {
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-700 
                     bg-opacity-30 rounded hover:shadow-xl m-10 mb-24 glow-cyan-xl">
                       <div>{this.props.caption}</div>
-                      <hr className="my-4" />
-                      <div className="font-bold mb-2">Prizes 🏆</div>
                       {(this.props.title === "Virtual Run")? <div>
+                      <hr className="my-4" />
                       Categories: <br/>
                       Women : 5km & 10km 🏃🏻‍♀️ <br/>
                       Men : 6km & 12km 🏃🏻‍♂️ <br/>
                       Group of 5 : 15km 🏃🏻
                       </div>: null}
-                      <hr/>
-                      <div>Prizes 🏆</div>
+                      <hr className="my-4" />
+                      <div className="font-bold mb-2">Prizes 🏆</div>
                       <div>{this.state.prizes}</div>
                       {(this.props.title === "Dance")? <div>🥇Public’s Favorite: Gold Medal</div>: null}
-                      <hr/>
+                      <hr className="my-4"/>
                       <div>{this.props.footer}</div>
                 </p>
               </div>
