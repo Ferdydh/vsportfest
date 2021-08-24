@@ -100,6 +100,12 @@ class Template extends React.Component {
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-700 
                     bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
                       <div>{this.props.caption}</div>
+                      {(this.props.title === "Virtual Run")? <div>
+                      Categories: <br/>
+                      Women : 5km & 10km 🏃🏻‍♀️ <br/>
+                      Men : 6km & 12km 🏃🏻‍♂️ <br/>
+                      Group of 5 : 15km 🏃🏻
+                      </div>: null}
                       <hr/>
                       <div>Prizes 🏆</div>
                       <div>{this.state.prizes}</div>

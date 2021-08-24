@@ -93,10 +93,6 @@ ONE TICKET = ONE DONATION💚
 Registrations will be closed on 07 OCTOBER 2021🗓‼️
 Slots: UNLIMITED, OPEN FOR PUBLIC
 Registration fee: 3€ / Rp 52.500,- per person 💶😆💚
-Categories:
-Women : 5km & 10km 🏃🏻‍♀️
-Men : 6km & 12km 🏃🏻‍♂️
-Group of 5 : 15km 🏃🏻
 `;
 
 const prizeVirtualRun = ['Gold medal for each winner'];
