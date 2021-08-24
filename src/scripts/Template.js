@@ -71,7 +71,7 @@ class Template extends React.Component {
       <div className="w-screen">
         <div>
           <div className={"spacer spacerAspect relative flex justify-center content-center align-middle " + this.props.wave} >
-            <img src={mascot} className="m-5 mt-20 object-contain h-1/2" alt="Vr mascot"/>
+            <img src={mascot} className="m-5 mt-20 object-contain h-1/2 animate-wiggle" alt="Vr mascot"/>
           </div>
         </div>
 
@@ -80,11 +80,11 @@ class Template extends React.Component {
             {/* LEFT SIDE OF THE DIV */}
             <div className="sm:h-full sm:w-1/2 flex flex-col sm:my-auto" id="leftside">
               <div className="mt-20 sm:m-10 md:m-auto font-bold text-7xl">
-                <div className="absolute transform -translate-y-20">
+                <div className="absolute transform -translate-y-20 z-0">
                   <img src={IRING} style={{ "animation": "spin 5s linear infinite", "animation-direction": "normal" }} className="h-80" alt="" />
                 </div>
 
-                <div className="absolute transform -translate-y-20">
+                <div className="absolute transform -translate-y-20 z-0">
                   <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }} className="h-80" alt="" />
                 </div>
 
@@ -98,17 +98,20 @@ class Template extends React.Component {
             <div className="h-1/2 sm:h-full sm:w-1/2 flex flex-col z-10" id="rightside">
               <div className="md:m-10 md:mt-36">
                 <p className="text-base p-4 md:text-lg max-w-md whitespace-normal text-white text-center font-sans bg-gray-700 
-                    bg-opacity-30 rounded hover:shadow-md m-10 mb-24 glow-cyan-xl">
+                    bg-opacity-30 rounded hover:shadow-xl m-10 mb-24 glow-cyan-xl">
                       <div>{this.props.caption}</div>
-                      <hr/>
-                      <div>Prizes 🏆</div>
+                      <hr className="my-4" />
+                      <div className="font-bold mb-2">Prizes 🏆</div>
                       <div>{this.state.prizes}</div>
                 </p>
               </div>
             </div>
           </section>
           {/* background image*/}
-          <img src={logo} className="absolute z-0 object-cover h-1/2 sm:h-auto" alt=""></img>
+          <img src={logo} className="absolute z-0 object-cover h-1/2"
+           alt=""
+           style={{boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}} 
+          />
           <div className="absolute h-1/2 z-0 w-full opacity-60" style={{ backgroundColor: this.props.backgroundColor }}></div>
 
         </section>

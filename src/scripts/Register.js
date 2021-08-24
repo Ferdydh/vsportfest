@@ -5,13 +5,13 @@ import PersonIcon from '@material-ui/icons/Person';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import VRMascot from '../images/CompressedImages/MASCOT_VR.png';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import BG from '../images/CompressedImages/bg1.jpg'
 
 class Register extends React.Component {
     render() {
       return (
         <>
         <div className="spacer spacerAspect wave7 relative flex justify-center content-center align-middle" />
+        <div className="h-14 shadow-green sm:shadow-darkGreen" style={{backgroundColor:"#5BCCCA"}} />
           <section className="h-auto md:h-screen flex flex-auto relative justify-center content-center registerSection p-10" id={this.props.id}>
             <div className="flex flex-wrap container justify-center mt-10 content-center sm:mt-30">
               <div className="transform -skew-y-6 mr-4 max-w-screen-md">
