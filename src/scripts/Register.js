@@ -10,7 +10,7 @@ class Register extends React.Component {
     render() {
       return (
         <>
-        <div className="spacer spacerAspect wave7 relative flex justify-center content-center align-middle" />
+        <div className="spacer spacerAspect wave7 relative flex justify-center content-center align-middle w-szreen" />
         <div className="h-14 shadow-green sm:shadow-darkGreen" style={{backgroundColor:"#5BCCCA"}} />
           <section className="h-auto md:h-screen flex flex-auto relative justify-center content-center registerSection p-10" id={this.props.id}>
             <div className="flex flex-wrap container justify-center mt-10 content-center sm:mt-30">
