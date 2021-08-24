@@ -92,7 +92,7 @@ class Sidebar extends React.Component {
 
       {isMobile && is_visible && (
       <nav class="mobilesidebar">
-        <Menu as="div" className="inline-block text-center flex-auto relative justify-center content-center">
+        <Menu as="div" className="inline-block text-center flex-auto absolute justify-center content-center">
           <div className="p-2">
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
               <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
@@ -159,8 +159,8 @@ class Sidebar extends React.Component {
 
 
 {/* ////////////////////////////// */}
-        {!isMobile && is_visible && (
-          <nav class="sidebar ml-3 h-screen">
+        {!isMobile && is_visible && ( 
+          <nav class="sidebar ml-3 h-screen"> 
             <div>
               <div class="bg-indigo-500 p-0.5 rounded-full mb-4 flex-1 flex justify-center mr-auto items-center">
                 {/* ring-2 ring-offset-2 ring-offset-gray-100 ring-indigo-500 */}
