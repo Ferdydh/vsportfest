@@ -17,9 +17,7 @@ const urlDota = "https://docs.google.com/forms/d/e/1FAIpQLSeCVJDz1oebmBpRbeb9aC4
 
 const prizeDota = ['1st place: 70% from Prize Pool + Gold Medal', '2nd place : 30% from Prize Pool'];
 
-const footerDota = `Don’t forget to check out our competition guideline! 
-For more information, feel free to contact us! 📲
-
+const footerDota = `For more information, feel free to contact us! 📲
 Oscar A.
 +49 162 6215433
 `
@@ -35,8 +33,7 @@ const prizeMoleg = ['1st place: 50% from Prize Pool + Gold Medal','2nd place: 30
 
 const urlMoleg = "https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
 
-const footerMoleg = `Don’t forget to check out our competition guideline! 
-For more information, feel free to contact us! 📲
+const footerMoleg = `For more information, feel free to contact us! 📲
 Farhan I.
 +49 176 32927185
 `
