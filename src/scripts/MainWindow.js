@@ -15,7 +15,7 @@ import PUBG_COVER from '../images/CompressedImages/PUBGSMALL.png'
 import RUN_COVER from '../images/CompressedImages/RUNSMALL.png'
 import {isMobile} from 'react-device-detect';
 import ReactPlayer from "react-player";
-import pdf from "../Guideline.pdf"
+import pdf from "../E-Booklet.pdf"
 
 import '../index.css' 
 
@@ -24,7 +24,7 @@ export default class MainWindow extends React.Component {
 
     render() {
         return (
-            <section id="mainwindow" className="pt-6 pb-20 min-h-screen w-full bg-retro mainwindow">
+            <section id="mainwindow" className="pt-6 pb-20 min-h-screen bg-retro mainwindow w-screen">
                 <div className="w-full inline-block">
                     <a href="https://ppi-munich.org/" target="_blank" rel="noreferrer" className="logo float-left ml-8 mt-2 w-20 h-12 hover:bg-gray-50 rounded-md">
                         <img src={logoWhite} alt="logo" className="logowhite w-20 h-12" />
@@ -55,7 +55,7 @@ export default class MainWindow extends React.Component {
                         <div className={"relative mx-2 player-wrapper glow-cyan-xl"}>
                             <ReactPlayer
                                 url="https://www.youtube.com/watch?v=qGWsNJ2zF4Q"
-                                playing={false}
+                                playing={true}
                                 className="top-0 left-1/2 transform -translate-x-1/2 absolute"
                                 width= "100%"
                                 height= "100%"
@@ -133,7 +133,7 @@ export default class MainWindow extends React.Component {
                     </Link>
 
                     <Link
-                        to="run"
+                        to="virtualrun"
                         smooth={true}
                         duration={500}
                     >

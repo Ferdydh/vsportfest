@@ -16,7 +16,7 @@ class Register extends React.Component {
             <div className="flex flex-wrap container justify-center mt-10 content-center sm:mt-30">
               <div className="transform -skew-y-6 mr-4 max-w-screen-md">
                 <div className="text-5xl font-extrabold font-mono p-3 m-3 rounded-lg justify-center items-center animate-bounce" style={{backgroundColor: "#EEC184"}}>
-                  <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">Register now!</a>
+                  Register now!
                 </div>
                 <div id="registerx" className="animate-pulse glow-cyan-md text-2xl text-red-600 font-bold font-mono border-2 border-double p-3 md:w-96 bg-gray-100 
               bg-opacity-20">
@@ -29,7 +29,7 @@ class Register extends React.Component {
                     Rachel Lauren
                   </div>
                   {/*link to WA generator : https://postcron.com/en/blog/landings/whatsapp-link-generator/#page-block-he6t7wyxoh*/}
-                  <a href="https://api.whatsapp.com/send?phone=4917644547544&text=CP%20Vsportfest">
+                  <a href="https://api.whatsapp.com/send?phone=4917644547544&text=%5BvSportfest%5D">
                   <WhatsAppIcon className="pr-2" />
                     +49 176 4454 7544
                   </a>
@@ -38,7 +38,7 @@ class Register extends React.Component {
                     Michelle Widjaja
                   </div>
                   {/*link to WA generator : https://postcron.com/en/blog/landings/whatsapp-link-generator/#page-block-he6t7wyxoh*/}
-                  <a href="https://api.whatsapp.com/send?phone=4915207994648&text=CP%20Vsportfest">
+                  <a href="https://api.whatsapp.com/send?phone=491752536466&text=%5BvSportfest%5D">
                   <WhatsAppIcon className="pr-2" />
                     +49 175 2536 466
                   </a>

@@ -7,7 +7,7 @@ import pubgbg from '../images/CompressedImages/bgsection/pubgsection.jpg'
 import chessbg from '../images/CompressedImages/bgsection/chesssection.jpg'
 import dancebg from '../images/CompressedImages/bgsection/dancesection.jpg'
 import virtualrunbg from '../images/CompressedImages/bgsection/virtualrunsection.jpg'
-
+import {isMobile} from 'react-device-detect';
 
 import RegistrationButton from "./RegistrationButton"
 import MASCOT_DOTA from '../images/CompressedImages/MASCOT_DOTA.png';
@@ -68,7 +68,7 @@ class Template extends React.Component {
     }
     
     return (
-      <div className="w-screen">
+      <div className="w-screen min-h-screen">
         <div>
           <div className={"spacer spacerAspect relative flex justify-center content-center align-middle " + this.props.wave} >
             <img src={mascot} className="m-5 mt-20 object-contain h-1/2 animate-wiggle" alt="Vr mascot"/>
@@ -88,7 +88,7 @@ class Template extends React.Component {
                   <img src={ORING} style={{ "animation": "spin 7s linear infinite", "animation-direction": "reverse" }} className="h-80" alt="" />
                 </div>
 
-                <div id={this.props.id + "x"} className="transform -skew-y-6 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 text-white select-none neonText">
+                <div id={this.props.id + "x"} className={"transform -skew-y-6 transition duration-500 ease-in-out text-white select-none neonText " + (isMobile?"":"hover:-translate-y-1 hover:scale-110")}>
                   {this.props.title}
                 </div>
                 <RegistrationButton url={this.props.url} />
@@ -102,7 +102,18 @@ class Template extends React.Component {
                       <div>{this.props.caption}</div>
                       <hr className="my-4" />
                       <div className="font-bold mb-2">Prizes 🏆</div>
+                      {(this.props.title === "Virtual Run")? <div>
+                      Categories: <br/>
+                      Women : 5km & 10km 🏃🏻‍♀️ <br/>
+                      Men : 6km & 12km 🏃🏻‍♂️ <br/>
+                      Group of 5 : 15km 🏃🏻
+                      </div>: null}
+                      <hr/>
+                      <div>Prizes 🏆</div>
                       <div>{this.state.prizes}</div>
+                      {(this.props.title === "Dance")? <div>🥇Public’s Favorite: Gold Medal</div>: null}
+                      <hr/>
+                      <div>{this.props.footer}</div>
                 </p>
               </div>
             </div>
@@ -113,6 +124,8 @@ class Template extends React.Component {
            style={{boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}} 
           />
           <div className="absolute h-1/2 z-0 w-full opacity-60" style={{ backgroundColor: this.props.backgroundColor }}></div>
+          {/* <img src={logo} className="absolute z-0 object-cover h-1/2 sm:h-auto" alt=""></img>
+          <div className="absolute h-3/5 z-0 w-full opacity-60" style={{ backgroundColor: this.props.backgroundColor }}></div> */}
 
         </section>
         <div className="flex-1 flex justify-center" style={{ backgroundColor: this.props.backgroundColor }}>
