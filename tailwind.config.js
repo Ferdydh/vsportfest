@@ -4,6 +4,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    boxShadow: {
+      'green': "inset 0px -50px 37px -24px #00D084",
+      'darkGreen': "inset 0px -50px 37px -24px #03ACA7",
+    },
     glow: {
       styles: { // Defaults to these values
         default: baseColor =>
