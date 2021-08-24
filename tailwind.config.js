@@ -26,6 +26,7 @@ module.exports = {
     extend: {
       colors: {
         'cyan': '#6ADDF4',
+        'pastelYellow': '#EEC184',
       },
       skew: {
         '25': '25deg',
