@@ -4,7 +4,7 @@ import '../index.css';
 const Countdown = () => {
     const calculateTimeLeft = () => {
         let year = new Date().getFullYear();
-        let difference = +new Date(`09/20/${year}`) - +new Date();
+        let difference = +new Date(`September 20, 2021 18:00:00`) - +new Date();
         let timeLeft = {};
     
         if (difference > 0) {
