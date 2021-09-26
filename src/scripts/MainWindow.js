@@ -162,6 +162,19 @@ export default class MainWindow extends React.Component {
                         </div>
                     </a>
                 </div>
+
+                {/* asdf */}
+                <div className="font-mono text-2xl p-4 flex align-middle neonText text-cyan transform duration-700 hover:scale-110 justify-center content-center">
+                    <a href ="https://discord.gg/ty3TdADs" target = "_blank" rel="noreferrer">
+                        <div className="mt-1">
+                            Looking for a teammate? Click here
+                            <span class="material-icons align-middle">
+                                chevron_right
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
             </section>
         );
     }
