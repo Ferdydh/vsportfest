@@ -103,8 +103,7 @@ class Template extends React.Component {
                       {(this.props.title === "Virtual Run")? <div>
                       <hr className="my-4" />
                       Categories: <br/>
-                      Women : 5km & 10km 🏃🏻‍♀️ <br/>
-                      Men : 6km & 12km 🏃🏻‍♂️ <br/>
+                      Individual : 3km & 5km 🏃🏻‍♀️ 🏃🏻‍♂️ <br/>
                       Group of 5 : 15km 🏃🏻
                       </div>: null}
                       <hr className="my-4" />

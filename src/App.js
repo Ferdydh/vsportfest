@@ -25,11 +25,11 @@ Oscar A.
 // MOLEG
 const textMoleg = `Mobile Legends players everywhere gather ‘round and prepare your ultimate builds! 🎮 Don’t miss your chance to compete and have fun with players all across the globe🌎 
 ‼️SIGN UP NOW‼️
-Only 16 slots available! 
+Only 8 slots available! 
 Registration fee: 15€ / Rp 262.500,- per team 💶😆
 `;
 
-const prizeMoleg = ['1st place: 50% from Prize Pool + Gold Medal','2nd place: 30% from Prize Pool', '3rd place: 20% dari Prize Pool'];
+const prizeMoleg = ['1st place: 70% from Prize Pool + Gold Medal', '2nd place : 30% from Prize Pool'];
 
 const urlMoleg = "https://docs.google.com/forms/d/e/1FAIpQLScRYrvS2gLJPwOqQX4Es3cLrfiU3qorzBR3PRtMvl-9HKmWMw/viewform"
 
